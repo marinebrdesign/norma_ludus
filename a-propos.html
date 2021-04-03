@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À Propos</title>
+</head>
+<body class=" ">
+<header>
+    <figure class="logo">
+        <img src="img/logo.jpg" alt="logo">
+    </figure>
+    <div class="nav-toggle" onclick="document.documentElement.classList.toggle('menu-open')">
+        <div class="nav-toggle-bar"></div>
+    </div>
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="">Jeux</a></li>
+            <li><a href="">Acheter des jeux</a></li>
+            <li><a href=""></a>Vendre des jeux</li>
+            <li><a href=""></a>Mon profil</li>
+            <li><a href=""></a>Mes paramètres</li>
+            <li><a href=""></a>À propos</li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="equipe">
+        <h3>L'équipe</h3>
+        <figure class="img_equipe">
+            <img src="img/img_equipe.jpg" alt="img_equipe" height="550" width="1520">
+        </figure>
+        <div class="lena">
+            <figure>
+                <img src="img/lena.png" alt="lena" height="180" width="180">
+            </figure>
+            <address>
+                <p>Lena Bataillard</p>
+                <a href="mailto:lena.bataillard3@gmail.com">lena.bataillard3@gmail.com</a>
+            </address>
+
+        </div>
+        <div class="marine">
+            <figure>
+                <img src="img/marine.png" alt="marine" width="180" height="180">
+            </figure>
+            <address>
+                <p>Marine Beurier</p>
+                <a href="mailto:marinebeurier22@gmail.com">marinebeurier22@gmail.com</a>
+            </address>
+        </div>
+
+        <div class="nina">
+            <figure>
+                <img src="img/nina.png" alt="nina" width="180" height="180">
+            </figure>
+            <address>
+                <p>Nina Bellino</p>
+                <a href="mailto:nina.bellin06@gmail.com">nina.bellin06@gmail.com</a>
+            </address>
+        </div>
+    </div>
+    <div class="a-propos">
+        <figure class="vague">
+            <img src="img/vague.png" alt="décoration" width="1520" height="247">
+        </figure>
+        <h3>À propos</h3>
+        <p>On a tous connu ce moment où l’on joue avec nos amis jusqu’à l’explication des règles, car celles-ci sont différentes pour chacun. Nous perdions alors plus de temps à débattre. <br> Pour mettre un terme à ça, Norma Ludus est là !
+        <p>Notre but est de regrouper les règles officielles des jeux et proposer une variété de règles alternatives. Norma Ludus permet aussi de vendre et acheter de nombreux jeux ! Vous l’aurez compris Norma Ludus c’est étendre les possibilités de jeux à l’infini !</p>
+        <p> Ce site a été créé par Lena Bataillard, Marine Beurier, Nina Bellino dans le cadre d’un projet pédagogique de 1re année au DUT MMI de Montbéliard qui forme au métier du web en deux ans.</p>
+        <figure class="vague2">
+            <img src="img/vague2.png" alt="décoration" width="1520" height="247">
+        </figure>
+    </div>
+    <div class="contact">
+        <figure class="img_contact">
+            <img src="img/img_contact.jpg" alt="contact" width="1520" height="750">
+        </figure>
+        <h3>Nous contacter</h3>
+        <form action="formulaire_de_contact" method="post" id="contact">
+            <div class="prenom">
+                <label for="prenom"></label>
+                <input type="text" placeholder="Prénom" id="prenom" name="user_firstname" required>
+            </div>
+            <div class="nom">
+                <label for="nom"></label>
+                <input type="text" placeholder="Nom" id="nom" name="user_name" required>
+            </div>
+            <div class="mail2">
+                <label for="mail2"></label>
+                <input type="email" placeholder="Email" id="mail2" name="user_mail" required>>
+            </div>
+            <div class="msg">
+                <label for="msg"></label>
+                <textarea id="msg" placeholder="Message" name="user_message" required></textarea>
+            </div>
+            <button class="envoyer"
+                    type="submit">
+                Envoyer
+            </button>
+        </form>
+    </div>
+    <footer>
+        <div class="reseaux module-footer">
+            <ul>
+                <li><a href="mailto:normaludus25@gmail.com">Mail</a></li>
+                <li><a href="https://fr-fr.facebook.com/"><img src="img/facebook.svg" alt="Facebook" height="20" width="20"/></a>
+                <li><a href="https://www.instagram.com/_marine_br/"><img src="img/instagram.svg" alt="Instagram" height="20" width="20"></a>
+            </ul>
+        </div>
+        <a href="mentions-legales.html">Mentions Légales</a>
+        <p>Lena Battalliard - Nina Bellino - Marine Beurier</p>
+    </footer>
+</main>
+</body>
+</html>
