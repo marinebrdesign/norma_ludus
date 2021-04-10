@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mes Paramètres</title>
+    <title>Envoi</title>
 </head>
 <body class=" ">
 <header>
@@ -16,27 +16,33 @@
     <nav class="menu">
         <ul>
             <li><a href="index.html">Accueil</a></li>
-            <li><a href="">Jeux</a></li>
-            <li><a href="">Acheter des jeux</a></li>
-            <li><a href=""></a>Vendre des jeux</li>
-            <li><a href=""></a>Mon profil</li>
-            <li><a href=""></a>Mes paramètres</li>
-            <li><a href=""></a>À propos</li>
+            <li><a href="acheter-jeux.html">Acheter des jeux</a></li>
+            <li><a href="vendre-jeux.html"></a>Vendre des jeux</li>
+            <li><a href="mes-parametres.html"></a>Mon profil</li>
+            <li><a href="mon-profil.html"></a>Mes paramètres</li>
+            <li><a href="a-propos.html"></a>À propos</li>
         </ul>
     </nav>
 </header>
 <main>
-    <header>
-        <h1>Paramètres</h1>
-    </header>
-    <ul>
-        <li><a href="paramètre-mon-profil.html">Mon profil</a><i class="fas fa-chevron-right"></i></li>
-        <li><a href="">Ajouter une carte</a><i class="fas fa-chevron-right"></i></li>
-        <li><a href="">Envoi</a><i class="fas fa-chevron-right"></i></li>
-        <li><a href="">Mails</a><i class="fas fa-chevron-right"></i></li>
-        <li><a href="">Passer premium</a><i class="fas fa-chevron-right"></i></li>
-        <li><a href="">Se déconnecter</a><i class="fas fa-chevron-right"></i></li>
-    </ul>
+    <form id="envoi">
+        <div class="nom/prenom">
+            <label for="nom/prenom"></label>
+            <input type="text" placeholder="Nom Prénom" id="nom/prenom" name="user_first/lastname">
+        </div>
+        <div class="adresse">
+            <label for=adresse>Adresse</label>
+            <input id=adresse name=adresse type=text required>
+            <label for=codepostal>Code postal</label>
+            <input id=codepostal name=codepostal type=number required>
+            <label for=pays>Pays</label>
+            <input id=pays name=pays type=text required>
+        </div>
+        <button class="terminer"
+                type="submit">
+            Terminer
+        </button>
+    </form>
 </main>
 <footer>
     <div class="reseaux module-footer">

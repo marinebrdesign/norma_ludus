@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paramètres-Mon Profil</title>
+    <title>Ajouter une Carte</title>
 </head>
 <body class=" ">
 <header>
@@ -26,31 +26,31 @@
 </header>
 <main>
     <header>
-        <h1>Mon profil</h1>
+        <h1>Ajouter une carte</h1>
         <a href="">Retour</a>
     </header>
-    <ul>
-        <li>Adresse mail<button>Changer</button></li>
-        <li>
-            <div class="nom-profil">
-            <label for=nom>Nom</label>
-            <input id=nom name=nom type=text required>
-            </div><i class="fas fa-chevron-right"></i>
-        </li>
-        <li><div class="nom-profil">
-            <label for=prenom>Prénom</label>
-            <input id=prenom name=prenom type=text required>
-            </div><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i>
-        </li>
-        <li><div class="date-naissance">
-            <label for=date-naissance>Date de naissance</label>
-            <input id=date-naissance name=date-naissance type=date required>
-        </div><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i></li>
-        <li>Pseudo<button>Changer</button></li>
-        <li>Mot de passe<button>Changer</button></li>
-        <li>Mon porte-monnaie<i class="fas fa-chevron-right"></i></li>
-        <li>Supprimer mon compte<i class="fas fa-chevron-right"></i></li>
-    </ul>
+    <form id="ajouter-carte">
+            <div class="nom-carte">
+                <label for=nom-carte>Nom figurant sur la carte</label>
+                <input id=nom-carte name=nom-carte type=text required>
+            </div>
+            <div class="num-carte">
+                <label for=num-carte>Numéro de carte bancaire</label>
+                <input id=num-carte name=num-carte type=number required>
+            </div>
+            <div class="date-exp">
+                <label for="date-exp">Date d'expiration</label>
+                <input type="date" id="date-exp" name="date-exp" required>
+            </div>
+            <div class="code-secu">
+                <label for=securite>Code de sécurité</label>
+                <input id=securite name=securite type=number required>
+            </div>
+            <button class="enregistrer"
+                    type="submit">
+                Enregistrer
+            </button>
+    </form>
 </main>
 <footer>
     <div class="reseaux module-footer">
