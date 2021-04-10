@@ -24,6 +24,34 @@
         </ul>
     </nav>
 </header>
+<main>
+    <header>
+        <h1>Ajouter une carte</h1>
+        <a href="">Retour</a>
+    </header>
+    <form id="ajouter-carte">
+            <div class="nom-carte">
+                <label for=nom-carte>Nom figurant sur la carte</label>
+                <input id=nom-carte name=nom-carte type=text required>
+            </div>
+            <div class="num-carte">
+                <label for=num-carte>Numéro de carte bancaire</label>
+                <input id=num-carte name=num-carte type=number required>
+            </div>
+            <div class="date-exp">
+                <label for="date-exp">Date d'expiration</label>
+                <input type="date" id="date-exp" name="date-exp" required>
+            </div>
+            <div class="code-secu">
+                <label for=securite>Code de sécurité</label>
+                <input id=securite name=securite type=number required>
+            </div>
+            <button class="enregistrer"
+                    type="submit">
+                Enregistrer
+            </button>
+    </form>
+</main>
 <footer>
     <div class="reseaux module-footer">
         <ul>

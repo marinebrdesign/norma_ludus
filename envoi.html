@@ -24,6 +24,26 @@
         </ul>
     </nav>
 </header>
+<main>
+    <form id="envoi">
+        <div class="nom/prenom">
+            <label for="nom/prenom"></label>
+            <input type="text" placeholder="Nom Prénom" id="nom/prenom" name="user_first/lastname">
+        </div>
+        <div class="adresse">
+            <label for=adresse>Adresse</label>
+            <input id=adresse name=adresse type=text required>
+            <label for=codepostal>Code postal</label>
+            <input id=codepostal name=codepostal type=number required>
+            <label for=pays>Pays</label>
+            <input id=pays name=pays type=text required>
+        </div>
+        <button class="terminer"
+                type="submit">
+            Terminer
+        </button>
+    </form>
+</main>
 <footer>
     <div class="reseaux module-footer">
         <ul>
