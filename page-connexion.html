@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Connexion</title>
+</head>
+<body>
+<img src="img/logo.jpg" alt="logo">
+<div id="container">
+    <form action="verification.php" method="POST">
+        <label for="id"></label>
+        <input type="text" id="id" placeholder="E-mail ou identifiant" name="username" required>
+
+        <label for="mdp"></label>
+        <input type="password" id="mdp" placeholder="Mot de passe" name="password" required>
+        <a href="mdp-oublie.html">Mot de passe oublié ?</a>
+        <button class="connexion"
+                type="submit">
+            Connexion
+        </button>
+    </form>
+    <p>Vous n'avez pas de compte ?</p><a href="page-inscription.html">Inscrivez-vous !</a>
+</div>
+</body>
+</html>
