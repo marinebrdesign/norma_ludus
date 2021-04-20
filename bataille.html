@@ -42,13 +42,37 @@
   <div id="bataille-visit">
     <h3>Bataille</h3>
     <img src="" alt="img-bataille">
-    <ul>
-      <li>Nombre de joueurs : <br>2 ou plus</li>
-      <li>Âge : <br>2 et plus
-      <li>Temps : <br>Environ 30 à 60 minutes</li>
-      <li>Règle : <br>Pour commencer il faut distribuer les 52 cartes du jeu aux joueurs qui les rassemblent en paquet devant eux. Chacun tire alors la carte du dessus de son paquet et la pose sur la table. Celui qui a la carte la plus forte ramasse les autres cartes. La carte la plus forte et l’As, suivi du roi, de la reine, du valet, du dix, du neuf,etc...
-        Si deux joueurs posent en même temps deux cartes de la même valeur, il y a bataille. C’est-à-dire que les joueurs avec les mêmes cartes tirent la carte suivante et la posent, face cachée, sur la carte précédente. Puis ils tirent une deuxième carte qu'ils posent cette fois-ci face découverte et c'est cette dernière qui départagera les joueurs. Le gagnant du jeu est celui qui remporte les 52 cartes.</li>
-    </ul>
+    <div class="regle">
+      <button><a href="">Règle</a></button>
+      <ul>
+        <li>Nombre de joueurs : <br>2 ou plus</li>
+        <li>Âge : <br>2 et plus</li>
+        <li>Temps : <br>Environ 30 à 60 minutes</li>
+        <li>Règle : <br>Pour commencer il faut distribuer les 52 cartes du jeu aux joueurs qui les rassemblent en paquet devant eux. Chacun tire alors la carte du dessus de son paquet et la pose sur la table. Celui qui a la carte la plus forte ramasse les autres cartes. La carte la plus forte et l’As, suivi du roi, de la reine, du valet, du dix, du neuf,etc...
+          Si deux joueurs posent en même temps deux cartes de la même valeur, il y a bataille. C’est-à-dire que les joueurs avec les mêmes cartes tirent la carte suivante et la posent, face cachée, sur la carte précédente. Puis ils tirent une deuxième carte qu'ils posent cette fois-ci face découverte et c'est cette dernière qui départagera les joueurs. Le gagnant du jeu est celui qui remporte les 52 cartes.</li>
+      </ul>
+    </div>
+    <div class="variante">
+      <button><a href="">Variante</a></button>
+      <ul>
+        <li><h3>La bataille "découverte":</h3> Si des joueurs posent la même des cartes de valeur identique, il y a bataille. Dans cette variante, on pose directement face en l'air la carte suivante. La plus forte l'emporte comme pour la vraie règle.
+        <li><h3>La bataille à deux cartes: </h3> Cette variante se joue de préférence avec des cartes ne comportant que des chiffres de 0 à 9. Avec un jeu de cartes traditionnel on retire les figures et le 10 remplace le zéro. Chacun à son tour on pose deux cartes et on les place l'une à côté de l'autre pour faire le plus grand nombre. Par exemple, on pose le 1 et le 9, on peut faire 19 ou 91. Le joueur adverse fait la même chose et le plus grand nombre gagne.</li>
+        <li><h3>La bataille d'addition:</h3> Dans le même ordre d'idée que la “bataille à deux cartes” on peut jouer à deux cartes mais il faut additionner les points des deux cartes au lieu de les placer côte à côte. Par exemple on abat le 9 et le 1, cela donne 10 - Si on abat le 5 et le 5, cela donne 10 aussi, il y a bataille.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="commentaire">
+    <h2>Commentaires</h2>
+    <form method="post" action="commentaire.php">
+      <div class="msg">
+        <label for="msg"></label>
+        <textarea id="msg" placeholder="Ajouter un commentaire" name="user_message" required></textarea>
+      </div>
+      <button class="envoyer"
+              type="submit">
+        Envoyer
+      </button>
+    </form>
   </div>
 </main>
 
