@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ajouter une règle</title>
+</head>
+<body class=" ">
+<header>
+  <a href="index.html"><img src="img/logo.jpg" alt="logo"></a>
+  <div class="nav-toggle" onclick="document.documentElement.classList.toggle('menu-open')">
+    <div class="nav-toggle-bar"></div>
+  </div>
+  <nav class="menu">
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="acheter-jeux.html">Acheter des jeux</a></li>
+      <li><a href="vendre-jeux.html">Vendre des jeux</a></li>
+      <li><a href="mes-parametres.html">Mes paramètres</a></li>
+      <li><a href="mon-profil.html">Mon profil</a></li>
+      <li><a href="a-propos.html">À propos</a></li>
+    </ul>
+  </nav>
+</header>
+<body>
+<main>
+  <form role="search">
+    <div>
+      <input type="search" id="maRecherche" name="q"
+             placeholder="Trouve un jeu !"/>
+      <button>loupe</button>
+    </div>
+  </form>
+  <div class="vendre-jeu">
+    <button><a href="vendre-jeux.html">+</a></button>
+  </div>
+  <div class="notifications">
+    <button><a href="notifications.html">Notifications</a></button>
+  </div>
+  <div class="retour">
+    <button><a href="javascript:history.go(-1)">Retour</a></button>
+  </div>
+  <form action="ajouter-regle" method="post" id="contact">
+    <div class="nom-j">
+      <label for="nom-j"></label>
+      <input type="text" placeholder="Nom du jeu" id="nom-j" required>
+    </div>
+    <div class="ajouter-le-jeu">
+      <button>Ajouter le jeu</button>
+    </div>
+    <div class="categorie">
+      <label for="categorie">Catégories</label>
+      <input type="text" placeholder="ex : Jeu de cartes" id="categorie" required>
+    </div>
+    <div class="nbr-joueurs">
+      <label for="nbr-joueurs">Nombre de joueurs</label>
+      <input type="text" placeholder="ex : 2 à 5" id="nbr-joueurs" required>
+    </div>
+    <div class="age-min">
+      <label for="age-min">Âge minimum</label>
+      <input type="text" placeholder="ex : 12 ans" id="age-min" required>
+    </div>
+    <div class=temps">
+      <label for="tps-j">Temps de jeu</label>
+      <input type="text" placeholder="ex : environ 45 min" id="tps-j" required>
+    </div>
+    <div class="regle-o">
+      <label for="regle-o">Règle officielle</label>
+      <textarea id="regle-o" placeholder="Écrire la règle ici" required></textarea>
+    </div>
+    <button class="envoyer"
+            type="submit">
+      Ajouter le jeu
+    </button>
+  </form>
+</body>
+</html>
