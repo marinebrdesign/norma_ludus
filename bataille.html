@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bataille</title>
+</head>
+<body class=" ">
+<header>
+  <a href="index.html"><img src="img/logo.jpg" alt="logo"></a>
+  <div class="nav-toggle" onclick="document.documentElement.classList.toggle('menu-open')">
+    <div class="nav-toggle-bar"></div>
+  </div>
+  <nav class="menu">
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="acheter-jeux.html">Acheter des jeux</a></li>
+      <li><a href="vendre-jeux.html">Vendre des jeux</a></li>
+      <li><a href="mes-parametres.html">Mes paramètres</a></li>
+      <li><a href="mon-profil.html">Mon profil</a></li>
+      <li><a href="a-propos.html">À propos</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <form role="search">
+    <div>
+      <input type="search" id="maRecherche" name="q"
+             placeholder="Trouve un jeu !"/>
+      <button>loupe</button>
+    </div>
+  </form>
+  <div class="vendre-jeu">
+    <button><a href="vendre-jeux.html">+</a></button>
+  </div>
+  <div class="notifications">
+    <button><a href="notifications.html">Notifications</a></button>
+  </div>
+  <div class="retour">
+    <button><a href="javascript:history.go(-1)">Retour</a></button>
+  </div>
+  <div id="bataille-visit">
+    <h3>Bataille</h3>
+    <img src="" alt="img-bataille">
+    <ul>
+      <li>Nombre de joueurs : <br>2 ou plus</li>
+      <li>Âge : <br>2 et plus
+      <li>Temps : <br>Environ 30 à 60 minutes</li>
+      <li>Règle : <br>Pour commencer il faut distribuer les 52 cartes du jeu aux joueurs qui les rassemblent en paquet devant eux. Chacun tire alors la carte du dessus de son paquet et la pose sur la table. Celui qui a la carte la plus forte ramasse les autres cartes. La carte la plus forte et l’As, suivi du roi, de la reine, du valet, du dix, du neuf,etc...
+        Si deux joueurs posent en même temps deux cartes de la même valeur, il y a bataille. C’est-à-dire que les joueurs avec les mêmes cartes tirent la carte suivante et la posent, face cachée, sur la carte précédente. Puis ils tirent une deuxième carte qu'ils posent cette fois-ci face découverte et c'est cette dernière qui départagera les joueurs. Le gagnant du jeu est celui qui remporte les 52 cartes.</li>
+    </ul>
+  </div>
+</main>
+
+</body>
+</html>
