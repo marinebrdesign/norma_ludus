@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loup-garou</title>
+</head>
+<body class=" ">
+<header>
+  <a href="index.html"><img src="img/logo.jpg" alt="logo"></a>
+  <div class="nav-toggle" onclick="document.documentElement.classList.toggle('menu-open')">
+    <div class="nav-toggle-bar"></div>
+  </div>
+  <nav class="menu">
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="acheter-jeux.html">Acheter des jeux</a></li>
+      <li><a href="vendre-jeux.html">Vendre des jeux</a></li>
+      <li><a href="mes-parametres.html">Mes paramètres</a></li>
+      <li><a href="mon-profil.html">Mon profil</a></li>
+      <li><a href="a-propos.html">À propos</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <form role="search">
+    <div>
+      <input type="search" id="maRecherche" name="q"
+             placeholder="Trouve un jeu !"/>
+      <button>loupe</button>
+    </div>
+  </form>
+  <div class="vendre-jeu">
+    <button><a href="vendre-jeux.html">+</a></button>
+  </div>
+  <div class="notifications">
+    <button><a href="notifications.html">Notifications</a></button>
+  </div>
+  <div class="retour">
+    <button><a href="javascript:history.go(-1)">Retour</a></button>
+  </div>
+  <div id="bataille-visit">
+    <h3>Bataille</h3>
+    <img src="" alt="img-bataille">
+    <div class="regle">
+      <button><a href="">Règle</a></button>
+      <ul>
+        <li>Nombre de joueurs : <br>6 à 24</li>
+        <li>Âge : <br>Â partir de 10 ans</li>
+        <li>Temps : <br>Environ 30 à 45 minutes</li>
+        <li>Règle : <br> Le but du jeu pour les Loup garous est de tuer tous les villageois. Et pour les villageois de tuer tous les loups garous.<br>
+          Les loups garous : Chaque nuit, ils choisissent un Villageois pour le tuer. Le jour, ils doivent cacher leur rôle pour échapper à la revanche des habitants du village.<br>
+          Les villageois = Il n’ont pas de pouvoir, il participe juste le jour pour démasquer les loups garous. <br>
+          La voyante : Chaque nuit, elle choisit la carte d’un des joueurs pour découvrir sa réelle identité. Elle peut ensuite aider les autres Villageois le jour, mais elle doit rester discrète pour ne pas être démasquée par les Loups-Garous.<br>
+          Le chasseur = Il a le droit à une dernière volonté avant sa mort. Il a le droit de tirer un coup de fusil pour emmener avec lui quelqu’un dans sa tombe. Le joueur visé par le chasseur est donc aussi éliminé.<br>
+          Cupidon : La première nuit et seulement celle là il fait tomber deux joueurs amoureux qui ne seront pas séparés par la mort car si l’un des deux tourtereaux succombe au griffes des loups garous ou au fourches des villageois alors son âme sœur meurt avec lui. Cupidon peut se désigner comme l’un des deux Amoureux. Un amoureux ne doit jamais faire du mal à son prétendant, même pour bluffer les autres joueurs.<br>
+          La sorcière : Au début de la partie la sorcière possède deux potions très puissante. Une potion de guérison, pour ressusciter le joueur tué par les Loups-Garous, une potion d’empoisonnement, utilisée la nuit pour éliminer un joueur. La Sorcière doit utiliser chaque potion 1 seule fois dans la partie. Elle peut se servir des ses 2 potions la même nuit. Le matin suivant l’usage de ce pouvoir, il pourra donc y avoir soit 0 mort, 1 mort ou 2 morts. La Sorcière peut utiliser les potions à son profit, et donc se guérir elle-même si elle vient d’être attaquée par les Loups-Garous.<br>
+          La Petite Fille : elle peut, en entrouvrant les yeux, espionner les Loups-Garous pendant leur réveil. Si elle se fait surprendre par un des Loups-Garous, elle meurt immédiatement (en silence), à la place de la victime désignée. La Petite Fille ne peut espionner que la nuit, durant le tour d’éveil des Loups-Garous. Elle n’a pas le droit de se faire passer pour un Loup-Garou et d’ouvrir grand les yeux.<br>
+          Le maire du village : Cette carte est confiée à un des joueurs, en plus de sa carte personnage. Le Capitaine est élu par vote, à la majorité relative. On ne peut refuser l’honneur d’être Capitaine. Dorénavant, les votes de ce joueur comptent pour 2 voix. Si ce joueur se fait éliminer, dans son dernier souffle il désigne son successeur.<br>
+          Le voleur : Si on veut jouer le Voleur, il faut ajouter deux cartes Simples Villageois en plus de toutes celles déjà choisies. Après la distribution, les deux cartes non distribuées sont placées au centre de la table face cachée. La première nuit, le Voleur pourra prendre connaissance de ces deux cartes, et échanger sa carte contre une des deux autres. Si ces cartes sont deux Loups-Garous, il est obligé d’échanger sa carte contre un des deux Loups-Garous. Il jouera désormais ce personnage jusqu’à la fin de la partie.<br>
+        </li>
+      </ul>
+    </div>
+    <div class="variante">
+      <button><a href="">Variante</a></button>
+      <ul>
+        <li><h3>Les différents villages :</h3> Les joueurs sont séparés en plusieurs villages. Les habitants des différents villages peuvent venir dans les villages voisins quand le Maître du jeu le décide.</li>
+        <li><h3>Le panneau du village :</h3> Chaque jour les habitants peuvent écrire sur un bout de papier des soupçons, découverte, mensonge pour tromper l'ennemi, etc… Les textes sont affichés dans le désordre quand la nuit tombe. </li>
+      </ul>
+    </div>
+  </div>
+  <div class="commentaire">
+    <h2>Commentaires</h2>
+    <form method="post" action="commentaire.php">
+      <div class="msg">
+        <label for="msg"></label>
+        <textarea id="msg" placeholder="Ajouter un commentaire" name="user_message" required></textarea>
+      </div>
+      <button class="envoyer"
+              type="submit">
+        Envoyer
+      </button>
+    </form>
+  </div>
+</main>
+
+</body>
+</html>
