@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bataille</title>
+  <script src="https://kit.fontawesome.com/6113af7c7c.js" crossorigin="anonymous"></script>
+</head>
+<body class=" ">
+<header>
+  <a href="index.html"><img src="img/logo.jpg" alt="logo"></a>
+  <div class="nav-toggle" onclick="document.documentElement.classList.toggle('menu-open')">
+    <div class="nav-toggle-bar"></div>
+  </div>
+  <nav class="menu">
+    <ul>
+      <li><a href="index.html">Accueil<i class="fas fa-chevron-right"></i></a></li>
+      <li><a href="acheter-jeux.html">Acheter des jeux<i class="fas fa-chevron-right"></i></a></li>
+      <li><a href="vendre-jeux.html">Vendre des jeux<i class="fas fa-chevron-right"></i></a></li>
+      <li><a href="mes-parametres.html">Mes paramètres<i class="fas fa-chevron-right"></i></a></li>
+      <li><a href="mon-profil.html">Mon profil<i class="fas fa-chevron-right"></i></a></li>
+      <li><a href="a-propos.html">À propos<i class="fas fa-chevron-right"></i></a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <form role="search">
+    <div>
+      <input type="search" id="maRecherche" name="q"
+             placeholder="Trouve un jeu !"/>
+      <button><img src="img/loupe.svg" alt="loupe" width="25" height="25"></button>
+    </div>
+  </form>
+  <div class="vendre-jeu">
+    <button><a href="vendre-jeux.html"><img src="img/plus.svg" alt="" width="25" height="25"></a></button>
+  </div>
+  <div class="notifications">
+    <button><a href="notifications.html"><img src="img/notification.svg" alt="" width="25" height="25"></a></button>
+  </div>
+  <div class="retour">
+    <button><a href="javascript:history.go(-1)"><img src="img/left-arrow.svg" alt="flèche retour" height="25" width="25"></a></button>
+  </div>
+  <div id="dooble-visit">
+    <h3>Dooble</h3>
+    <img src="" alt="img-dooble">
+    <div class="regle">
+      <button><a href="">Règle</a></button>
+      <ul>
+        <li>Nombre de joueurs : <br>2 à 5</li>
+        <li>Âge : <br>4 et plus</li>
+        <li>Temps : <br>Environ 5 à 15 minutes</li>
+        <li>Règle : <br>Quand une partie commence, tous les joueurs jouent en même temps. Il faut être le plus rapide à repérer le symbole identique entre 2 cartes. Une fois trouvé, il faut le nommer à haute voix. Enfin  prendre la carte, la poser ou la défausser.
+          <br>Distribuez <strong>une carte à chaque joueur</strong> qu’il conserve <strong>face cachée</strong>. Placez les cartes restantes au milieu. Elles constitueront la pioche. <strong>Pour gagner</strong> il faut récupérer le plus de cartes. Au top départ les joueurs retournent leur carte. Les joueurs doivent alors trouver le symbole identique entre leur carte et celle posée au centre de la table (sur la pile). Dès qu’un joueur trouve un symbole identique il le nomme, puis s’empare de la carte concernée et enfin la pose devant lui sur sa carte. En prenant cette carte, une nouvelle carte centrale est ainsi révélée. La partie continue jusqu’à ce que toutes les cartes de la pioche aient été récupérées. Le jeu s’arrête dès que toutes les cartes de la pioche ont été récupérées.
+
+        </li>
+      </ul>
+    </div>
+    <div class="variante">
+      <button><a href="">Variante</a></button>
+      <ul>
+        <p>Pièce touchée = pièce jouée. Une pièce que le joueur touche doit obligatoirement être jouée par ce dernier. Pour replacer une pièce sur l’échiquier sans avoir à la bouger, il faut dire “J’adoube“.
+          Les prises sont obligatoires. En un mot, aux Dames, si vous pouvez manger des Pions (ou des Dames), vous êtes obligés de le faire !
+        </p>
+      </ul>
+      <button><a href="ajouter-variante.html">Ajouter une variante</a></button>
+    </div>
+  </div>
+  <div class="commentaire">
+    <h2>Commentaires</h2>
+    <form method="post" action="commentaire.php">
+      <div class="msg">
+        <label for="msg"></label>
+        <textarea id="msg" placeholder="Ajouter un commentaire" name="user_message" required></textarea>
+      </div>
+      <button class="envoyer"
+              type="submit">
+        Envoyer
+      </button>
+    </form>
+  </div>
+</main>
+<footer>
+  <div class="reseaux module-footer">
+    <ul>
+      <li><a href="mailto:normaludus25@gmail.com"><img src="img/mail.svg" alt="mail" height="20" width="20"></a></li>
+      <li><a href="https://www.facebook.com/norma.ludus/"><img src="img/facebook.svg" alt="Facebook" height="20" width="20"/></a>
+      <li><a href="https://www.instagram.com/normaludus/"><img src="img/instagram.svg" alt="Instagram" height="20" width="20"></a>
+    </ul>
+  </div>
+  <a href="mentions-legales.html">Mentions Légales</a>
+  <p>Lena Batalliard - Nina Bellino - Marine Beurier</p>
+</footer>
+</body>
+</html>
