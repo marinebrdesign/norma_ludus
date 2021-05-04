@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil</title>
     <script src="https://kit.fontawesome.com/6113af7c7c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/typographie_couleurs.css">
 </head>
 <body class=" ">
 <header>
@@ -23,19 +24,19 @@
         </ul>
     </nav>
 </header>
-<main>
+<main class="index">
     <form role="search">
-        <div>
+        <div class="recherche">
             <input type="search" id="maRecherche" name="q"
                    placeholder="Trouve un jeu !"/>
-            <button><img src="img/loupe.svg" alt="loupe" width="25" height="25"></button>
+            <button><svg version="1.1" id="loupe" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.005 512.005" style="enable-background:new 0 0 512.005 512.005;" xml:space="preserve"><g><g><path d="M505.749,475.587l-145.6-145.6c28.203-34.837,45.184-79.104,45.184-127.317c0-111.744-90.923-202.667-202.667-202.667S0,90.925,0,202.669s90.923,202.667,202.667,202.667c48.213,0,92.48-16.981,127.317-45.184l145.6,145.6c4.16,4.16,9.621,6.251,15.083,6.251s10.923-2.091,15.083-6.251C514.091,497.411,514.091,483.928,505.749,475.587zM202.667,362.669c-88.235,0-160-71.765-160-160s71.765-160,160-160s160,71.765,160,160S290.901,362.669,202.667,362.669z"/></g></g></svg></button>
         </div>
     </form>
     <div class="vendre-jeu">
-        <button><a href="vendre-jeux.html"><img src="img/plus.svg" alt="" width="25" height="25"></a></button>
+        <button><a href="vendre-jeux.html"><svg id="plus" height="426.66667pt" viewBox="0 0 426.66667 426.66667" width="426.66667pt" xmlns="http://www.w3.org/2000/svg"><path d="m405.332031 192h-170.664062v-170.667969c0-11.773437-9.558594-21.332031-21.335938-21.332031-11.773437 0-21.332031 9.558594-21.332031 21.332031v170.667969h-170.667969c-11.773437 0-21.332031 9.558594-21.332031 21.332031 0 11.777344 9.558594 21.335938 21.332031 21.335938h170.667969v170.664062c0 11.777344 9.558594 21.335938 21.332031 21.335938 11.777344 0 21.335938-9.558594 21.335938-21.335938v-170.664062h170.664062c11.777344 0 21.335938-9.558594 21.335938-21.335938 0-11.773437-9.558594-21.332031-21.335938-21.332031zm0 0"/></svg></a></button>
     </div>
     <div class="notifications">
-        <button><a href="notifications.html"><img src="img/notification.svg" alt="" width="25" height="25"></a></button>
+        <button><a href="notifications.html"><svg version="1.1" id="notif" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g><g><path d="M467.819,431.851l-36.651-61.056c-16.896-28.181-25.835-60.437-25.835-93.312V224c0-82.325-67.008-149.333-149.333-149.333S106.667,141.675,106.667,224v53.483c0,32.875-8.939,65.131-25.835,93.312l-36.651,61.056c-1.984,3.285-2.027,7.403-0.149,10.731c1.899,3.349,5.461,5.419,9.301,5.419h405.333c3.84,0,7.403-2.069,9.301-5.419C469.845,439.253,469.803,435.136,467.819,431.851z M72.171,426.667l26.944-44.907C118.016,350.272,128,314.219,128,277.483V224c0-70.592,57.408-128,128-128s128,57.408,128,128v53.483c0,36.736,9.984,72.789,28.864,104.277l26.965,44.907H72.171z"/></g></g><g><g><path d="M256,0c-23.531,0-42.667,19.136-42.667,42.667v42.667C213.333,91.221,218.112,96,224,96s10.667-4.779,10.667-10.667V42.667c0-11.776,9.557-21.333,21.333-21.333s21.333,9.557,21.333,21.333v42.667C277.333,91.221,282.112,96,288,96s10.667-4.779,10.667-10.667V42.667C298.667,19.136,279.531,0,256,0z"/></g></g><g><g><path d="M302.165,431.936c-3.008-5.077-9.515-6.741-14.613-3.819c-5.099,2.987-6.805,9.536-3.819,14.613c2.773,4.715,4.288,10.368,4.288,15.936c0,17.643-14.357,32-32,32c-17.643,0-32-14.357-32-32c0-5.568,1.515-11.221,4.288-15.936c2.965-5.099,1.259-11.627-3.819-14.613c-5.141-2.923-11.627-1.259-14.613,3.819c-4.715,8.064-7.211,17.301-7.211,26.731C202.667,488.085,226.581,512,256,512s53.333-23.915,53.376-53.333C309.376,449.237,306.88,440,302.165,431.936z"/></g></g></svg></a></button>
     </div>
     <a href="j-plateau.html">
         <section class="j-de-plateau">
@@ -65,9 +66,9 @@
 <footer>
     <div class="reseaux module-footer">
         <ul>
-            <li><a href="mailto:normaludus25@gmail.com"><img src="img/mail.svg" alt="mail" height="20" width="20"></a></li>
-            <li><a href="https://www.facebook.com/norma.ludus/"><img src="img/facebook.svg" alt="Facebook" height="20" width="20"/></a>
-            <li><a href="https://www.instagram.com/normaludus/"><img src="img/instagram.svg" alt="Instagram" height="20" width="20"></a>
+            <li><a href="https://www.instagram.com/normaludus/"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="80" viewBox="0 0 24 24" fill="none" stroke="#250B55" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+            <li><a href="https://www.facebook.com/norma.ludus/"><svg id="Bold" enable-background="new 0 0 24 24" height="79" viewBox="0 0 24 24" width="47" xmlns="http://www.w3.org/2000/svg"><path d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z"/></svg></a>
+            <li><a href="mailto:normaludus25@gmail.com"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g><g><path d="M467,76H45C20.137,76,0,96.262,0,121v270c0,24.885,20.285,45,45,45h422c24.655,0,45-20.03,45-45V121C512,96.306,491.943,76,467,76z M460.698,106c-9.194,9.145-167.415,166.533-172.878,171.967c-8.5,8.5-19.8,13.18-31.82,13.18s-23.32-4.681-31.848-13.208C220.478,274.284,64.003,118.634,51.302,106H460.698z M30,384.894V127.125L159.638,256.08L30,384.894zM51.321,406l129.587-128.763l22.059,21.943c14.166,14.166,33,21.967,53.033,21.967c20.033,0,38.867-7.801,53.005-21.939l22.087-21.971L460.679,406H51.321z M482,384.894L352.362,256.08L482,127.125V384.894z"/></g></g></svg></a></li>
         </ul>
     </div>
     <a href="mentions-legales.html">Mentions Légales</a>

@@ -1,0 +1,107 @@
+/*------menu------*/
+.menu {
+    font-family: Roboto;
+    font-weight: 500;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #000;
+}
+
+.menu ul {
+    list-style-type: none;
+}
+
+/*------rechercher------*/
+svg#loupe {
+    fill: #A8D9DC;
+    width: 55px;
+    height: 79px;
+}
+
+.recherche button {
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+}
+
+input#maRecherche {
+    font-family: Roboto;
+    font-weight: 500;
+    color: #CF4C68;
+   /* border: none;*/
+    height: 25px;
+}
+
+/*------notifications------*/
+svg#notif {
+    fill: #CF4C68;
+    width: 55px;
+    height: 60px;
+}
+
+.notifications button {
+    background-color: white;
+    /*border: none;*/
+    border-radius: 45%;
+}
+
+/*-----vendre jeu------*/
+svg#plus {
+    fill: #CF4C68;
+    width: 55px;
+    height: 60px;
+}
+
+.vendre-jeu button {
+    background-color: white;
+    /*border: none;*/
+    border-radius: 45%;
+}
+
+
+/*------catégories------*/
+.j-cartes, .j-pions, .j-de-plateau, .j-des {
+    font-family: Roboto;
+    font-weight: 900;
+    color: #000;
+}
+
+main.index a {
+    text-decoration: none;
+}
+
+/*------footer------*/
+footer ul {
+    list-style-type: none;
+}
+
+footer a {
+    font-family: Roboto;
+    font-weight: 300;
+    color: #000;
+}
+
+footer p {
+    font-family: Roboto;
+    font-weight: 500;
+    color: #000;
+}
+
+svg#Bold {
+    fill: #000000;
+}
+
+/*------instagram------*/
+svg.feather.feather-instagram {
+    stroke: #000000;
+}
+
+/*------mail------*/
+svg#Capa_1 {
+    stroke: #000000;
+    fill : #000000;
+    width: 55px;
+    height: 79px;
+}
