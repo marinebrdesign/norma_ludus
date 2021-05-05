@@ -13,6 +13,11 @@
     list-style-type: none;
 }
 
+.fa-chevron-right {
+    color: #000000;
+}
+
+
 /*------rechercher------*/
 svg#loupe {
     fill: #A8D9DC;
@@ -74,6 +79,15 @@ main.index a {
     text-decoration: none;
 }
 
+/*------titres------*/
+h1 {
+    font-family: Roboto;
+    font-weight: 500;
+    color: #000;
+}
+
+
+
 /*------footer------*/
 footer ul {
     list-style-type: none;
@@ -121,4 +135,47 @@ svg#left_arrow {
     background-color: white;
     /*border: none;*/
     border-radius: 50%;
+}
+
+/*------bouton ajouter photos------ NON FINI*/
+svg#plus_ajouter {
+    fill: #FFFFFF;
+    width: 55px;
+    height: 60px;
+}
+
+.ajouter-des-photos {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.ajouter-des-photos a {
+    background-color: #CF4C68;
+    border: none;
+    border-radius: 22%;
+    padding: 50px 20px 0 20px;
+    width: 50px;
+}
+
+svg#plus_ajouter, .ajouter-des-photos p {
+    display: inline-block;
+}
+
+.ajouter-des-photos p {
+    font-family: Roboto;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+/*------bouton ajouter jeu------ NON FINI*/
+
+.ajouter-le-jeu button {
+    background-color: #CF4C68;
+    border: none;
+    border-radius: 22%;
+    font-family: Roboto;
+    font-weight: 500;
+    color: #FFFFFF;
+    height: 50px;
+    width: 150px;
 }
