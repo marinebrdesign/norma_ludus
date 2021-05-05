@@ -39,12 +39,13 @@ svg#notif {
     fill: #CF4C68;
     width: 55px;
     height: 60px;
+    padding: 5px;
 }
 
 .notifications button {
     background-color: white;
     /*border: none;*/
-    border-radius: 45%;
+    border-radius: 50%;
 }
 
 /*-----vendre jeu------*/
@@ -52,12 +53,13 @@ svg#plus {
     fill: #CF4C68;
     width: 55px;
     height: 60px;
+    padding: 5px;
 }
 
 .vendre-jeu button {
     background-color: white;
     /*border: none;*/
-    border-radius: 45%;
+    border-radius: 50%;
 }
 
 
@@ -104,4 +106,19 @@ svg#Capa_1 {
     fill : #000000;
     width: 55px;
     height: 79px;
+}
+
+/*------bouton retour------*/
+svg#left_arrow {
+    fill: #000000;
+    width: 55px;
+    height: 60px;
+    padding-right: 5px;
+    padding-top: 5px;
+}
+
+.retour button {
+    background-color: white;
+    /*border: none;*/
+    border-radius: 50%;
 }
