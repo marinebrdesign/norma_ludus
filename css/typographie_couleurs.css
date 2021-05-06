@@ -220,3 +220,104 @@ svg#croix {
     /*border: none;*/
     border-radius: 50%;
 }
+
+/*------à propos------*/
+.a-propos > p {
+    color: black;
+    font-family: Roboto;
+    font-weight: 500;
+}
+
+.a-propos > h3, .contact > h3 {
+    color: white;
+    font-family: Roboto;
+    font-weight: 500;
+    background-color: #CF4C68;
+}
+
+.equipe > h3 {
+    color: #CF4C68;
+    font-family: Roboto;
+    font-weight: 500;
+    background-color: white;
+}
+
+
+/*L'équipe*/
+.lena > address > p {
+    color: #76A0A3;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 24px;
+    text-decoration: none;
+    font-style: normal;
+}
+
+.lena > address > a {
+    color: white;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 15px;
+    text-decoration: none;
+    background-color: #76A0A3;
+    font-style: normal;
+}
+
+.marine> address > p {
+    color: #CF4C68;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 24px;
+    text-decoration: none;
+    font-style: normal;
+}
+
+
+.marine > address > a {
+    color: white;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 15px;
+    text-decoration: none;
+    background-color: #CF4C68;
+    font-style: normal;
+}
+
+.nina > address > p {
+    color: #E7A52E;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 24px;
+    text-decoration: none;
+    font-style: normal;
+}
+
+.nina > address > a {
+    color: white;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 15px;
+    text-decoration: none;
+    background-color: #E7A52E;
+    font-style: normal;
+}
+
+/* contact*/
+input#mail2, input#nom, input#prenom, textarea#msg{
+    color: #666666;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+form#contact {
+    background-color: #FCBAC5;
+}
+
+button.envoyer {
+    color: white;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 22px;
+    background-color: #CF4C68;
+}
