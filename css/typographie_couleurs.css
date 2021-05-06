@@ -179,3 +179,18 @@ svg#plus_ajouter, .ajouter-des-photos p {
     height: 50px;
     width: 150px;
 }
+
+/*------Paramètres------*/
+.parametres {
+    font-family: Roboto;
+    font-weight: 500;
+}
+
+.parametres a {
+    text-decoration: none;
+    color: #000;
+}
+
+.parametres ul {
+    list-style-type: none;
+}
