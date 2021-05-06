@@ -321,3 +321,34 @@ button.envoyer {
     font-size: 22px;
     background-color: #CF4C68;
 }
+
+/*------premium------*/
+
+h2, h3 {
+    color: black;
+    font-family: Roboto;
+    font-weight: 500;
+}
+
+.premium p {
+    color: black;
+    font-family: Roboto;
+    font-weight: 400;
+}
+
+/*bouton s'abonner*/
+.demarrer-abonnement button {
+    background-color: #CF4C68;
+    border: none;
+    border-radius: 22%;
+    font-family: Roboto;
+    font-weight: 500;
+    color: #FFFFFF;
+    height: 50px;
+    width: 300px;
+}
+
+.demarrer-abonnement a {
+    text-decoration: none;
+    color: white;
+}
