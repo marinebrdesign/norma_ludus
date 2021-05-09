@@ -56,15 +56,12 @@ svg#notif {
 /*-----vendre jeu------*/
 svg#plus {
     fill: #CF4C68;
-    width: 55px;
-    height: 60px;
-    padding: 5px;
 }
 
 .vendre-jeu button {
     background-color: white;
     /*border: none;*/
-    border-radius: 50%;
+    border-radius: 17px;
 }
 
 
@@ -152,7 +149,7 @@ svg#plus_ajouter {
 .ajouter-des-photos a {
     background-color: #CF4C68;
     border: none;
-    border-radius: 22%;
+    border-radius: 25px;
     padding: 50px 20px 0 20px;
     width: 50px;
 }
@@ -167,12 +164,12 @@ svg#plus_ajouter, .ajouter-des-photos p {
     color: #FFFFFF;
 }
 
-/*------bouton ajouter jeu------ NON FINI*/
+/*------bouton ajouter jeu------*/
 
 .ajouter-le-jeu button {
     background-color: #CF4C68;
     border: none;
-    border-radius: 22%;
+    border-radius: 15px;
     font-family: Roboto;
     font-weight: 500;
     color: #FFFFFF;
@@ -320,10 +317,10 @@ button.envoyer {
     font-weight: 500;
     font-size: 22px;
     background-color: #CF4C68;
+    border-radius: 17px;
 }
 
 /*------premium------*/
-
 h2, h3 {
     color: black;
     font-family: Roboto;
@@ -396,3 +393,13 @@ h4 {
 .reseaux.module-footer li {
     display: inline-block;
 }
+
+/*------mon profil------*/
+ul#parametre_profil {
+    list-style-type: none;
+    color: black;
+    font-family: Roboto;
+    font-weight: 500;
+}
+
+/*button je
