@@ -352,3 +352,47 @@ h2, h3 {
     text-decoration: none;
     color: white;
 }
+
+/*------mon profil------*/
+
+/* bouton réglages*/
+.profil svg#reglages {
+    fill: #000000;
+    width: 55px;
+    height: 79px;
+}
+
+.profil button {
+    background-color: white;
+    border: none;
+}
+
+.porte-monnaie svg#reglages {
+    fill: #FFFFFF;
+    width: 55px;
+    height: 79px;
+}
+
+.porte-monnaie button {
+    background-color: #CF4C68;
+    border: none;
+}
+
+h4 {
+    color: black;
+    font-family: Roboto;
+    font-weight: 500;
+}
+
+
+.porte-monnaie h4 {
+    color: #ffffff;
+    font-family: Roboto;
+    font-weight: 500;
+    background-color: #CF4C68;
+}
+
+/*------réseaux sociaux------*/
+.reseaux.module-footer li {
+    display: inline-block;
+}
