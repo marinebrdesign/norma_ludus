@@ -56,12 +56,15 @@ svg#notif {
 /*-----vendre jeu------*/
 svg#plus {
     fill: #CF4C68;
+    width: 55px;
+    height: 60px;
+    padding: 5px;
 }
 
 .vendre-jeu button {
     background-color: white;
     /*border: none;*/
-    border-radius: 17px;
+    border-radius: 50%;
 }
 
 
@@ -318,6 +321,7 @@ button.envoyer {
     font-size: 22px;
     background-color: #CF4C68;
     border-radius: 17px;
+    border: none;
 }
 
 /*------premium------*/
@@ -333,11 +337,16 @@ h2, h3 {
     font-weight: 400;
 }
 
+.regles-premium, .pas-pubs {
+    border: 2px solid #E4E4E4;
+    border-radius: 18px;
+}
+
 /*bouton s'abonner*/
 .demarrer-abonnement button {
     background-color: #CF4C68;
     border: none;
-    border-radius: 22%;
+    border-radius: 17px;
     font-family: Roboto;
     font-weight: 500;
     color: #FFFFFF;
@@ -402,4 +411,73 @@ ul#parametre_profil {
     font-weight: 500;
 }
 
-/*button je
+/*------categories------*/
+.ajouter-un-jeu button {
+    background-color: #CF4C68;
+    border: none;
+    border-radius: 15px;
+    font-family: Roboto;
+    font-weight: 500;
+    color: #FFFFFF;
+    height: 50px;
+    width: 150px;
+    margin-top: 10px;
+}
+
+.ajouter-un-jeu a {
+    color: #ffffff;
+    font-family: Roboto;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+/*------porte-monnaie------*/
+button.transfert {
+    background-color: #76a0a3;
+    border: none;
+    border-radius: 40px;
+    font-family: Roboto;
+    font-weight: 500;
+    color: #FFFFFF;
+    height: 50px;
+    width: 300px;
+    margin-top: 10px;
+}
+
+/*------parametres mon profil------*/
+ul#parametre_profil button {
+    background-color: #ffffff;
+    border-radius: 10px;
+    font-family: Roboto;
+    font-weight: 500;
+    color: #76a0a3;
+    height: 35px;
+    width: 70px;
+    margin-top: 10px;
+    border: 3px solid #76a0a3;
+}
+
+/*------envoi------*/
+button.terminer {
+    background-color: #CF4C68;
+    border: none;
+    border-radius: 15px;
+    font-family: Roboto;
+    font-weight: 500;
+    color: #FFFFFF;
+    height: 40px;
+    width: 150px;
+    margin-top: 10px;
+}
+
+/*------mails------*/
+.mails label {
+    color: #000000;
+    font-family: Roboto;
+    font-weight: 500;
+}
+
+.mails h3 {
+    color: #707070;
+}
+
