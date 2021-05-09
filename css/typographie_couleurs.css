@@ -497,3 +497,54 @@ button.terminer {
     color: #CF4C68;
 }
 
+/*bouton regles*/
+.regle button {
+    background-color: #E6A4B2;
+    border: none;
+    border-radius: 50px;
+    font-family: Roboto;
+    font-weight: 500;
+    color: #FFFFFF;
+    height: 40px;
+    width: 150px;
+    margin-top: 10px;
+}
+
+.regle a {
+    color: #000000;
+    font-family: Roboto;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+/*bouton ajouter variante*/
+button.ajouter-variante  {
+    background-color: #CF4C68;
+    border: none;
+    border-radius: 15px;
+    font-family: Roboto;
+    font-weight: 500;
+    color: #FFFFFF;
+    height: 40px;
+    width: 150px;
+    margin-top: 10px;
+}
+
+.variante a {
+    color: #ffffff;
+    font-family: Roboto;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+button.variante  {
+    background-color: #76a0a3;
+    border: none;
+    border-radius: 50px;
+    font-family: Roboto;
+    font-weight: 500;
+    color: #FFFFFF;
+    height: 40px;
+    width: 150px;
+    margin-top: 10px;
+}
