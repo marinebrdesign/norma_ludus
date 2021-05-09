@@ -481,3 +481,19 @@ button.terminer {
     color: #707070;
 }
 
+/*------regles------*/
+.regle ul {
+    list-style-type: none;
+}
+
+.regle li, .variante p, .variante li {
+    color: black;
+    font-family: Roboto;
+    font-weight: 400;
+    list-style-type: none;
+}
+
+.regle h4, .variante h4 {
+    color: #CF4C68;
+}
+
