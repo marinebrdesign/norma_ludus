@@ -79,6 +79,9 @@ main.index a {
     text-decoration: none;
 }
 
+.jeux a {
+    text-decoration: none;
+}
 /*------titres------*/
 h1 {
     font-family: Roboto;
@@ -517,6 +520,16 @@ button.terminer {
     text-decoration: none;
 }
 
+/*bouton pour acheter le jeu*/
+button.acheter-lien {
+    background-color: #CF4C68;
+    border-radius: 17px;
+}
+
+.acheter-lien a {
+    color: white;
+}
+
 /*bouton ajouter variante*/
 button.ajouter-variante  {
     background-color: #CF4C68;
@@ -547,4 +560,16 @@ button.variante  {
     height: 40px;
     width: 150px;
     margin-top: 10px;
+}
+
+/*------ajouter une variante------*/
+.variante label {
+    color: #CF4C68;
+    font-family: Roboto;
+    font-weight: 500;
+}
+
+.variante textarea#variante {
+    font-family: Roboto;
+    font-weight: 400;
 }
