@@ -17,6 +17,11 @@
     color: #000000;
 }
 
+/*------logo------*/
+svg#logo {
+    width: 105px;
+    height: 50px;
+}
 
 /*------rechercher------*/
 svg#loupe {
