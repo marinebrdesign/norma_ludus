@@ -578,3 +578,113 @@ button.variante  {
     font-family: Roboto;
     font-weight: 400;
 }
+
+/*------page connexion------*/
+#container {
+    color: #000000;
+    font-family: Roboto;
+    font-weight: 500;
+}
+
+#id, #mdp {
+    color: black;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 15px;
+    background-color: #FFE9AA;
+}
+
+button.connexion {
+    background-color: #CF4C68;
+    border: none;
+    border-radius: 15px;
+    font-family: Roboto;
+    font-weight: 500;
+    color: #FFFFFF;
+    height: 40px;
+    width: 150px;
+    margin-top: 10px;
+}
+
+#container >form > a {
+    color: #76A0A3;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+#container p {
+    color: black;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+#container a {
+    color: #CF4C68;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+#container a, #container p {
+    display: inline-block;
+}
+
+/*------page inscription------*/
+input#prenom\/nom, input#age, input#id, input#mail, input#mdp {
+    color: black;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 15px;
+    background-color: #FFE9AA;
+}
+
+#inscription p {
+    color: black;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+button.je-m-inscris {
+    background-color: #CF4C68;
+    border: none;
+    border-radius: 50px;
+    font-family: Roboto;
+    font-weight: 500;
+    color: #FFFFFF;
+    height: 30px;
+    width: 150px;
+    margin-top: 10px;
+}
+
+/*------mot de passe oublié------*/
+.mdp-oublie {
+    color: black;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+input#mdp-o {
+    color: black;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 15px;
+    background-color: #FFE9AA;
+}
+
+button.mdp-o {
+    background-color: #CF4C68;
+    border: none;
+    border-radius: 50px;
+    font-family: Roboto;
+    font-weight: 500;
+    color: #FFFFFF;
+    height: 30px;
+    width: 150px;
+    margin-top: 10px;
+}
