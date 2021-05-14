@@ -1,0 +1,140 @@
+.nav-toggle {
+    /*background-color: #FFFCF1;*/
+    width: 20px;
+    height: 25px;
+    position: fixed;
+    top: 24px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+}
+
+.nav-toggle-bar, .nav-toggle-bar::before,.nav-toggle-bar::after {
+    content: '';
+    background-color: #000000;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .4s ease-in-out;
+}
+
+.nav-toggle-bar::before {
+    top: -5px;
+}
+
+.nav-toggle-bar::after {
+    top: 5px;
+}
+
+.menu-open .nav-toggle-bar {
+    transform: rotate(135deg);
+    background-color: #000000;
+}
+
+.menu-open .nav-toggle-bar::before,.menu-open .nav-toggle-bar::after {
+    transform: rotate(90deg);
+    background-color: #000000;
+    top: 0;
+}
+
+/*Menu*/
+
+.menu {
+    background-color: #FFFFFF;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(100vw);
+    z-index: 4;
+    transition: all 2s;
+}
+
+.menu-open .menu {
+    transform: translateX(0);
+    transition: all .4s;
+}
+
+.menu-open, .menu-open body{
+    overflow: hidden;
+
+}
+
+.menu ul {
+    list-style: none;
+    padding:0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.menu li {
+    padding-bottom: 15px;
+}
+
+.logo-menu {
+    position: absolute;
+    left: 200px;
+    top: 0;
+}
+
+.fa-chevron-right {
+    position: absolute;
+    left: 230px;
+}
+
+.menu > ul > li:nth-of-type(2) > a > .fa-chevron-right  {
+    top: 5px;
+}
+
+.menu > ul > li:nth-of-type(3) > a > .fa-chevron-right {
+    top: 15px;
+}
+
+.menu > ul > li:nth-of-type(4) > a > .fa-chevron-right {
+    top: 35px;
+}
+
+.menu > ul > li:nth-of-type(5) > a > .fa-chevron-right {
+    top: 10px;
+}
+
+.menu > ul > li:nth-of-type(6) > a > .fa-chevron-right {
+    top: 25px;
+}
+
+.menu li, .menu > li > h1 {
+    margin-bottom: 50px;
+    transform: translateX(30px);
+    opacity: 0;
+    transition: all .4s ease;
+}
+
+.menu a {
+    color: #000000;
+}
+
+.menu h1 {
+    text-transform: uppercase;
+    padding: 4px 0 5px 68px;
+}
+
+.menu-open .menu li,.menu-open .menu > h1 {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.menu-open .menu li :nth-child(n+1) { transition-delay: .3s;}
+.menu-open .menu li :nth-child(n+2) { transition-delay: .35s;}
+.menu-open .menu li :nth-child(n+3) { transition-delay: .4s;}
+.menu-open .menu li :nth-child(n+4) { transition-delay: .45s;}
+.menu-open .menu li :nth-child(n+5) { transition-delay: .5s;}
+.menu-open .menu li :nth-child(n+6) { transition-delay: .55s;}
+
