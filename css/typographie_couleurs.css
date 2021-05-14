@@ -180,11 +180,11 @@ svg#plus_ajouter, .ajouter-des-photos p {
 .ajouter-le-jeu button {
     background-color: #CF4C68;
     border: none;
-    border-radius: 15px;
+    border-radius: 50px;
     font-family: Roboto;
     font-weight: 500;
     color: #FFFFFF;
-    height: 50px;
+    height: 40px;
     width: 150px;
 }
 
@@ -687,4 +687,33 @@ button.mdp-o {
     height: 30px;
     width: 150px;
     margin-top: 10px;
+}
+
+/*------ajouter regle------*/
+#ajouter-regle label {
+    color: #CF4C68;
+    font-family: Roboto;
+    font-weight: 500;
+}
+
+#ajouter-regle input, textarea {
+    color: black;
+    font-family: Roboto;
+    font-weight: 400;
+    background-color: #E4E4E4;
+}
+
+button.ajouter-le-jeu  {
+    background-color: #CF4C68;
+    border: none;
+    border-radius: 50px;
+    font-family: Roboto;
+    font-weight: 500;
+    color: #FFFFFF;
+    height: 40px;
+    width: 150px;
+}
+input#nom-j {
+    background-color: white;
+    border: none;
 }
