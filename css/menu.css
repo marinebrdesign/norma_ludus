@@ -87,10 +87,10 @@
 
 .fa-chevron-right {
     position: absolute;
-    left: 230px;
+    left: 200px;
 }
 
-.menu > ul > li:nth-of-type(2) > a > .fa-chevron-right  {
+/*.menu > ul > li:nth-of-type(2) > a > .fa-chevron-right  {
     top: 5px;
 }
 
@@ -109,7 +109,7 @@
 .menu > ul > li:nth-of-type(6) > a > .fa-chevron-right {
     top: 25px;
 }
-
+*/
 .menu li, .menu > li > h1 {
     margin-bottom: 50px;
     transform: translateX(30px);

@@ -115,8 +115,8 @@ h3#equipe, .contact > h3, .a-propos h3 {
 
 }
 
-/*------mentions legales------*/
-.mentions-legales {
+/*------mentions legales, parametres------*/
+.mentions-legales, .parametres {
     position: relative;
 }
 
@@ -129,7 +129,7 @@ h3#equipe, .contact > h3, .a-propos h3 {
     margin-top: 40px;
 }
 
-.mentions-legales header {
+.mentions-legales header, .parametres header {
     border-bottom:1px solid #707070;
     margin: 0;
     height: 50px;
@@ -137,6 +137,49 @@ h3#equipe, .contact > h3, .a-propos h3 {
 
 .mentions-legales h3:first-of-type {
     margin-top: 30px;
+}
+
+/*parametres*/
+.parametres header {
+    text-align: center;
+}
+
+.parametres ul {
+    padding-left: 0;
+}
+
+.parametres li {
+    padding: 15px 0 15px 0;
+}
+
+.parametres li:first-of-type {
+    border-bottom:50px solid #E4E4E4;
+    padding-bottom: 15px;
+    padding-top: 0;
+}
+
+.parametres li:nth-of-type(2) {
+    border-bottom:1px solid #707070;
+    border-top:1px solid #707070;
+}
+
+.parametres li:nth-of-type(3) {
+    border-bottom:50px solid #E4E4E4;
+}
+
+.parametres li:nth-of-type(4) {
+    border-top:1px solid #707070;
+    border-bottom:50px solid #E4E4E4;
+}
+
+.parametres li:nth-of-type(5) {
+    border-top:1px solid #707070;
+    border-bottom:50px solid #E4E4E4;
+}
+
+.parametres li:nth-of-type(6) {
+    border-top:1px solid #707070;
+    border-bottom:1px solid #707070;
 }
 
 /*croix*/
@@ -192,6 +235,15 @@ svg#croix {
         position: relative;
         left: 35px;
     }
+
+    /*parametres*/
+    .parametres a {
+        padding-left: 120px;
+    }
+
+    .parametres .fa-chevron-right {
+        padding-left: 540px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -233,6 +285,15 @@ svg#croix {
 
     .nina {
         left: 250px;
+    }
+
+    /*parametres*/
+    .parametres a {
+        padding-left: 80px;
+    }
+
+    .parametres .fa-chevron-right {
+        padding-left: 250px;
     }
 }
 
@@ -284,6 +345,14 @@ svg#croix {
         max-height: 440px;
     }
 
+    /*parametres*/
+    .parametres a {
+        padding-left:40px;
+    }
+
+    .parametres .fa-chevron-right {
+        padding-left: 80px;
+    }
 }
 
 
