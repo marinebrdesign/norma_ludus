@@ -2,6 +2,7 @@
 .menu {
     font-family: Roboto;
     font-weight: 500;
+    font-size: 17px;
 }
 
 .menu a {
@@ -23,6 +24,12 @@ svg#logo {
     height: 50px;
 }
 
+/*------textes------*/
+p{
+    font-size: 15px;
+    font-family: Roboto;
+    font-weight: 400;
+}
 /*------rechercher------*/
 svg#loupe {
     fill: #A8D9DC;
@@ -42,6 +49,7 @@ input#maRecherche {
     color: #CF4C68;
    /* border: none;*/
     height: 25px;
+    font-size: 15px;
 }
 
 /*------notifications------*/
@@ -78,6 +86,9 @@ svg#plus {
     font-family: Roboto;
     font-weight: 900;
     color: #000;
+    border: 2px solid #cf4c68;
+    border-radius: 18px;
+    font-size: 15px;
 }
 
 main.index a {
@@ -105,18 +116,25 @@ footer a {
     font-family: Roboto;
     font-weight: 300;
     color: #000;
+    font-size: 12px;
 }
 
 footer p {
     font-family: Roboto;
     font-weight: 500;
     color: #000;
+    font-size: 13px;
 }
 
 svg#Bold {
     fill: #000000;
 }
 
+/*------facebook------*/
+svg#facebook {
+    width: 45px;
+    height: 80px;
+}
 /*------instagram------*/
 svg.feather.feather-instagram {
     stroke: #000000;
@@ -173,6 +191,7 @@ svg#plus_ajouter, .ajouter-des-photos p {
     font-family: Roboto;
     font-weight: 500;
     color: #FFFFFF;
+    font-size: 17px;
 }
 
 /*------bouton ajouter jeu------*/
@@ -186,17 +205,20 @@ svg#plus_ajouter, .ajouter-des-photos p {
     color: #FFFFFF;
     height: 40px;
     width: 150px;
+    font-size: 17px;
 }
 
 /*------Paramètres------*/
 .parametres {
     font-family: Roboto;
     font-weight: 500;
+    font-size: 17px;
 }
 
 .parametres a {
     text-decoration: none;
     color: #000;
+    font-size: 17px;
 }
 
 .parametres ul {
@@ -208,6 +230,7 @@ svg#plus_ajouter, .ajouter-des-photos p {
 .mentions-legales h3 {
     font-family: Roboto;
     font-weight: 700;
+    font-size: 20px;
 }
 
 .mentions-legales p {
@@ -233,7 +256,7 @@ svg#croix {
 .a-propos > p {
     color: black;
     font-family: Roboto;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .a-propos > h3, .contact > h3 {
@@ -243,7 +266,7 @@ svg#croix {
     background-color: #CF4C68;
 }
 
-.equipe > h3 {
+h3#equipe {
     color: #CF4C68;
     font-family: Roboto;
     font-weight: 500;
@@ -256,7 +279,7 @@ svg#croix {
     color: #76A0A3;
     font-family: Roboto;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 15px;
     text-decoration: none;
     font-style: normal;
 }
@@ -265,7 +288,7 @@ svg#croix {
     color: white;
     font-family: Roboto;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 10px;
     text-decoration: none;
     background-color: #76A0A3;
     font-style: normal;
@@ -275,7 +298,7 @@ svg#croix {
     color: #CF4C68;
     font-family: Roboto;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 15px;
     text-decoration: none;
     font-style: normal;
 }
@@ -285,7 +308,7 @@ svg#croix {
     color: white;
     font-family: Roboto;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 10px;
     text-decoration: none;
     background-color: #CF4C68;
     font-style: normal;
@@ -295,7 +318,7 @@ svg#croix {
     color: #E7A52E;
     font-family: Roboto;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 15px;
     text-decoration: none;
     font-style: normal;
 }
@@ -304,7 +327,7 @@ svg#croix {
     color: white;
     font-family: Roboto;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 10px;
     text-decoration: none;
     background-color: #E7A52E;
     font-style: normal;
@@ -314,8 +337,8 @@ svg#croix {
 input#mail2, input#nom, input#prenom, textarea#msg{
     color: #666666;
     font-family: Roboto;
-    font-weight: 500;
-    font-size: 22px;
+    font-weight: 400;
+    font-size: 15px;
 }
 
 form#contact {
@@ -326,7 +349,7 @@ button.envoyer {
     color: white;
     font-family: Roboto;
     font-weight: 500;
-    font-size: 22px;
+    font-size: 15px;
     background-color: #CF4C68;
     border-radius: 17px;
     border: none;
@@ -360,6 +383,7 @@ h2, h3 {
     color: #FFFFFF;
     height: 50px;
     width: 300px;
+    font-size:10px;
 }
 
 .demarrer-abonnement a {
@@ -417,6 +441,7 @@ ul#parametre_profil {
     color: black;
     font-family: Roboto;
     font-weight: 500;
+    font-size: 17px;
 }
 
 /*------categories------*/
@@ -430,6 +455,7 @@ ul#parametre_profil {
     height: 50px;
     width: 150px;
     margin-top: 10px;
+    font-size:15px;
 }
 
 .ajouter-un-jeu a {
@@ -437,6 +463,7 @@ ul#parametre_profil {
     font-family: Roboto;
     font-weight: 500;
     text-decoration: none;
+    font-size:15px;
 }
 
 /*------porte-monnaie------*/
@@ -450,6 +477,7 @@ button.transfert {
     height: 50px;
     width: 300px;
     margin-top: 10px;
+    font-size:15px;
 }
 
 /*------parametres mon profil------*/
@@ -463,6 +491,7 @@ ul#parametre_profil button {
     width: 70px;
     margin-top: 10px;
     border: 3px solid #76a0a3;
+    font-size:17px;
 }
 
 /*------envoi------*/
@@ -476,6 +505,7 @@ button.terminer {
     height: 40px;
     width: 150px;
     margin-top: 10px;
+    font-size:17px;
 }
 
 /*------mails------*/
@@ -499,6 +529,7 @@ button.terminer {
     font-family: Roboto;
     font-weight: 400;
     list-style-type: none;
+    font-size:15px;
 }
 
 .regle h4, .variante h4 {
@@ -516,6 +547,7 @@ button.terminer {
     height: 40px;
     width: 150px;
     margin-top: 10px;
+    font-size:15px;
 }
 
 .regle a {
@@ -523,6 +555,7 @@ button.terminer {
     font-family: Roboto;
     font-weight: 500;
     text-decoration: none;
+    font-size:15px;
 }
 
 /*bouton pour acheter le jeu*/
@@ -533,6 +566,9 @@ button.acheter-lien {
 
 .acheter-lien a {
     color: white;
+    font-size:17px;
+    font-family: Roboto;
+    font-weight: 500;
 }
 
 /*bouton ajouter variante*/
@@ -540,19 +576,26 @@ button.ajouter-variante  {
     background-color: #CF4C68;
     border: none;
     border-radius: 15px;
-    font-family: Roboto;
-    font-weight: 500;
-    color: #FFFFFF;
     height: 40px;
     width: 150px;
     margin-top: 10px;
 }
 
-.variante a {
-    color: #ffffff;
+button.ajouter-variante a {
+    color: #FFFFFF;
     font-family: Roboto;
     font-weight: 500;
     text-decoration: none;
+    font-size:17px;
+}
+
+/*bouton variante*/
+.variante a {
+    color: #000000;
+    font-family: Roboto;
+    font-weight: 500;
+    text-decoration: none;
+    font-size:15px;
 }
 
 button.variante  {
@@ -716,4 +759,10 @@ button.ajouter-le-jeu  {
 input#nom-j {
     background-color: white;
     border: none;
+}
+
+p {
+    color: black;
+    font-family: Roboto;
+    font-weight: 400;
 }

@@ -1,0 +1,248 @@
+/*------footer------*/
+footer > p  {
+    text-align: center;
+}
+
+footer > a {
+    display:block;
+    text-align:center;
+}
+/*------reseaux sociaux------*/
+footer li {
+    padding: 0 10px 0 10px;
+}
+.reseaux.module-footer {
+    text-align: center;
+}
+/*------à propos------*/
+/* contact*/
+.contact textarea, .contact input {
+    width: 100%;
+    border-radius: 17px;
+    border: none;
+    padding: 10px 10px 10px 10px;
+    box-sizing: border-box;
+    resize: vertical;
+    margin-bottom: 10px;
+}
+
+#contact label{
+    margin-right: 0;
+    margin-left: 0;
+    width: 100%;
+}
+
+.contact input, .contact textarea {
+    background-color: #FFFFFF;
+    color: #666666;
+    border: none;
+    border-radius: 17px;
+}
+
+#contact {
+    box-sizing : border-box;
+    border-radius:35px;
+    background-color:#f2f2f2;
+    padding:20px;
+    width: 100%;
+    height: 500px;
+    max-width: 700px;
+    margin:0 auto;
+}
+
+.formulaire_contact {
+    margin: 0 10px 0 10px;
+    position: relative;
+}
+
+.nom, .prenom, .mail2, .msg {
+    padding: 5px 0 5px 0;
+}
+
+textarea#msg {
+    height: 200px;
+}
+
+#contact button.envoyer {
+    width: 150px;
+    height: 40px;
+    border-radius: 12px;
+    border: none;
+    float: right;
+}
+
+h3#equipe, .contact > h3, .a-propos h3 {
+    height: 30px;
+    border-radius: 0 60px 60px 0;
+    text-align: left;
+    padding: 10px 0 0 20px;
+    margin-left: -10px;
+    width: 100%;
+    font-size: 15px;
+}
+
+/*a propos*/
+.a-propos {
+    position: relative;
+}
+
+.a-propos h3 { /*!!non fini!!*/
+    border-radius: 60px 0 0 60px;
+    margin-right: -10px;
+    position: relative;
+    top: -50px;
+    float: right;
+}
+
+.a-propos p { /*!!non fini!!*/
+    margin: 15px 15px 5px 15px;
+    position: relative;
+    top: 25px;
+}
+
+/*equipe*/
+.equipe {
+    position: relative;
+}
+
+.lena, .marine, .nina {
+    display:inline-block;
+    text-align: center;
+
+}
+
+/*responsive*/
+@media screen and (max-width: 2000px) {
+    /*equipe*/
+    h3#equipe, .contact > h3, .a-propos h3  {
+        max-width: 600px;
+    }
+
+    .equipe {
+        height: 300px;
+        position: relative;
+        margin: 0 auto;
+        max-width: 665px;
+    }
+
+    .lena img, .marine img, .nina img {
+        width: 130px;
+        height: 130px;
+    }
+    .nina > address > p, .marine > address > p, .lena > address > p {
+        font-size: 16px;
+    }
+
+    .lena > address > a, .marine > address > a, .nina > address > a{
+        padding: 7px 15px 7px 15px;
+        border-radius: 60px;
+        font-size: 14px;
+    }
+
+    .lena {
+        position: relative;
+    }
+
+    .marine {
+        position: relative;
+        left: 25px;
+        top: -60px;
+    }
+
+    .nina {
+        position: relative;
+        left: 35px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /*equipe*/
+    h3#equipe, .contact > h3, .a-propos h3  {
+        max-width: 300px;
+    }
+
+    .equipe {
+        height: 240px;
+        position: relative;
+        margin: 0 auto;
+        max-width: 440px;
+    }
+
+    .lena img, .marine img, .nina img {
+        width: 110px;
+        height: 110px;
+    }
+
+    .nina > address > p, .marine > address > p, .lena > address > p {
+        font-size: 14px;
+    }
+
+    .lena > address > a, .marine > address > a, .nina > address > a{
+        padding: 7px 15px 7px 15px;
+        border-radius: 60px;
+        font-size: 12px;
+    }
+
+    .nina, .marine, .lena {
+        position: absolute;
+    }
+
+    .marine {
+        left: 125px;
+        top: -60px;
+    }
+
+    .nina {
+        left: 250px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    /*equipe*/
+    h3#equipe, .contact > h3, .a-propos h3 {
+        max-width: 115px;
+    }
+
+    .equipe {
+        height: 200px;
+        position: relative;
+        margin: 0 auto;
+        max-width: 372px;
+    }
+
+    .lena img, .marine img, .nina img {
+        width: 90px;
+        height:90px;
+    }
+
+    .nina > address > p, .marine > address > p, .lena > address > p {
+        font-size: 12px;
+        margin: 0;
+    }
+
+    .nina > address > a, .marine > address > a, .lena > address > a {
+        padding: 5px 10px 5px 10px;
+        border-radius: 60px;
+        font-size: 10px;
+    }
+
+    .nina, .marine, .lena {
+        position: absolute;
+    }
+
+    .marine {
+        left: 100px;
+        top: -40px;
+    }
+
+    .nina {
+        left: 200px;
+    }
+
+    /* a propos---non-fini*/
+    .a-propos {
+        max-width: 400px;
+        max-height: 440px;
+    }
+}
+
