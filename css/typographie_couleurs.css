@@ -131,24 +131,15 @@ svg#Bold {
     fill: #000000;
 }
 
-/*------facebook------*/
-svg#facebook {
-    width: 31px;
-    height: 50px;
-}
 /*------instagram------*/
 svg.feather.feather-instagram {
     stroke: #000000;
-    width: 35px;
-    height: 50px;
 }
 
 /*------mail------*/
 svg#Capa_1 {
     stroke: #000000;
     fill : #000000;
-    width: 35px;
-    height: 50px;
 }
 
 /*------bouton retour------*/
@@ -162,7 +153,7 @@ svg#left_arrow {
 
 .retour button {
     background-color: white;
-    /*border: none;*/
+    border: none;
     border-radius: 50%;
 }
 
@@ -347,7 +338,7 @@ h3#equipe {
 }
 
 /* contact*/
-input#mail2, input#nom, input#prenom, textarea#msg{
+.formulaire_contact input#mail2, .formulaire_contact input#nom, .formulaire_contact input#prenom, .formulaire_contact textarea#msg{
     color: #666666;
     font-family: Roboto;
     font-weight: 400;
@@ -449,12 +440,22 @@ h4 {
 }
 
 /*------mon profil------*/
-ul#parametre_profil {
+ul#parametre_profil, ul#parametre_profil p, ul#parametre_profil a  {
     list-style-type: none;
     color: black;
     font-family: Roboto;
     font-weight: 500;
     font-size: 17px;
+    text-decoration: none;
+}
+
+.parametres_profil input {
+    background-color:#76A0A3;
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 17px;
+    border: none;
 }
 
 /*------categories------*/
@@ -505,6 +506,7 @@ ul#parametre_profil button {
     margin-top: 10px;
     border: 3px solid #76a0a3;
     font-size:17px;
+    text-decoration: none;
 }
 
 /*------envoi------*/
@@ -778,4 +780,88 @@ p {
     color: black;
     font-family: Roboto;
     font-weight: 400;
+}
+
+/*responsive*/
+@media screen and (max-width: 2000px) {
+    /*footer*/
+    footer a {
+        font-size: 14px;
+    }
+
+    footer p {
+        font-size: 15px;
+    }
+
+    /*------facebook------*/
+    svg#facebook {
+        width: 50px;
+        height: 80px;
+    }
+    /*------instagram------*/
+    svg.feather.feather-instagram {
+        width: 50px;
+        height: 80px;
+    }
+
+    /*------mail------*/
+    svg#Capa_1 {
+        width: 50px;
+        height: 80px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /*footer*/
+    footer a {
+        font-size: 14px;
+    }
+
+    footer p {
+        font-size: 15px;
+    }
+
+    /*------facebook------*/
+    svg#facebook {
+        width: 40px;
+        height: 70px;
+    }
+    /*------instagram------*/
+    svg.feather.feather-instagram {
+        width: 40px;
+        height: 70px;
+    }
+
+    /*------mail------*/
+    svg#Capa_1 {
+        width: 40px;
+        height: 70px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    /*footer*/
+    footer a {
+        font-size: 12px;
+    }
+
+    footer p {
+        font-size: 13px;
+    }
+    /*------facebook------*/
+    svg#facebook {
+        width: 31px;
+        height: 50px;
+    }
+    /*------instagram------*/
+    svg.feather.feather-instagram {
+        width: 35px;
+        height: 50px;
+    }
+
+    /*------mail------*/
+    svg#Capa_1 {
+        width: 35px;
+        height: 50px;
+    }
 }
