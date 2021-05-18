@@ -139,12 +139,12 @@ h3#equipe, .contact > h3, .a-propos h3 {
     margin-top: 30px;
 }
 
-/*parametres, mon profil(parametres, envoi*/
+/*parametres, mon profil(parametres, envoi, mails*/
 .parametres header {
     text-align: center;
 }
 
-.parametres_profil h1, .envoi h1 {
+.parametres_profil h1, .envoi h1, .mails h1 {
     text-align: center;
     margin-top: 20px;
   }
@@ -187,15 +187,24 @@ h3#equipe, .contact > h3, .a-propos h3 {
     border-bottom:1px solid #707070;
 }
 
-/*parametres mon profil, envoi*/
-.parametres_profil header, .envoi header {
+.parametres_profil header, .envoi header, .mails header, .mails {
     border-bottom:42px solid #E4E4E4;
 }
 
-.parametres_profil .retour {
-    position: absolute;
-    top: 38px;
+.mails {
+    padding-bottom: 20px;
 }
+
+.envoi .retour button, .parametres_profil .retour button {
+    position: absolute;
+    top: -5px;
+}
+
+.mails .retour button {
+    position: absolute;
+    top: 75px;
+}
+
 .parametres_profil label, .parametres_profil input, .envoi input, .envoi label {
     display: table-cell;
 }
@@ -246,18 +255,53 @@ form#envoi {
     width: 100%;
     max-width: 310px;
     margin:0 auto;
+    padding-top: 20px;
 }
 
 button.terminer {
    position: relative;
-    left: 75px;
+    left: 83px;
 }
 
 .envoi input {
     width: 100%;
     border-radius: 17px;
     border: none;
-    padding: 15px 10px 15px 10px;
+    padding: 20px 10px 20px 10px;
+    box-sizing: border-box;
+    resize: vertical;
+    margin-bottom: 10px;
+}
+
+#envoi label{
+    margin-right: 0;
+    margin-left: 0;
+    width: 100%;
+}
+
+/*envoi*/
+.envoi {
+    position: relative;
+}
+
+form#envoi {
+    box-sizing : border-box;
+    width: 100%;
+    max-width: 310px;
+    margin:0 auto;
+    padding-top: 20px;
+}
+
+button.terminer {
+    position: relative;
+    left: 83px;
+}
+
+.envoi input {
+    width: 100%;
+    border-radius: 17px;
+    border: none;
+    padding: 20px 10px 20px 10px;
     box-sizing: border-box;
     resize: vertical;
     margin-bottom: 10px;
@@ -313,7 +357,7 @@ button.terminer {
     }
 
     /*parametres*/
-    .parametres a, .parametres_profil label, .parametres_profil a, .parametres_profil p {
+    .parametres a, .parametres_profil label, .parametres_profil a, .parametres_profil p,.mails h3  {
         padding-left: 80px;
     }
 
@@ -322,7 +366,7 @@ button.terminer {
     }
 
     /*parametres mon profil*/
-    .parametres_profil input {
+    .parametres_profil input, .mails input {
         margin-left:80px;
     }
 
@@ -340,6 +384,11 @@ button.terminer {
     ul#parametre_profil li:nth-of-type(6) button{
         position: relative;
         left: 490px;
+    }
+
+    /*mails*/
+    .mails label {
+        padding-left:40px;
     }
 }
 
@@ -384,8 +433,8 @@ button.terminer {
         left: 250px;
     }
 
-    /*parametres*/
-    .parametres a, .parametres_profil label, .parametres_profil a, .parametres_profil p {
+    /*parametres, parametres mon profil, mails */
+    .parametres a, .parametres_profil label, .parametres_profil a, .parametres_profil p, .mails h3 {
         padding-left: 50px;
     }
 
@@ -393,10 +442,16 @@ button.terminer {
         padding-left: 250px;
     }
 
-    /*parametres mon profil*/
-    .parametres_profil input {
+    /*parametres mon profil, mails*/
+    .parametres_profil input, .mails input {
         margin-left:50px;
     }
+
+    /*mails*/
+    .mails label {
+        padding-left:40px;
+    }
+
 
     /*bouton*/
     ul#parametre_profil li:first-of-type button {
@@ -472,13 +527,17 @@ button.terminer {
         padding-left: 80px;
     }
 
-    /*parametres mon profil*/
-    .parametres_profil input {
+    /*parametres mon profil, mails*/
+    .parametres_profil input, .mails input {
         margin-left:20px;
     }
 
-    .parametres_profil label, .parametres_profil a, .parametres_profil p {
+    .parametres_profil label, .parametres_profil a, .parametres_profil p, .mails h3 {
         padding-left:20px;
+    }
+
+    .mails label {
+        padding-left:10px;
     }
 
     /*bouton*/
