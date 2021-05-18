@@ -139,12 +139,12 @@ h3#equipe, .contact > h3, .a-propos h3 {
     margin-top: 30px;
 }
 
-/*parametres, mon profil(parametres)*/
+/*parametres, mon profil(parametres, envoi*/
 .parametres header {
     text-align: center;
 }
 
-.parametres_profil h1 {
+.parametres_profil h1, .envoi h1 {
     text-align: center;
     margin-top: 20px;
   }
@@ -187,8 +187,8 @@ h3#equipe, .contact > h3, .a-propos h3 {
     border-bottom:1px solid #707070;
 }
 
-/*parametres mon profil*/
-.parametres_profil header {
+/*parametres mon profil, envoi*/
+.parametres_profil header, .envoi header {
     border-bottom:42px solid #E4E4E4;
 }
 
@@ -196,7 +196,7 @@ h3#equipe, .contact > h3, .a-propos h3 {
     position: absolute;
     top: 38px;
 }
-.parametres_profil label, .parametres_profil input {
+.parametres_profil label, .parametres_profil input, .envoi input, .envoi label {
     display: table-cell;
 }
 
@@ -208,7 +208,7 @@ h3#equipe, .contact > h3, .a-propos h3 {
     border-bottom:1px solid #707070;
 }
 
-.parametres_profil input {
+.parametres_profil input, .envoi input {
     border-radius: 17px;
     height: 20px;
     padding: 10px;
@@ -234,6 +234,39 @@ svg#croix {
 svg#left_arrow {
     width: 18px;
     height: 20px;
+}
+
+/*envoi*/
+.envoi {
+    position: relative;
+}
+
+form#envoi {
+    box-sizing : border-box;
+    width: 100%;
+    max-width: 310px;
+    margin:0 auto;
+}
+
+button.terminer {
+   position: relative;
+    left: 75px;
+}
+
+.envoi input {
+    width: 100%;
+    border-radius: 17px;
+    border: none;
+    padding: 15px 10px 15px 10px;
+    box-sizing: border-box;
+    resize: vertical;
+    margin-bottom: 10px;
+}
+
+#envoi label{
+    margin-right: 0;
+    margin-left: 0;
+    width: 100%;
 }
 
 /*responsive*/
@@ -280,7 +313,7 @@ svg#left_arrow {
     }
 
     /*parametres*/
-    .parametres a, .parametres_profil label, .parametres_profil a, .parametres_profil p  {
+    .parametres a, .parametres_profil label, .parametres_profil a, .parametres_profil p {
         padding-left: 80px;
     }
 

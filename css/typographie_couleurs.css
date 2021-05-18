@@ -215,7 +215,7 @@ svg#plus_ajouter, .ajouter-des-photos p {
     font-size: 17px;
 }
 
-.parametres a:nth-of-type(5) { /*non fini*/
+.parametres > ul > li:nth-of-type(5) > a { /*non fini*/
     color: #E22424;
 }
 
@@ -439,8 +439,8 @@ h4 {
     display: inline-block;
 }
 
-/*------mon profil------*/
-ul#parametre_profil, ul#parametre_profil p, ul#parametre_profil a  {
+/*------mon profil, envoi------*/
+ul#parametre_profil, ul#parametre_profil p, ul#parametre_profil a, #envoi label  {
     list-style-type: none;
     color: black;
     font-family: Roboto;
@@ -449,7 +449,7 @@ ul#parametre_profil, ul#parametre_profil p, ul#parametre_profil a  {
     text-decoration: none;
 }
 
-.parametres_profil input {
+.parametres_profil input, #envoi input {
     background-color:#76A0A3;
     color: #FFFFFF;
     font-family: Roboto;
