@@ -366,6 +366,14 @@ h2, h3 {
     font-weight: 500;
 }
 
+h2 {
+    font-size: 18px;
+}
+
+h3 {
+    font-size: 14px;
+}
+
 .premium p {
     color: black;
     font-family: Roboto;
@@ -387,7 +395,7 @@ h2, h3 {
     color: #FFFFFF;
     height: 50px;
     width: 300px;
-    font-size:10px;
+    font-size:14px;
 }
 
 .demarrer-abonnement a {
@@ -528,10 +536,12 @@ button.terminer {
     color: #000000;
     font-family: Roboto;
     font-weight: 500;
+    font-size: 17px;
 }
 
 .mails h3 {
     color: #707070;
+    font-size: 17px;
 }
 
 /*------regles------*/

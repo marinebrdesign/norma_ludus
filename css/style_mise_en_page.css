@@ -139,12 +139,12 @@ h3#equipe, .contact > h3, .a-propos h3 {
     margin-top: 30px;
 }
 
-/*parametres, mon profil(parametres, envoi, mails*/
+/*parametres, mon profil(parametres), envoi, mails, premium*/
 .parametres header {
     text-align: center;
 }
 
-.parametres_profil h1, .envoi h1, .mails h1 {
+.parametres_profil h1, .envoi h1, .mails h1, .premium h1 {
     text-align: center;
     margin-top: 20px;
   }
@@ -195,7 +195,7 @@ h3#equipe, .contact > h3, .a-propos h3 {
     padding-bottom: 20px;
 }
 
-.envoi .retour button, .parametres_profil .retour button {
+.envoi .retour button, .parametres_profil .retour button, .premium .retour button {
     position: absolute;
     top: -5px;
 }
@@ -229,7 +229,7 @@ ul#parametre_profil button {
 }
 
 /*croix, fleche retour*/
-.croix button, .retour button {
+.croix button{
     position: relative;
     top: -43px;
     margin-left: 30px;
@@ -253,14 +253,14 @@ svg#left_arrow {
 form#envoi {
     box-sizing : border-box;
     width: 100%;
-    max-width: 310px;
+    max-width: 1000px;
     margin:0 auto;
-    padding-top: 20px;
+    padding: 20px 15px 0 15px;
 }
 
 button.terminer {
-   position: relative;
-    left: 83px;
+    display: block;
+    margin : 0 auto;
 }
 
 .envoi input {
@@ -279,38 +279,73 @@ button.terminer {
     width: 100%;
 }
 
-/*envoi*/
-.envoi {
+/*premium*/
+.premium {
+    margin: 0 15px 0 15px;
     position: relative;
 }
 
-form#envoi {
+.premium h2 {
+    padding-left: 5px;
+}
+
+.avantages p, .premium p {
+    text-align: center;
+}
+
+.avantages > .regles-premium > p, .avantages > .pas-pubs > p {
+    text-align: left;
+}
+
+.pas-pubs, .regles-premium {
+
+}
+
+.pas-pubs h3, .pas-pubs figure, .regles-premium h3, .regles-premium figure {
+    display: inline-block;
+}
+
+.pas-pubs figure, .regles-premium figure {
+    margin-right: 20px;
+}
+
+.pas-pubs h3, .regles-premium h3 {
+    margin: 0;
+}
+
+.pas-pubs p, .regles-premium p {
+    padding-left: 120px;
+    margin: 0;
+}
+
+.pas-pubs  h3, .pas-pubs p, .regles-premium h3, .regles-premium p {
+    position: relative;
+    top: -50px;
+}
+
+.pas-pubs, .regles-premium  {
     box-sizing : border-box;
     width: 100%;
-    max-width: 310px;
-    margin:0 auto;
+    max-width: 1000px;
+    margin:20px auto 0 auto;
     padding-top: 20px;
-}
-
-button.terminer {
     position: relative;
-    left: 83px;
+    height: 150px;
 }
 
-.envoi input {
+.avantages h2 {
+    box-sizing : border-box;
     width: 100%;
-    border-radius: 17px;
-    border: none;
-    padding: 20px 10px 20px 10px;
-    box-sizing: border-box;
-    resize: vertical;
-    margin-bottom: 10px;
+    max-width: 1000px;
+    margin:20px auto 0 auto;
+    padding-top: 20px;
+    position: relative;
 }
 
-#envoi label{
-    margin-right: 0;
-    margin-left: 0;
-    width: 100%;
+.demarrer-abonnement button {
+    display: block;
+    margin : 0 auto;
+    width: 260px;
 }
 
 /*responsive*/
