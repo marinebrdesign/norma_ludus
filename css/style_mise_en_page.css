@@ -18,6 +18,10 @@ footer ul {
 .reseaux.module-footer {
     text-align: center;
 }
+/*------index------*/
+main.index {
+    margin: 0 5px 0 5px;
+}
 /*------à propos------*/
 /* contact*/
 .contact textarea, .contact input {
@@ -410,6 +414,50 @@ main.index header {
     padding-top: 20px;
 }
 
+/*commentaire*/
+.commentaire h2 {
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 0;
+}
+
+.commentaire textarea {
+    width: 100%;
+    border-radius: 17px;
+    border: none;
+    padding: 10px 10px 10px 10px;
+    box-sizing: border-box;
+    resize: vertical;
+    margin-bottom: 10px;
+    background-color: #FFFFFF;
+}
+
+#commentaire label{
+    margin-right: 0;
+    margin-left: 0;
+    width: 100%;
+}
+
+#commentaire {
+    box-sizing : border-box;
+    border-radius:35px;
+    padding:20px;
+    width: 100%;
+    height: 500px;
+    max-width: 750px;
+    margin:0 auto;
+}
+
+.commentaire {
+    margin: 0 auto;
+    position: relative;
+    max-height: 350px;
+    max-width: 800px;
+}
+
+.commentaire button {
+    float: right;
+}
 /*responsive*/
 @media screen and (max-width: 2000px) {
     /*equipe*/

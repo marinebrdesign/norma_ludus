@@ -358,14 +358,17 @@ form#contact {
     background-color: #FCBAC5;
 }
 
-button.envoyer {
-    color: white;
+button.publier {
+    color: #cf4c68;
     font-family: Roboto;
     font-weight: 500;
     font-size: 15px;
-    background-color: #CF4C68;
-    border-radius: 17px;
+    background-color: #FFFFFF;
+    border-radius: 13px;
     border: none;
+    height: 30px;
+    width: 120px;
+    margin-top: 10px;
 }
 
 /*------premium------*/
@@ -799,6 +802,16 @@ p {
     color: black;
     font-family: Roboto;
     font-weight: 400;
+}
+
+/*commentaire*/
+.commentaire {
+    background-color: #cf4c68;
+    border-radius:50px;
+}
+
+.commentaire h2 {
+    color: #FFFFFF;
 }
 
 /*responsive*/
