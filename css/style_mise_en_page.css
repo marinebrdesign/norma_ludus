@@ -423,7 +423,7 @@ main.index header {
 
 .commentaire textarea {
     width: 100%;
-    border-radius: 17px;
+    border-radius: 13px;
     border: none;
     padding: 10px 10px 10px 10px;
     box-sizing: border-box;
@@ -440,7 +440,7 @@ main.index header {
 
 #commentaire {
     box-sizing : border-box;
-    border-radius:35px;
+    border-radius:20px;
     padding:20px;
     width: 100%;
     height: 500px;
@@ -453,6 +453,7 @@ main.index header {
     position: relative;
     max-height: 350px;
     max-width: 800px;
+    border-radius: 20px;
 }
 
 .commentaire button {
