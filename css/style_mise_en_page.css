@@ -494,7 +494,6 @@ main.index header {
         height: 42px;
         width: 600px;
         border-radius: 0 60px 60px 0;
-        border: 3px solid #cf4c68;
     }
 
     #maRecherche {
@@ -618,7 +617,6 @@ main.index header {
         height: 42px;
         width: 350px;
         border-radius: 0 60px 60px 0;
-        border: 3px solid #cf4c68;
     }
 
     #maRecherche {
