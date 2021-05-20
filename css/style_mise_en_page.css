@@ -348,6 +348,68 @@ button.terminer {
     width: 260px;
 }
 
+/*accueil*/
+/*header*/
+main.index header {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 25px;
+}
+
+/* recherche*/
+.recherche {
+    background-color: #ffffff;
+    margin-left: -10px;
+}
+
+#maRecherche {
+    padding: 5px 0 5px 20px;
+}
+
+.recherche button {
+    margin-top: 4px;
+    position: relative;
+    top: 3px;
+}
+
+/* vendre, notification*/
+.vendre-jeu, .notifications{
+    display: inline-block;
+}
+
+.vendre-jeu, .notifications, .recherche {
+    flex-direction: row;
+}
+
+/*jeux*/
+.categories {
+    display: grid;
+    grid-template-columns: repeat(2, 140px);
+    grid-gap: 30px;
+    grid-auto-rows: minmax(100px, auto);
+    box-sizing : border-box;
+    width: 100%;
+    max-width: 310px;
+    margin:0 auto;
+}
+
+.j-de-plateau, .j-pions, .j-cartes, .j-des  {
+    height: 250px;
+    text-align: center;
+}
+
+.j-de-plateau h2, .j-pions h2, .j-cartes h2, .j-des h2{
+   padding-top: 20px;
+}
+
+.j-pions img, .j-cartes img, .j-des img {
+    padding-top: 10px;
+}
+
+.j-de-plateau img {
+    padding-top: 20px;
+}
+
 /*responsive*/
 @media screen and (max-width: 2000px) {
     /*equipe*/
@@ -424,6 +486,25 @@ button.terminer {
     /*mails*/
     .mails label {
         padding-left:40px;
+    }
+
+    /*accueil*/
+    /* recherche*/
+    .recherche {
+        height: 42px;
+        width: 600px;
+        border-radius: 0 60px 60px 0;
+        border: 3px solid #cf4c68;
+    }
+
+    #maRecherche {
+        padding: 5px 0 5px 20px;
+    }
+
+    .recherche button {
+        margin-top: 4px;
+        position: relative;
+        top: 3px;
     }
 }
 
@@ -502,6 +583,52 @@ button.terminer {
     ul#parametre_profil li:nth-of-type(6) button{
         position: relative;
         left: 240px;
+    }
+
+    /*accueil*/
+    /* recherche*/
+    .recherche {
+        height: 42px;
+        width: 175px;
+        border-radius: 0 60px 60px 0;
+    }
+
+    #maRecherche {
+        padding: 5px 0 5px 20px;
+    }
+
+    .recherche button {
+        margin-top: 4px;
+        position: relative;
+        top: 3px;
+    }
+
+    /* vendre, notification*/
+    .vendre-jeu, .notifications{
+        display: inline-block;
+    }
+
+    .vendre-jeu, .notifications, .recherche {
+        flex-direction: row;
+    }
+
+    /*accueil*/
+    /* recherche*/
+    .recherche {
+        height: 42px;
+        width: 350px;
+        border-radius: 0 60px 60px 0;
+        border: 3px solid #cf4c68;
+    }
+
+    #maRecherche {
+        padding: 5px 0 5px 20px;
+    }
+
+    .recherche button {
+        margin-top: 4px;
+        position: relative;
+        top: 3px;
     }
 }
 
@@ -589,6 +716,24 @@ button.terminer {
     ul#parametre_profil li:nth-of-type(6) button{
         position: relative;
         left: 95px;
+    }
+
+    /*accueil*/
+    /* recherche*/
+    .recherche {
+        height: 42px;
+        width: 175px;
+        border-radius: 0 60px 60px 0;
+    }
+
+    #maRecherche {
+        padding: 5px 0 5px 20px;
+    }
+
+    .recherche button {
+        margin-top: 4px;
+        position: relative;
+        top: 3px;
     }
 }
 
