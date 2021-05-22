@@ -272,7 +272,7 @@ svg#croix {
     font-weight: 400;
 }
 
-.a-propos > h3, .contact > h3 {
+#titre h3, .contact > h3 {
     color: white;
     font-family: Roboto;
     font-weight: 500;
