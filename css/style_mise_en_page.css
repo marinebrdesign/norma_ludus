@@ -417,11 +417,11 @@ main.index header {
 /*commentaire*/
 .commentaire h2 {
     text-align: center;
-    padding-top: 20px;
-    margin-bottom: 0;
+    padding-bottom: 10px;
+    margin: 0;
 }
 
-.commentaire textarea {
+.commentaire textarea, .commentaire input {
     width: 100%;
     border-radius: 13px;
     border: none;
@@ -430,6 +430,14 @@ main.index header {
     resize: vertical;
     margin-bottom: 10px;
     background-color: #FFFFFF;
+}
+
+.commentaire textarea {
+    height: 200px;
+}
+
+.commentaire input#poster_comm {
+    float: right;
 }
 
 #commentaire label{
@@ -451,7 +459,7 @@ main.index header {
 .commentaire {
     margin: 0 auto;
     position: relative;
-    max-height: 350px;
+    max-height: 400px;
     max-width: 800px;
     border-radius: 20px;
 }
@@ -828,5 +836,3 @@ button.connexion, button.je-m-inscris {
         top: 3px;
     }
 }
-
-

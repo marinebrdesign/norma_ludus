@@ -70,16 +70,13 @@
     </div>
   </div>
   <div class="commentaire">
-    <h2>Commentaires</h2>
-    <form method="post" action="commentaire.php">
-      <div class="msg">
-        <label for="msg"></label>
-        <textarea id="msg" placeholder="Ajouter un commentaire" name="user_message" required></textarea>
-      </div>
-      <button class="publier"
-              type="submit">
-        Publier
-      </button>
+    <form id="commentaire" method="POST">
+      <h2>Commentaires</h2>
+      <label for="pseudo"></label>
+      <input type="text" id="pseudo" name="pseudo" placeholder="Votre pseudo" /><br />
+      <label for="votre_commentaire"></label>
+      <textarea name="commentaire" id="votre_commentaire" placeholder="Votre commentaire..."></textarea><br />
+      <input type="submit" id="poster_comm" value="Poster mon commentaire" name="submit_commentaire" />
     </form>
   </div>
 </main>
