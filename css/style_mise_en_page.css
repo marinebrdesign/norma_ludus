@@ -459,6 +459,51 @@ main.index header {
 .commentaire button {
     float: right;
 }
+
+/*page connexion et inscription*/
+body.connexion svg#logo, body.inscription {
+    width: 234px;
+    height: 89px;
+}
+
+body.inscription, body.connexion {
+    margin: 0 auto;
+    position: relative;
+    max-height: 350px;
+    max-width: 800px;
+    border-radius: 20px;
+}
+
+form#connexion label, form#connexion input, form#connexion a, form#inscription button, form#inscription label, form#inscription input, form#inscription button {
+    display: table-cell;
+}
+
+form#connexion input, form#inscription input{
+    background-color: #ffe9aa;
+    border: none;
+    border-radius: 25px;
+    color: #000000;
+    height: 56px;
+    margin: 10px 0 20px 0;
+    padding-left: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+button.connexion, button.je-m-inscris {
+    background-color: #cf4c68;
+    border: none;
+    border-radius: 25px;
+    color: #FFFFFF;
+    height: 56px;
+    width: 250px;
+    margin-top: 10px;
+}
+
+#container p, #inscription p {
+    text-align: center;
+}
 /*responsive*/
 @media screen and (max-width: 2000px) {
     /*equipe*/
