@@ -199,7 +199,7 @@ svg#plus_ajouter, .ajouter-des-photos p {
 
 /*------bouton ajouter jeu------*/
 
-.ajouter-le-jeu button {
+.ajouter button {
     background-color: #CF4C68;
     border: none;
     border-radius: 50px;
@@ -208,9 +208,17 @@ svg#plus_ajouter, .ajouter-des-photos p {
     color: #FFFFFF;
     height: 40px;
     width: 150px;
-    font-size: 17px;
+    font-size: 15px;
 }
 
+
+.ajouter a {
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-weight: 500;
+    text-decoration: none;
+    font-size:15px;
+}
 /*------Paramètres------*/
 .parametres {
     font-family: Roboto;
@@ -358,6 +366,18 @@ form#contact {
     background-color: #FCBAC5;
 }
 
+button.envoyer {
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 15px;
+    background-color: #cf4c68;
+    border-radius: 13px;
+    border: none;
+    height: 30px;
+    width: 120px;
+    margin-top: 10px;
+}
 button.publier {
     color: #cf4c68;
     font-family: Roboto;
@@ -593,6 +613,11 @@ button.terminer {
     font-weight: 500;
     text-decoration: none;
     font-size:15px;
+}
+/*boutons "ajouter"*/
+button.ajouter {
+    background-color: #CF4C68;
+    border-radius: 17px;
 }
 
 /*bouton pour acheter le jeu*/

@@ -1,3 +1,10 @@
+/*------logo------*/
+svg#logo {
+    position: fixed;
+    top: 0;
+    left: 10px;
+}
+
 /*------footer------*/
 footer > p  {
     text-align: center;
@@ -20,7 +27,7 @@ footer ul {
 }
 /*------index------*/
 main.index {
-    margin: 0 5px 0 5px;
+    margin: 50px 5px 0 5px;
 }
 /*------à propos------*/
 /* contact*/
@@ -354,13 +361,6 @@ button.terminer {
 }
 
 /*accueil*/
-/*header*/
-main.index header {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 25px;
-}
-
 /* recherche*/
 .recherche {
     background-color: #ffffff;
@@ -378,12 +378,14 @@ main.index header {
 }
 
 /* vendre, notification*/
+.boutons {
+    display: flex;
+    justify-content: flex-end;
+}
 .vendre-jeu, .notifications{
     display: inline-block;
-}
-
-.vendre-jeu, .notifications, .recherche {
-    flex-direction: row;
+    position: relative;
+    top: -50px;
 }
 
 /*jeux*/
