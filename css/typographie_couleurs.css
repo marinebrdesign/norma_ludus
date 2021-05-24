@@ -87,6 +87,19 @@ svg#plus {
     margin: 0 10px 0 45px;
 }
 
+#vendre-jeux label {
+    color: #707070;
+    font-family: Roboto;
+    font-weight: 500;
+}
+
+#vendre-jeux input {
+    color: black;
+    font-family: Roboto;
+    font-weight: 400;
+    background-color: #E4E4E4;
+}
+
 /*------catégories------*/
 .j-cartes, .j-pions, .j-de-plateau, .j-des {
     font-family: Roboto;
@@ -187,11 +200,11 @@ svg#left_arrow {
     border-radius: 50%;
 }
 
-/*------bouton ajouter photos------ NON FINI*/
+/*------bouton ajouter photos------*/
 svg#plus_ajouter {
     fill: #FFFFFF;
     width: 35px;
-    height: 45px;
+    height: 35px;
     padding-bottom: 7px;
     padding-right:10px;
 }
@@ -205,7 +218,7 @@ svg#plus_ajouter {
     background-color: #CF4C68;
     border: none;
     border-radius: 25px;
-    padding: 50px 20px 0 20px;
+    padding: 35px 20px 0 20px;
     width: 50px;
 }
 
@@ -841,7 +854,8 @@ button.ajouter-le-jeu  {
     height: 40px;
     width: 150px;
 }
-input#nom-j {
+
+input#nom-j, #vendre-jeux input {
     background-color: white;
     border: none;
 }

@@ -183,7 +183,7 @@ h3#equipe, .contact > h3, #titre h3 {
     text-align: center;
 }
 
-.parametres_profil h1, .envoi h1, .mails h1, .premium h1 {
+.parametres_profil h1, .envoi h1, .mails h1, .premium h1, .vendre-un-jeu h1 {
     text-align: center;
     margin-top: 20px;
   }
@@ -221,12 +221,12 @@ h3#equipe, .contact > h3, #titre h3 {
     border-bottom:42px solid #E4E4E4;
 }
 
-.parametres li:nth-of-type(6) {
+.parametres li:nth-of-type(6), .vendre-un-jeu .prix {
     border-top:1px solid #707070;
     border-bottom:1px solid #707070;
 }
 
-.parametres_profil header, .envoi header, .mails header, .mails {
+.parametres_profil header, .envoi header, .mails header, .mails, .vendre-un-jeu header {
     border-bottom:42px solid #E4E4E4;
 }
 
@@ -239,9 +239,9 @@ h3#equipe, .contact > h3, #titre h3 {
     top: -5px;
 }
 
-.mails .retour button {
+.mails .retour button, .vendre-un-jeu .retour button {
     position: absolute;
-    top: 45px;
+    top: 65px;
 }
 
 .parametres_profil label, .parametres_profil input, .envoi input, .envoi label {
@@ -252,7 +252,7 @@ h3#equipe, .contact > h3, #titre h3 {
     display: inline-block;
 }
 
-.parametres_profil li:nth-of-type(2),.parametres_profil li:nth-of-type(3), .parametres_profil li:nth-of-type(5) {
+.parametres_profil li:nth-of-type(2),.parametres_profil li:nth-of-type(3), .parametres_profil li:nth-of-type(5), .vendre-un-jeu .etat {
     border-bottom:1px solid #707070;
 }
 
@@ -584,26 +584,25 @@ form#ajouter-variante {
     height: 200px;
 }
 
-.nom-j, .ajouter-des-photos {
+#ajouter-regle .nom-j, .ajouter-des-photos {
     margin: 0 auto;
     position: relative;
     box-sizing : border-box;
     width: 100%;
 }
 
-.nom-j {
+#ajouter-regle .nom-j {
     max-width: 90px;
 }
 
 .ajouter-des-photos {
-    max-width: 240px;
- /*   position: relative;*/
+    max-width: 230px;
 }
 
 .ajouter-des-photos > a > p{
     max-width: 240px;
     position: relative;
-    top: -25px;
+    top: -18px;
 }
 
 /*page connexion et inscription*/
@@ -620,7 +619,7 @@ body.inscription, body.connexion {
     border-radius: 20px;
 }
 
-form#connexion label, form#connexion input, form#connexion a, form#inscription button, form#inscription label, form#inscription input, form#inscription button {
+form#connexion label, form#connexion input, form#connexion a, form#inscription button, form#inscription label, form#inscription input, form#inscription button, #vendre-jeux input, #vendre-jeux label {
     display: table-cell;
 }
 
@@ -663,6 +662,20 @@ button.connexion, button.je-m-inscris {
     box-sizing : border-box;
     width: 100%;
     margin:0 auto;
+}
+
+/*vendre un jeu*/
+.vendre-un-jeu .ajouter-des-photos {
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.vendre-un-jeu .nom-j, .prix, .etat {
+    padding: 15px 0 15px 0;
+}
+
+.vendre-un-jeu .ajouter {
+    margin-top: 50px;
 }
 
 /*responsive*/
@@ -708,8 +721,8 @@ button.connexion, button.je-m-inscris {
         left: 35px;
     }
 
-    /*parametres*/
-    .parametres a, .parametres_profil label, .parametres_profil a, .parametres_profil p,.mails h3  {
+    /*parametres, vendre un jeu*/
+    .parametres a, .parametres_profil label, .parametres_profil a, .parametres_profil p,.mails h3, .vendre-un-jeu label   {
         padding-left: 80px;
     }
 
@@ -717,8 +730,8 @@ button.connexion, button.je-m-inscris {
         padding-left: 540px;
     }
 
-    /*parametres mon profil*/
-    .parametres_profil input, .mails input {
+    /*parametres mon profil, mails, vendre un jeu*/
+    .parametres_profil input, .mails input, .vendre-un-jeu input{
         margin-left:80px;
     }
 
@@ -761,8 +774,8 @@ button.connexion, button.je-m-inscris {
         top: 3px;
     }
 
-    /*envoi*/
-    .envoi a, .premium header a, .mails header a {
+    /*envoi, mails, vendre un jeu*/
+    .envoi a, .premium header a, .mails header a, .vendre-un-jeu .retour a, .retour > button > a {
         padding-left: 100px;
     }
 }
@@ -865,8 +878,8 @@ button.connexion, button.je-m-inscris {
         flex-direction: row;
     }
 
-    /*envoi*/
-    .envoi a, .premium header a, .mails header a  {
+    /*envoi, mails, vendre un jeu*/
+    .envoi a, .premium header a, .mails header a, .vendre-un-jeu .retour a, .retour > button > a  {
         padding-left: 15px;
     }
 }
@@ -978,8 +991,10 @@ button.connexion, button.je-m-inscris {
         top: 3px;
     }
 
-    /*envoi*/
-    .envoi a, .premium header a, .mails header a  {
+    /*envoi, mails, vendre un jeu*/
+    .envoi a, .premium header a, .mails header a, .vendre-un-jeu .retour a, .retour > button > a   {
         padding-left: 15px;
     }
+
+
 }
