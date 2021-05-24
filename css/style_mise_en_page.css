@@ -1,3 +1,13 @@
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 /*------logo------*/
 svg#logo {
     position: fixed;
@@ -5,7 +15,14 @@ svg#logo {
     left: 10px;
 }
 
+/*------retour------*/
+.retour {
+    margin-bottom: 10px;
+
+}
+
 /*------footer------*/
+
 footer > p  {
     text-align: center;
 }
@@ -26,7 +43,7 @@ footer ul {
     text-align: center;
 }
 /*------index------*/
-main.index {
+main.index, main {
     margin: 50px 5px 0 5px;
 }
 /*------à propos------*/
@@ -234,6 +251,7 @@ h3#equipe, .contact > h3, #titre h3 {
     height: 20px;
     padding: 10px;
 }
+
 /*bouton*/
 ul#parametre_profil button {
     padding: 0;
@@ -381,6 +399,7 @@ button.terminer {
 .boutons {
     display: flex;
     justify-content: flex-end;
+    height: 0;
 }
 .vendre-jeu, .notifications{
     display: inline-block;
@@ -403,6 +422,7 @@ button.terminer {
 .j-de-plateau, .j-pions, .j-cartes, .j-des  {
     height: 250px;
     text-align: center;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.3);
 }
 
 .j-de-plateau h2, .j-pions h2, .j-cartes h2, .j-des h2{
@@ -415,6 +435,62 @@ button.terminer {
 
 .j-de-plateau img {
     padding-top: 20px;
+}
+
+/*j-cartes*/
+#dooble-visit {
+    box-sizing : border-box;
+    width: 100%;
+    max-width: 800px;
+    margin:0 auto 15px auto;
+    border: 3px solid #cf4c68;
+    border-radius: 30px;
+    padding: 5px 20px 5px 20px;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.3);
+}
+
+#dooble-visit ul {
+    padding: 0;
+}
+
+.acheter, .ajouter-variante {
+    margin: 0 auto;
+    position: relative;
+     box-sizing : border-box;
+     width: 100%;
+     max-width: 150px;
+ }
+
+.ajouter-variante button {
+     margin-bottom: 15px;
+ }
+
+/*ajouter variante*/
+form#ajouter-variante {
+    box-sizing : border-box;
+    width: 100%;
+    max-width: 800px;
+    margin:0 auto 15px auto;
+    border: 3px solid #cf4c68;
+    border-radius: 30px;
+    padding: 30px 20px 30px 20px;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.3);
+}
+
+#ajouter-variante label, #ajouter-variante textarea {
+    display: table-cell;
+}
+
+#ajouter-variante textarea {
+    width: 100%;
+    border-radius: 17px;
+    border: none;
+    padding: 10px;
+    box-sizing: border-box;
+    resize: vertical;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    height: 200px;
 }
 
 /*commentaire*/
@@ -515,6 +591,21 @@ button.connexion, button.je-m-inscris {
 #container p, #inscription p {
     text-align: center;
 }
+
+/*boutons "ajouter*/
+.ajouter {
+    margin: 0 auto;
+    position: relative;
+    max-width: 150px;
+    border-radius: 20px;
+}
+
+.ajouter button {
+    box-sizing : border-box;
+    width: 100%;
+    margin:0 auto;
+}
+
 /*responsive*/
 @media screen and (max-width: 2000px) {
     /*equipe*/
@@ -668,7 +759,7 @@ button.connexion, button.je-m-inscris {
     }
 
     /*mails*/
-    .mails label {
+   /* .mails label {
         padding-left:40px;
     }
 
@@ -791,7 +882,6 @@ button.connexion, button.je-m-inscris {
     .parametres a {
         padding-left:20px;
     }
-
     .parametres .fa-chevron-right, .parametres_profil .fa-chevron-right  {
         padding-left: 80px;
     }

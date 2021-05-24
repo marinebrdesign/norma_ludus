@@ -20,14 +20,10 @@ $liste =array();
 if($requete->execute()){
     while ($donnees=$requete->fetch()){
         $chat = new CHAT(
-            $donnees['$ID_CHAT'],
-            $donnees['$Message'],
-            $donnees['$Date_Chat'],
-            $donnees['$Heure_Chat'],
-            $donnees['Duree'],
-            $donnees['Materiel'],
-            $donnees["Preparation"],
-            $donnees['Base'],
+            $donnees['ID_CHAT'],
+            $donnees['Message'],
+            $donnees['Date_Chat'],
+            $donnees['Heure_Chat'],
             0
         );
         public $ID_CHAT;
