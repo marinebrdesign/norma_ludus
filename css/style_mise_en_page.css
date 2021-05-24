@@ -231,7 +231,7 @@ h3#equipe, .contact > h3, #titre h3 {
 
 .mails .retour button {
     position: absolute;
-    top: 75px;
+    top: 45px;
 }
 
 .parametres_profil label, .parametres_profil input, .envoi input, .envoi label {
@@ -750,6 +750,11 @@ button.connexion, button.je-m-inscris {
         position: relative;
         top: 3px;
     }
+
+    /*envoi*/
+    .envoi a, .premium header a, .mails header a {
+        padding-left: 100px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -807,12 +812,6 @@ button.connexion, button.je-m-inscris {
         margin-left:50px;
     }
 
-    /*mails*/
-   /* .mails label {
-        padding-left:40px;
-    }
-
-
     /*bouton*/
     ul#parametre_profil li:first-of-type button {
         position: relative;
@@ -856,22 +855,9 @@ button.connexion, button.je-m-inscris {
         flex-direction: row;
     }
 
-    /*accueil*/
-    /* recherche*/
-    .recherche {
-        height: 42px;
-        width: 350px;
-        border-radius: 0 60px 60px 0;
-    }
-
-    #maRecherche {
-        padding: 5px 0 5px 20px;
-    }
-
-    .recherche button {
-        margin-top: 4px;
-        position: relative;
-        top: 3px;
+    /*envoi*/
+    .envoi a, .premium header a, .mails header a  {
+        padding-left: 15px;
     }
 }
 
@@ -980,5 +966,10 @@ button.connexion, button.je-m-inscris {
         margin-top: 4px;
         position: relative;
         top: 3px;
+    }
+
+    /*envoi*/
+    .envoi a, .premium header a, .mails header a  {
+        padding-left: 15px;
     }
 }
