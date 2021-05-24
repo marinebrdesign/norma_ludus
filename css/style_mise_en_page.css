@@ -128,7 +128,7 @@ h3#equipe, .contact > h3, #titre h3 {
     border-radius: 60px 0 0 60px;
 }
 
-.a-propos p { /*!!non fini!!*/
+.a-propos p {
     margin: 15px 15px 5px 15px;
     position: relative;
 }
@@ -547,6 +547,55 @@ form#ajouter-variante {
     float: right;
 }
 
+/*ajouter une règle*/
+#ajouter-regle {
+    box-sizing : border-box;
+    width: 100%;
+    max-width: 800px;
+    margin:0 auto 15px auto;
+    border: 3px solid #cf4c68;
+    border-radius: 30px;
+    padding: 30px 20px 30px 20px;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.3);
+}
+
+#ajouter-regle input, #ajouter-regle textarea {
+    width: 100%;
+    border-radius: 17px;
+    border: none;
+    padding: 10px;
+    box-sizing: border-box;
+    resize: vertical;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+#ajouter-regle textarea {
+    height: 200px;
+}
+
+.nom-j, .ajouter-des-photos {
+    margin: 0 auto;
+    position: relative;
+    box-sizing : border-box;
+    width: 100%;
+}
+
+.nom-j {
+    max-width: 90px;
+}
+
+.ajouter-des-photos {
+    max-width: 240px;
+ /*   position: relative;*/
+}
+
+.ajouter-des-photos > a > p{
+    max-width: 240px;
+    position: relative;
+    top: -25px;
+}
+
 /*page connexion et inscription*/
 body.connexion svg#logo, body.inscription {
     width: 234px;
@@ -868,7 +917,7 @@ button.connexion, button.je-m-inscris {
         left: 200px;
     }
 
-    /* a propos---non-fini*/
+    /* a propos---*/
     .a-propos {
         max-width: 400px;
         max-height: 440px;

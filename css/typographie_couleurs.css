@@ -190,8 +190,10 @@ svg#left_arrow {
 /*------bouton ajouter photos------ NON FINI*/
 svg#plus_ajouter {
     fill: #FFFFFF;
-    width: 55px;
-    height: 60px;
+    width: 35px;
+    height: 45px;
+    padding-bottom: 7px;
+    padding-right:10px;
 }
 
 .ajouter-des-photos {
