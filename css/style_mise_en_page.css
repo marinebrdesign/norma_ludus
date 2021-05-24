@@ -165,7 +165,6 @@ h3#equipe, .contact > h3, #titre h3 {
 }
 .mentions-legales h1 {
     text-align: center;
-    margin-top: 40px;
 }
 
 .mentions-legales header, .parametres header {
@@ -178,12 +177,12 @@ h3#equipe, .contact > h3, #titre h3 {
     margin-top: 30px;
 }
 
-/*parametres, mon profil(parametres), envoi, mails, premium*/
+/*parametres, mon profil(parametres), envoi, mails, premium, vendre un jeu, porte monnaie*/
 .parametres header {
     text-align: center;
 }
 
-.parametres_profil h1, .envoi h1, .mails h1, .premium h1, .vendre-un-jeu h1 {
+.parametres_profil h1, .envoi h1, .mails h1, .premium h1, .vendre-un-jeu h1, #porte-monnaie h1 {
     text-align: center;
     margin-top: 20px;
   }
@@ -226,7 +225,7 @@ h3#equipe, .contact > h3, #titre h3 {
     border-bottom:1px solid #707070;
 }
 
-.parametres_profil header, .envoi header, .mails header, .mails, .vendre-un-jeu header {
+.parametres_profil header, .envoi header, .mails header, .mails, .vendre-un-jeu header, #porte-monnaie header {
     border-bottom:42px solid #E4E4E4;
 }
 
@@ -239,7 +238,7 @@ h3#equipe, .contact > h3, #titre h3 {
     top: -5px;
 }
 
-.mails .retour button, .vendre-un-jeu .retour button {
+.mails .retour button, .vendre-un-jeu .retour button, #porte-monnaie .retour button {
     position: absolute;
     top: 65px;
 }
@@ -678,6 +677,30 @@ button.connexion, button.je-m-inscris {
     margin-top: 50px;
 }
 
+/*porte monnaie*/
+.montant-dispo h3 {
+    color: #707070;
+    font-size: 17px;
+    text-align: center;
+}
+
+.montant-dispo {
+    margin: 0 auto 30px auto;
+    position: relative;
+    max-width: 280px;
+}
+
+button.transfert {
+    box-sizing : border-box;
+    max-width: 100%;
+    margin:0 auto;
+}
+
+.solde-initial {
+    border-bottom:42px solid #E4E4E4;
+    border-top:42px solid #E4E4E4;
+
+}
 /*responsive*/
 @media screen and (max-width: 2000px) {
     /*equipe*/
@@ -722,7 +745,7 @@ button.connexion, button.je-m-inscris {
     }
 
     /*parametres, vendre un jeu*/
-    .parametres a, .parametres_profil label, .parametres_profil a, .parametres_profil p,.mails h3, .vendre-un-jeu label   {
+    .parametres a, .parametres_profil label, .parametres_profil a, .parametres_profil p,.mails h3, .vendre-un-jeu label, #porte-monnaie h4   {
         padding-left: 80px;
     }
 
@@ -731,7 +754,7 @@ button.connexion, button.je-m-inscris {
     }
 
     /*parametres mon profil, mails, vendre un jeu*/
-    .parametres_profil input, .mails input, .vendre-un-jeu input{
+    .parametres_profil input, .mails input, .vendre-un-jeu input {
         margin-left:80px;
     }
 
@@ -775,7 +798,7 @@ button.connexion, button.je-m-inscris {
     }
 
     /*envoi, mails, vendre un jeu*/
-    .envoi a, .premium header a, .mails header a, .vendre-un-jeu .retour a, .retour > button > a {
+    .envoi a, .premium header a, .mails header a, .vendre-un-jeu .retour a, .retour > button > a{
         padding-left: 100px;
     }
 }
@@ -822,7 +845,7 @@ button.connexion, button.je-m-inscris {
     }
 
     /*parametres, parametres mon profil, mails */
-    .parametres a, .parametres_profil label, .parametres_profil a, .parametres_profil p, .mails h3 {
+    .parametres a, .parametres_profil label, .parametres_profil a, .parametres_profil p, .mails h3, #porte-monnaie h4 {
         padding-left: 50px;
     }
 
@@ -949,7 +972,7 @@ button.connexion, button.je-m-inscris {
         margin-left:20px;
     }
 
-    .parametres_profil label, .parametres_profil a, .parametres_profil p, .mails h3 {
+    .parametres_profil label, .parametres_profil a, .parametres_profil p, .mails h3, #porte-monnaie h4 {
         padding-left:20px;
     }
 
