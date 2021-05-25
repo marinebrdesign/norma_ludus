@@ -476,24 +476,27 @@ h3 {
 /* bouton réglages*/
 .profil svg#reglages {
     fill: #000000;
-    width: 55px;
-    height: 79px;
+    width: 24px;
+    height: 24px;    padding: 0;
 }
 
 .profil button {
     background-color: white;
     border: none;
+    padding: 0;
 }
 
 .porte-monnaie svg#reglages {
     fill: #FFFFFF;
-    width: 55px;
-    height: 79px;
+    width: 24px;
+    height: 24px;
+    float: right;
+    background-color: #cf4c68;
 }
 
 .porte-monnaie button {
-    background-color: #CF4C68;
     border: none;
+    padding: 0;
 }
 
 h4 {
@@ -508,6 +511,10 @@ h4 {
     font-family: Roboto;
     font-weight: 500;
     background-color: #CF4C68;
+}
+
+.porte-monnaie {
+    background-color: #cf4c68;
 }
 
 /*------réseaux sociaux------*/
