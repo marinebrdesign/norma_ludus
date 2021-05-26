@@ -742,6 +742,11 @@ button.variante  {
     background-color: #FFE9AA;
 }
 
+form#inscription .mdp p {
+    font-size: 10px;
+    margin-bottom: 5px;
+}
+
 button.connexion {
     background-color: #CF4C68;
     border: none;
@@ -808,6 +813,7 @@ button.je-m-inscris {
     width: 150px;
     margin-top: 10px;
 }
+
 
 /*------mot de passe oublié------*/
 .mdp-oublie {

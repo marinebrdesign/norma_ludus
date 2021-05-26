@@ -22,23 +22,39 @@
     transition: all .4s ease-in-out;
 }
 
+.nav-toggle-bar {
+    width: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+
 .nav-toggle-bar::before {
     top: -5px;
+    width: 20px;
 }
 
 .nav-toggle-bar::after {
     top: 5px;
+    width: 20px;
 }
 
 .menu-open .nav-toggle-bar {
     transform: rotate(135deg);
     background-color: #000000;
+    width: 20px;
 }
 
 .menu-open .nav-toggle-bar::before,.menu-open .nav-toggle-bar::after {
     transform: rotate(90deg);
     background-color: #000000;
     top: 0;
+}
+
+/*logo*/
+nav.menu svg#logo {
+    height: 40px;
+    width: 105px;
+    top: 5px;
 }
 
 /*Menu*/
@@ -72,6 +88,7 @@
     padding:0;
     margin-right: auto;
     margin-left: auto;
+    width: 210px;
 }
 
 .menu li {
@@ -90,7 +107,7 @@
 }
 
 .menu li, .menu > li > h1 {
-    margin-bottom: 50px;
+    margin-bottom: 25px;
     transform: translateX(30px);
     opacity: 0;
     transition: all .4s ease;
