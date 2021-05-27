@@ -16,6 +16,7 @@ svg#logo {
     position: fixed;
     top: 0;
     left: 10px;
+    z-index: 2;
 }
 
 /*------retour------*/
@@ -929,6 +930,20 @@ button.transfert {
         top: -5px;
         left: 0;
     }
+
+    img#ligne.responsive {
+        width: 100%;
+        max-width: 2000px;
+        height: 60px;
+        max-height: 300px;
+    }
+
+    img#ligne {
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -1086,6 +1101,20 @@ button.transfert {
         top: -5px;
         left: 0;
     }
+
+    img#ligne.responsive {
+        width: 100%;
+        max-width: 2000px;
+        height: 60px;
+        max-height: 300px;
+    }
+
+    img#ligne {
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+    }
 }
 
 @media screen and (max-width: 480px){
@@ -1240,14 +1269,28 @@ button.transfert {
     img#img_nav.responsive {
         width: 100%;
         max-width: 2000px;
-        height: 180px;
+        height: 200px;
         max-height: 300px;
     }
 
     img#img_nav {
         position: absolute;
         z-index: -1;
-        top: 15px;
+        top: 0;
+        left: 0;
+    }
+
+    img#ligne.responsive {
+        width: 100%;
+        max-width: 2000px;
+        height: 60px;
+        max-height: 300px;
+    }
+
+    img#ligne {
+        position: fixed;
+        z-index: 1;
+        top: 0;
         left: 0;
     }
 
