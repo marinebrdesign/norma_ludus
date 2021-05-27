@@ -876,8 +876,8 @@ button.transfert {
 
     /*jeux*/
     .centrer {
-        margin-top:1vh; /* poussé de la moitié de hauteur de viewport */
-        transform: translateY(-1%); /* tiré de la moitié de sa propre hauteur */
+        margin-top:1vh;
+        transform: translateY(-1%);
     }
 
     .categories {
@@ -1033,8 +1033,8 @@ button.transfert {
 
 
     .centrer {
-        margin-top: 10vh; /* poussé de la moitié de hauteur de viewport */
-        transform: translateY(-10%); /* tiré de la moitié de sa propre hauteur */
+        margin-top: 10vh;
+        transform: translateY(-10%);
     }
 
     .categories {
@@ -1098,23 +1098,23 @@ button.transfert {
         height: 200px;
         position: relative;
         margin: 0 auto;
-        max-width: 372px;
+        max-width: 320px;
     }
 
     .lena img, .marine img, .nina img {
-        width: 90px;
-        height:90px;
+        width: 70px;
+        height: 70px;
     }
 
     .nina > address > p, .marine > address > p, .lena > address > p {
-        font-size: 12px;
+        font-size: 10px;
         margin: 0;
     }
 
     .nina > address > a, .marine > address > a, .lena > address > a {
         padding: 5px 10px 5px 10px;
         border-radius: 60px;
-        font-size: 10px;
+        font-size: 9px;
     }
 
     .nina, .marine, .lena {
@@ -1122,12 +1122,12 @@ button.transfert {
     }
 
     .marine {
-        left: 100px;
+        left: 80px;
         top: -40px;
     }
 
     .nina {
-        left: 200px;
+        left: 160px;
     }
 
     /* a propos---*/
@@ -1197,8 +1197,8 @@ button.transfert {
     }
 
     .centrer {
-        margin-top: 10vh; /* poussé de la moitié de hauteur de viewport */
-        transform: translateY(-10%); /* tiré de la moitié de sa propre hauteur */
+        margin-top: 10vh;
+        transform: translateY(-10%);
     }
 
     .categories {
