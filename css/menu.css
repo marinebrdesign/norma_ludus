@@ -88,11 +88,12 @@ nav.menu svg#logo {
     padding:0;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 80px;
     width: 210px;
 }
 
 .menu li {
-    padding-bottom: 15px;
+    padding-bottom: 20px;
 }
 
 .logo-menu {
@@ -134,3 +135,22 @@ nav.menu svg#logo {
 .menu-open .menu li :nth-child(n+5) { transition-delay: .5s;}
 .menu-open .menu li :nth-child(n+6) { transition-delay: .55s;}
 
+/*images*/
+img#vagues-haut-menu {
+    position: fixed;
+    top: 15px;
+
+}
+
+img#vagues-bas-menu {
+    position: fixed;
+    bottom: 0;
+}
+
+.responsive {
+    width: 100%;
+    max-width: 2000px;
+    height: 200px;
+    max-height: 500px;
+
+}

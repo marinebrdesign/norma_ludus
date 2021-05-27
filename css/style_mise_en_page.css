@@ -10,7 +10,6 @@ body {
 
 footer {
     margin-top: auto;
-    padding: 15px;
 }
 /*------logo------*/
 svg#logo {
@@ -22,7 +21,7 @@ svg#logo {
 /*------retour------*/
 .retour {
     margin-bottom: 10px;
-
+    margin-top: 10px;
 }
 
 /*------footer------*/
@@ -41,6 +40,13 @@ footer > a {
     display:block;
     text-align:center;
 }
+
+img#footer {
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+}
+
 /*------reseaux sociaux------*/
 footer li {
     padding: 0 10px 0 10px;
@@ -54,7 +60,7 @@ footer ul {
 }
 /*------index------*/
 main.index, main {
-    margin: 50px 5px 0 5px;
+    margin: 60px 5px 30px 5px;
 }
 /*------à propos------*/
 /* contact*/
@@ -146,6 +152,7 @@ h3#equipe, .contact > h3, #titre h3 {
 /*equipe*/
 .equipe {
     position: relative;
+    top: 35px;
 }
 
 .lena, .marine, .nina {
@@ -189,6 +196,10 @@ h3#equipe, .contact > h3, #titre h3 {
 
 .parametres ul, .parametres_profil ul {
     padding-left: 0;
+}
+
+.parametres_profil ul {
+    margin-bottom: 40px;
 }
 
 .parametres li,.parametres_profil li {
@@ -320,7 +331,7 @@ button.terminer {
 
 /*premium*/
 .premium {
-    margin: 0 15px 0 15px;
+    margin: 0 15px 30px 15px;
     position: relative;
 }
 
@@ -413,37 +424,7 @@ button.terminer {
 .vendre-jeu, .notifications{
     display: inline-block;
     position: relative;
-    top: -50px;
-}
-
-/*jeux*/
-.categories {
-    display: grid;
-    grid-template-columns: repeat(2, 140px);
-    grid-gap: 30px;
-    grid-auto-rows: minmax(100px, auto);
-    box-sizing : border-box;
-    width: 100%;
-    max-width: 310px;
-    margin:0 auto;
-}
-
-.j-de-plateau, .j-pions, .j-cartes, .j-des  {
-    height: 250px;
-    text-align: center;
-    box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.3);
-}
-
-.j-de-plateau h2, .j-pions h2, .j-cartes h2, .j-des h2{
-   padding-top: 20px;
-}
-
-.j-pions img, .j-cartes img, .j-des img {
-    padding-top: 10px;
-}
-
-.j-de-plateau img {
-    padding-top: 20px;
+    top: -45px;
 }
 
 /*j-cartes*/
@@ -453,6 +434,7 @@ button.terminer {
     max-width: 800px;
     margin:0 auto 15px auto;
     border: 3px solid #cf4c68;
+    background-color: white;
     border-radius: 30px;
     padding: 5px 20px 5px 20px;
     box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.3);
@@ -704,7 +686,7 @@ button.connexion {
 .ajouter button {
     box-sizing : border-box;
     width: 100%;
-    margin:0 auto;
+    margin:15px auto 0 auto;
 }
 
 /*vendre un jeu*/
@@ -751,6 +733,7 @@ button.transfert {
 }
 .profil {
     border: 3px solid #cf4c68;
+    background-color: white;
     box-sizing : border-box;
     width: 100%;
     max-width: 800px;
@@ -874,12 +857,13 @@ button.transfert {
     /* recherche*/
     .recherche {
         height: 42px;
-        width: 600px;
+        width: 250px;
         border-radius: 0 60px 60px 0;
     }
 
     #maRecherche {
         padding: 5px 0 5px 20px;
+        margin-right: 60px;
     }
 
     .recherche button {
@@ -888,9 +872,62 @@ button.transfert {
         top: 3px;
     }
 
-    /*envoi, mails, vendre un jeu*/
-    .envoi a, .premium header a, .mails header a, .vendre-un-jeu .retour a, .retour > button > a{
-        padding-left: 100px;
+
+
+    /*jeux*/
+    .centrer {
+        margin-top:1vh; /* poussé de la moitié de hauteur de viewport */
+        transform: translateY(-1%); /* tiré de la moitié de sa propre hauteur */
+    }
+
+    .categories {
+        display: grid;
+        grid-template-columns: repeat(2, 260px);
+        grid-gap: 40px;
+        grid-auto-rows: minmax(100px, auto);
+        box-sizing : border-box;
+        width: 100%;
+        max-width: 560px;
+        margin: 50px auto 0 auto;
+    }
+
+    .j-de-plateau, .j-pions, .j-cartes, .j-des  {
+        height: 400px;
+        text-align: center;
+        box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.3);
+    }
+
+    .j-de-plateau h2, .j-pions h2, .j-cartes h2, .j-des h2{
+        padding-top: 20px;
+    }
+
+    .j-pions img, .j-cartes img, .j-des img, .j-de-plateau img {
+        padding-top: 30px;
+        width: 200px;
+        height: 200px;
+    }
+
+    /*footer*/
+    img#footer.responsive {
+        width: 100%;
+        max-width: 2000px;
+        height: 210px;
+        max-height: 500px;
+    }
+
+    /*nav*/
+    img#img_nav.responsive {
+        width: 100%;
+        max-width: 2000px;
+        height: 300px;
+        max-height: 500px;
+    }
+
+    img#img_nav {
+        position: absolute;
+        z-index: -1;
+        top: -5px;
+        left: 0;
     }
 }
 
@@ -975,6 +1012,7 @@ button.transfert {
 
     #maRecherche {
         padding: 5px 0 5px 20px;
+        margin-right: 0;
     }
 
     .recherche button {
@@ -992,9 +1030,61 @@ button.transfert {
         flex-direction: row;
     }
 
-    /*envoi, mails, vendre un jeu*/
-    .envoi a, .premium header a, .mails header a, .vendre-un-jeu .retour a, .retour > button > a  {
-        padding-left: 15px;
+
+
+    .centrer {
+        margin-top: 10vh; /* poussé de la moitié de hauteur de viewport */
+        transform: translateY(-10%); /* tiré de la moitié de sa propre hauteur */
+    }
+
+    .categories {
+        display: grid;
+        grid-template-columns: repeat(2, 220px);
+        grid-gap: 30px;
+        grid-auto-rows: minmax(100px, auto);
+        box-sizing : border-box;
+        width: 100%;
+        max-width: 470px;
+        margin: 110px auto 0 auto;
+    }
+
+    .j-de-plateau, .j-pions, .j-cartes, .j-des  {
+        height: 330px;
+        text-align: center;
+        box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.3);
+    }
+
+    .j-de-plateau h2, .j-pions h2, .j-cartes h2, .j-des h2{
+        padding-top: 20px;
+    }
+
+    .j-pions img, .j-cartes img, .j-des img, .j-de-plateau img {
+        padding-top: 10px;
+        height: 200px;
+        width: 170px;
+    }
+
+    /*footer*/
+    img#footer.responsive {
+        width: 100%;
+        max-width: 2000px;
+        height: 225px;
+        max-height: 400px;
+    }
+
+    /*nav*/
+    img#img_nav.responsive {
+        width: 100%;
+        max-width: 2000px;
+        height: 300px;
+        max-height: 400px;
+    }
+
+    img#img_nav {
+        position: absolute;
+        z-index: -1;
+        top: -5px;
+        left: 0;
     }
 }
 
@@ -1097,6 +1187,7 @@ button.transfert {
 
     #maRecherche {
         padding: 5px 0 5px 20px;
+        margin-right: 0;
     }
 
     .recherche button {
@@ -1105,10 +1196,59 @@ button.transfert {
         top: 3px;
     }
 
-    /*envoi, mails, vendre un jeu*/
-    .envoi a, .premium header a, .mails header a, .vendre-un-jeu .retour a, .retour > button > a   {
-        padding-left: 15px;
+    .centrer {
+        margin-top: 10vh; /* poussé de la moitié de hauteur de viewport */
+        transform: translateY(-10%); /* tiré de la moitié de sa propre hauteur */
     }
 
+    .categories {
+        display: grid;
+        grid-template-columns: repeat(2, 140px);
+        grid-gap: 30px;
+        grid-auto-rows: minmax(100px, auto);
+        box-sizing : border-box;
+        width: 100%;
+        max-width: 310px;
+        margin:0 auto;
+    }
+
+    .j-de-plateau, .j-pions, .j-cartes, .j-des  {
+        height: 250px;
+        text-align: center;
+        box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.3);
+    }
+
+    .j-de-plateau h2, .j-pions h2, .j-cartes h2, .j-des h2{
+        padding-top: 20px;
+    }
+
+    .j-pions img, .j-cartes img, .j-des img, .j-de-plateau img {
+        padding-top: 10px;
+        height: 121px;
+        width: 100px;
+    }
+
+    /*footer*/
+    img#footer.responsive {
+        width: 100%;
+        max-width: 2000px;
+        height: 180px;
+        max-height: 300px;
+    }
+
+    /*nav*/
+    img#img_nav.responsive {
+        width: 100%;
+        max-width: 2000px;
+        height: 180px;
+        max-height: 300px;
+    }
+
+    img#img_nav {
+        position: absolute;
+        z-index: -1;
+        top: 15px;
+        left: 0;
+    }
 
 }
