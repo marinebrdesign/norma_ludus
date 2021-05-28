@@ -42,7 +42,7 @@ footer > a {
     text-align:center;
 }
 
-img#footer {
+img#footer, img#bas_connexion {
     position: absolute;
     z-index: -1;
     bottom: 0;
@@ -104,7 +104,7 @@ main.index, main {
     position: relative;
 }
 
-.nom, .prenom, .mail2, .msg {
+#contact .nom, #contact .prenom, #contact .mail2, #contact .msg {
     padding: 5px 0 5px 0;
 }
 
@@ -593,13 +593,9 @@ form#ajouter-variante {
 
 body.connexion svg#logo, body.inscription svg#logo, body.mdp-oublie svg#logo {
     width: 234px;
-    height: 89px;
+    height: 70px;
     position: relative;
     margin: 0 auto;
-}
-
-body.inscription, body.connexion, body.mdp-oublie {
-      margin: 30px 10px 0 10px;
 }
 
 #container {
@@ -609,7 +605,7 @@ body.inscription, body.connexion, body.mdp-oublie {
 
 #connexion, div.mdp-oublie, #inscription {
     box-sizing : border-box;
-    padding:20px;
+    padding:10px;
     width: 100%;
     max-width: 700px;
     margin:0 auto;
@@ -619,12 +615,24 @@ form#connexion label, form#connexion input, form#connexion a, form#inscription b
     display: table-cell;
 }
 
-form#connexion input, form#inscription input, div.mdp-oublie input {
+form#connexion input, div.mdp-oublie input {
     background-color: #ffe9aa;
     border: none;
     border-radius: 25px;
     color: #000000;
     margin: 10px 0 20px 0;
+    padding: 0 15px 0 15px;
+    width: 100%;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+form#inscription input {
+    background-color: #ffe9aa;
+    border: none;
+    border-radius: 25px;
+    color: #000000;
+    margin: 5px 0 5px 0;
     padding: 0 15px 0 15px;
     width: 100%;
     box-sizing: border-box;
@@ -660,7 +668,11 @@ form#connexion input {
 }
 
 form#inscription input, .mdp-oublie input {
-    height: 30px;
+    height: 35px;
+}
+
+#inscription .prenom, #inscription .nom {
+    margin: 0;
 }
 
 
@@ -947,6 +959,20 @@ button.transfert {
         top: 0;
         left: 0;
     }
+
+    img#bas_connexion.responsive {
+        width: 100%;
+        max-width: 2000px;
+        height: 130px;
+        max-height: 300px;
+    }
+
+    img#haut_connexion.responsive {
+        width: 100%;
+        max-width: 2000px;
+        height: 130px;
+        max-height: 300px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -1117,6 +1143,20 @@ button.transfert {
         z-index: 1;
         top: 0;
         left: 0;
+    }
+
+    img#bas_connexion.responsive {
+        width: 100%;
+        max-width: 2000px;
+        height: 150px;
+        max-height: 300px;
+    }
+
+    img#haut_connexion.responsive {
+        width: 100%;
+        max-width: 2000px;
+        height: 150px;
+        max-height: 300px;
     }
 }
 
@@ -1297,4 +1337,18 @@ button.transfert {
         left: 0;
     }
 
+    img#bas_connexion.responsive {
+        width: 100%;
+        max-width: 2000px;
+        height: 150px;
+        max-height: 300px;
+    }
+
+    img#haut_connexion.responsive {
+        width: 100%;
+        max-width: 2000px;
+        height: 150px;
+        max-height: 300px;
+    }
 }
+
