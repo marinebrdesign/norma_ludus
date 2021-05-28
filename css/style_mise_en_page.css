@@ -61,7 +61,7 @@ footer ul {
 }
 /*------index------*/
 main.index, main {
-    margin: 60px 5px 30px 5px;
+    margin: 60px 5px 50px 5px;
 }
 /*------à propos------*/
 /* contact*/
@@ -464,6 +464,7 @@ form#ajouter-variante {
     max-width: 800px;
     margin:0 auto 15px auto;
     border: 3px solid #cf4c68;
+    background-color: white;
     border-radius: 30px;
     padding: 30px 20px 30px 20px;
     box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.3);
@@ -546,6 +547,7 @@ form#ajouter-variante {
     max-width: 800px;
     margin:0 auto 15px auto;
     border: 3px solid #cf4c68;
+    background-color: white;
     border-radius: 30px;
     padding: 30px 20px 30px 20px;
     box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.3);
@@ -751,6 +753,7 @@ button.transfert {
     max-width: 800px;
     margin:0 auto 15px auto;
     border: 3px solid #cf4c68;
+    background-color: white;
     border-radius: 10px;
     padding: 30px 20px 30px 20px;
     box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.3);
