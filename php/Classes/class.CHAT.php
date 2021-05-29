@@ -1,46 +1,92 @@
 <?php
+
 require_once('class.UTILISATEUR.php');
 
 
 class CHAT{
-    public $ID_CHAT;
-    public $Message;
-    public $Date_Chat;
-    public $Heure_Chat;
+    private $ID_CHAT = 0;
+    private $Message = null;
+    private $Date_Chat = null;
+    private $Heure_Chat = null;
 
-    function setID_CHAT($chat){
-        $this->ID_CHAT=$chat;
-
+    /**
+     * CHAT constructor.
+     * @param int $ID_CHAT
+     * @param null $Message
+     * @param null $Date_Chat
+     * @param null $Heure_Chat
+     */
+    public function __construct($ID_CHAT, $Message, $Date_Chat, $Heure_Chat)
+    {
+        $this->ID_CHAT = $ID_CHAT;
+        $this->Message = $Message;
+        $this->Date_Chat = $Date_Chat;
+        $this->Heure_Chat = $Heure_Chat;
     }
 
-    function setMessage($mess){
-        $this->Message=$mess;
-
+    /**
+     * @return int
+     */
+    public function getIDCHAT()
+    {
+        return $this->ID_CHAT;
     }
 
-    function setDate_Chat($datechat){
-        $this->Date_Chat=$datechat;
-
+    /**
+     * @param int $ID_CHAT
+     */
+    public function setIDCHAT($ID_CHAT)
+    {
+        $this->ID_CHAT = $ID_CHAT;
     }
 
-    function setHeure_Chat($heurechat){
-        $this->Heure_Chat=$heurechat;
-
+    /**
+     * @return null
+     */
+    public function getMessage()
+    {
+        return $this->Message;
     }
 
-    function ajoutBDD{
-        $db = New PDO ('mysql:host=localhost;dbname=fruit;chargest=utf-8','root','');
+    /**
+     * @param null $Message
+     */
+    public function setMessage($Message)
+    {
+        $this->Message = $Message;
+    }
 
-        $req = $db->prepare("INSERT INTO CHAT (ID_C, message, Dateduchat, Heureduchat) VALUES  (:chat, :mess, :datechat, :heurechat)");
+    /**
+     * @return null
+     */
+    public function getDateChat()
+    {
+        return $this->Date_Chat;
+    }
 
-        $req -> execute (array(
-            ":chat"=> $this->iD_CHAT,
-            ":mess"=> $this->Message,
-            ":datechat"=> $this->Date_Chat,
-            ":heurechat"=> $this->Heure_Chat,
-        ));
+    /**
+     * @param null $Date_Chat
+     */
+    public function setDateChat($Date_Chat)
+    {
+        $this->Date_Chat = $Date_Chat;
+    }
+
+    /**
+     * @return null
+     */
+    public function getHeureChat()
+    {
+        return $this->Heure_Chat;
+    }
+
+    /**
+     * @param null $Heure_Chat
+     */
+    public function setHeureChat($Heure_Chat)
+    {
+        $this->Heure_Chat = $Heure_Chat;
     }
 
 }
-
 ?>

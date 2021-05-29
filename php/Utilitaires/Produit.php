@@ -20,7 +20,7 @@ VALUES (:prix,:etat,:statut");
 while($c = $_POST->fetch()) { ?>
     <b><?= $c['Prix'] ?>:</b> <?= $c['Etat'] ?><?= $c['Statut'] ?><br />
 
-    }
+<?php    }
 /*
 $db = new PDO('mysql:host=localhost;dbname=normaludus;','root','');
 $req = $db->prepare("S");

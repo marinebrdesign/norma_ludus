@@ -139,12 +139,14 @@ nav.menu svg#logo {
 img#vagues-haut-menu {
     position: fixed;
     top: 15px;
+    z-index: -1;
 
 }
 
 img#vagues-bas-menu {
     position: fixed;
     bottom: 0;
+    z-index: -1;
 }
 
 .responsive {

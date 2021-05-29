@@ -1,46 +1,95 @@
 <?php
+
 require_once('class.UTILISATEUR.php');
 
 
+class COMMENTAIRE
+{
+    private $ID_Commentaire = 0;
+    private $Commentaire_utilisateur = null;
+    private $Date_commentaire = null;
+    private $Heure = null;
 
-class COMMENTAIRE{
-    public $ID_Commentaire;
-    public $Commentaire_utilisateur;
-    public $Date_commentaire;
-    public $Heure;
-
-    function setID_Commentaire($idcomment){
-        $this->ID_Commentaire=$idcomment;
-
+    /**
+     * COMMENTAIRE constructor.
+     * @param int $ID_Commentaire
+     * @param null $Commentaire_utilisateur
+     * @param null $Date_commentaire
+     * @param null $Heure
+     */
+    public function __construct($ID_Commentaire,
+                                $Commentaire_utilisateur, $Date_commentaire, $Heure)
+    {
+        $this->ID_Commentaire = $ID_Commentaire;
+        $this->Commentaire_utilisateur = $Commentaire_utilisateur;
+        $this->Date_commentaire = $Date_commentaire;
+        $this->Heure = $Heure;
     }
 
-    function setCommentaire_utilisateur($comment){
-        $this->Commentaire_utilisateur=$comment;
-
+    /**
+     * @return int
+     */
+    public function getIDCommentaire()
+    {
+        return $this->ID_Commentaire;
     }
 
-    function setDate_commentaire($datecomment){
-        $this->Date_commentaire=$datecomment;
-
+    /**
+     * @param int $ID_Commentaire
+     */
+    public function setIDCommentaire($ID_Commentaire)
+    {
+        $this->ID_Commentaire = $ID_Commentaire;
     }
 
-    function setHeure($heurecomment){
-        $this->Heure=$heurecomment;
-
+    /**
+     * @return null
+     */
+    public function getCommentaireUtilisateur()
+    {
+        return $this->Commentaire_utilisateur;
     }
 
-    function ajoutBDD{
-        $db = New PDO ('mysql:host=localhost;dbname=fruit;chargest=utf-8','root','');
-
-        $req = $db->prepare("INSERT INTO COMMENTAIRE (ID_com, com, comdate, comhours) VALUES  (:idcomment, :comment, :datecomment, :heurecomment)");
-
-        $req -> execute (array(
-            ":idcomment"=> $this->ID_Commentaire,
-            ":comment"=> $this->Commentaire_utilisateur,
-            ":datecomment"=> $this->Date_commentaire,
-            ":heurecomment"=> $this->Heure,
-        ));
+    /**
+     * @param null $Commentaire_utilisateur
+     */
+    public function setCommentaireUtilisateur($Commentaire_utilisateur)
+    {
+        $this->Commentaire_utilisateur = $Commentaire_utilisateur;
     }
+
+    /**
+     * @return null
+     */
+    public function getDateCommentaire()
+    {
+        return $this->Date_commentaire;
+    }
+
+    /**
+     * @param null $Date_commentaire
+     */
+    public function setDateCommentaire($Date_commentaire)
+    {
+        $this->Date_commentaire = $Date_commentaire;
+    }
+
+    /**
+     * @return null
+     */
+    public function getHeure()
+    {
+        return $this->Heure;
+    }
+
+    /**
+     * @param null $Heure
+     */
+    public function setHeure($Heure)
+    {
+        $this->Heure = $Heure;
+    }
+
+
 }
-
 ?>

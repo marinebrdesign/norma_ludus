@@ -1,90 +1,209 @@
 <?php
+
+
 require_once('class.COMMENTAIRE.php');
 require_once('class.CATEGORIE.php');
 
 
-class JEU{
+class JEU
+{
 
-    public $ID_Jeu;
-    public $Photo_Jeu;
-    public $Regle_Jeu;
-    public $Nb_Participants;
-    public $Temps_Jeu;
-    public $Age_min;
-    public $Age_max;
-    public $ID_Regle_Utilisateur;
-    public $ID_categorie;
-    public $ID_Commentaire;
+    private $ID_Jeu = 0;
+    private $Photo_Jeu = null;
+    private $Regle_Jeu = null;
+    private $Nb_Participants = null;
+    private $Temps_Jeu = null;
+    private $Age_min = null;
+    private $Age_max = null;
 
-    function setID_JEU($Jeu){
-        $this->ID_Jeu=$Jeu;
+    /* Attribut données par associations*/
+    private $ID_Regle_Utilisateur = null;
+    private $ID_categorie = null;
+    private $ID_Commentaire = null;
 
-    }
-
-    function setPhoto_Jeu($photo){
-        $this->Photo_Jeu=$photo;
-
-    }
-
-    function setRegle_Jeu($reglejeu){
-        $this->Regle_Jeu=$reglejeu;
-
-    }
-
-    function setNb_Participants($participants){
-        $this->Nb_Participants=$participants;
-
-    }
-
-    function setTemps_Jeu($temps){
-        $this->Temps_Jeu=$temps;
-
-    }
-
-    function setAge_min($Amin){
-        $this->Age_min=$Amin;
+    /**
+     * JEU constructor.
+     * @param int $ID_Jeu
+     * @param null $Photo_Jeu
+     * @param null $Regle_Jeu
+     * @param null $Nb_Participants
+     * @param null $Temps_Jeu
+     * @param null $Age_min
+     * @param null $Age_max
+     */
+    public function __construct($ID_Jeu, $Photo_Jeu, $Regle_Jeu, $Nb_Participants,
+                                $Temps_Jeu, $Age_min, $Age_max)
+    {
+        $this->ID_Jeu = $ID_Jeu;
+        $this->Photo_Jeu = $Photo_Jeu;
+        $this->Regle_Jeu = $Regle_Jeu;
+        $this->Nb_Participants = $Nb_Participants;
+        $this->Temps_Jeu = $Temps_Jeu;
+        $this->Age_min = $Age_min;
+        $this->Age_max = $Age_max;
 
     }
 
-    function setAge_max($Amax){
-        $this->Age_max=$Amax;
-
+    /**
+     * @return int
+     */
+    public function getIDJeu()
+    {
+        return $this->ID_Jeu;
     }
 
-    function setID_Regle_Utilisateur($regle){
-        $this->ID_Regle_Utilisateur=$regle;
-
+    /**
+     * @param int $ID_Jeu
+     */
+    public function setIDJeu($ID_Jeu)
+    {
+        $this->ID_Jeu = $ID_Jeu;
     }
 
-    function setID_categorie($ID_cat){
-        $this->ID_categorie=$ID_cat;
-
+    /**
+     * @return null
+     */
+    public function getPhotoJeu()
+    {
+        return $this->Photo_Jeu;
     }
 
-    function setID_Commentaire($idcomment){
-        $this->ID_Commentaire=$idcomment;
-
+    /**
+     * @param null $Photo_Jeu
+     */
+    public function setPhotoJeu($Photo_Jeu)
+    {
+        $this->Photo_Jeu = $Photo_Jeu;
     }
 
-    function ajoutBDD{
-        $db = New PDO ('mysql:host=localhost;dbname=fruit;chargest=utf-8','root','');
-
-        $req = $db->prepare("INSERT INTO JEU (rJ, Picture, regleJ, Participantsnb, tempsJ,MinA, MaxA,ID_re ,cat_ID,ID_com) VALUES  ( :Jeu,:photo, :reglejeu,:participants,:temps,:Amin,:Amax,:regle,:ID_cat,:idcomment)");
-
-        $req -> execute (array(
-            ":Jeu"=> $this->ID_Jeu,
-            ":photo"=> $this->Photo_Jeu,
-            ":reglejeu"=> $this->Regle_Jeu,
-            ":participants"=> $this->Nb_Participants,
-            ":temps"=> $this->Temps_Jeu,
-            ":Amin"=> $this->Age_min,
-            ":Amax"=> $this->Age_max,
-            ":regle"=> $this->ID_Regle_Utilisateur,
-            ":ID_cat"=> $this->ID_categorie,
-            ":idcomment"=> $this->ID_Commentaire,
-        ));
+    /**
+     * @return null
+     */
+    public function getRegleJeu()
+    {
+        return $this->Regle_Jeu;
     }
+
+    /**
+     * @param null $Regle_Jeu
+     */
+    public function setRegleJeu($Regle_Jeu)
+    {
+        $this->Regle_Jeu = $Regle_Jeu;
+    }
+
+    /**
+     * @return null
+     */
+    public function getNbParticipants()
+    {
+        return $this->Nb_Participants;
+    }
+
+    /**
+     * @param null $Nb_Participants
+     */
+    public function setNbParticipants($Nb_Participants)
+    {
+        $this->Nb_Participants = $Nb_Participants;
+    }
+
+    /**
+     * @return null
+     */
+    public function getTempsJeu()
+    {
+        return $this->Temps_Jeu;
+    }
+
+    /**
+     * @param null $Temps_Jeu
+     */
+    public function setTempsJeu($Temps_Jeu)
+    {
+        $this->Temps_Jeu = $Temps_Jeu;
+    }
+
+    /**
+     * @return null
+     */
+    public function getAgeMin()
+    {
+        return $this->Age_min;
+    }
+
+    /**
+     * @param null $Age_min
+     */
+    public function setAgeMin($Age_min)
+    {
+        $this->Age_min = $Age_min;
+    }
+
+    /**
+     * @return null
+     */
+    public function getAgeMax()
+    {
+        return $this->Age_max;
+    }
+
+    /**
+     * @param null $Age_max
+     */
+    public function setAgeMax($Age_max)
+    {
+        $this->Age_max = $Age_max;
+    }
+
+    /**
+     * @return null
+     */
+    public function getIDRegleUtilisateur()
+    {
+        return $this->ID_Regle_Utilisateur;
+    }
+
+    /**
+     * @param null $ID_Regle_Utilisateur
+     */
+    public function setIDRegleUtilisateur($ID_Regle_Utilisateur)
+    {
+        $this->ID_Regle_Utilisateur = $ID_Regle_Utilisateur;
+    }
+
+    /**
+     * @return null
+     */
+    public function getIDCategorie()
+    {
+        return $this->ID_categorie;
+    }
+
+    /**
+     * @param null $ID_categorie
+     */
+    public function setIDCategorie($ID_categorie)
+    {
+        $this->ID_categorie = $ID_categorie;
+    }
+
+    /**
+     * @return null
+     */
+    public function getIDCommentaire()
+    {
+        return $this->ID_Commentaire;
+    }
+
+    /**
+     * @param null $ID_Commentaire
+     */
+    public function setIDCommentaire($ID_Commentaire)
+    {
+        $this->ID_Commentaire = $ID_Commentaire;
+    }
+
 
 }
-
 ?>

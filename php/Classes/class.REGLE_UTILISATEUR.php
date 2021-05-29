@@ -1,45 +1,93 @@
 <?php
+
 require_once('class.UTILISATEUR.php');
 
 
-class REGLE_UTILISATEUR{
-    public $ID_Regle_Utilisateur;
-    public $Contenu;
-    public $Date_post;
-    public $Heure_post;
+class REGLE_UTILISATEUR
+{
+    private $ID_Regle_Utilisateur = 0;
+    private $Contenu = null;
+    private $Date_post = null;
+    private $Heure_post = null;
 
-    function setID_Regle_Utilisateur($regle){
-        $this->ID_Regle_Utilisateur=$regle;
-
+    /**
+     * REGLE_UTILISATEUR constructor.
+     * @param int $ID_Regle_Utilisateur
+     * @param null $Contenu
+     * @param null $Date_post
+     * @param null $Heure_post
+     */
+    public function __construct($ID_Regle_Utilisateur, $Contenu, $Date_post, $Heure_post)
+    {
+        $this->ID_Regle_Utilisateur = $ID_Regle_Utilisateur;
+        $this->Contenu = $Contenu;
+        $this->Date_post = $Date_post;
+        $this->Heure_post = $Heure_post;
     }
 
-    function setContenu($contenu){
-        $this->Contenu=$contenu;
-
+    /**
+     * @return int
+     */
+    public function getIDRegleUtilisateur()
+    {
+        return $this->ID_Regle_Utilisateur;
     }
 
-    function setDate_post($datepost){
-        $this->Date_post=$datepost;
-
+    /**
+     * @param int $ID_Regle_Utilisateur
+     */
+    public function setIDRegleUtilisateur($ID_Regle_Utilisateur)
+    {
+        $this->ID_Regle_Utilisateur = $ID_Regle_Utilisateur;
     }
 
-    function setHeure_post($heurepost){
-        $this->Heure_post=$heurepost;
-
+    /**
+     * @return null
+     */
+    public function getContenu()
+    {
+        return $this->Contenu;
     }
 
-    function ajoutBDD{
-        $db = New PDO ('mysql:host=localhost;dbname=fruit;chargest=utf-8','root','');
-
-        $req = $db->prepare("INSERT INTO REGLE_UTILISATEUR (ID_re, post, postdate, posthours) VALUES  (:regle, :contenu, :datepost, :heurepost)");
-
-        $req -> execute (array(
-            ":regle"=> $this->ID_Regle_Utilisateur,
-            ":contenu"=> $this->Contenu,
-            ":datepost"=> $this->Date_post,
-            ":heurepost"=> $this->Heure_post,
-        ));
+    /**
+     * @param null $Contenu
+     */
+    public function setContenu($Contenu)
+    {
+        $this->Contenu = $Contenu;
     }
+
+    /**
+     * @return null
+     */
+    public function getDatePost()
+    {
+        return $this->Date_post;
+    }
+
+    /**
+     * @param null $Date_post
+     */
+    public function setDatePost($Date_post)
+    {
+        $this->Date_post = $Date_post;
+    }
+
+    /**
+     * @return null
+     */
+    public function getHeurePost()
+    {
+        return $this->Heure_post;
+    }
+
+    /**
+     * @param null $Heure_post
+     */
+    public function setHeurePost($Heure_post)
+    {
+        $this->Heure_post = $Heure_post;
+    }
+
 }
-
 ?>

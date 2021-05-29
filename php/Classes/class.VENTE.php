@@ -2,75 +2,169 @@
 require_once('class.UTILISATEUR.php');
 
 
-class VENTE{
+class VENTE
+{
 
-    public $ID_paypal;
-    public $Statut_paiement;
-    public $Comission;
-    public $Prix;
-    public $Date_paiement;
-    public $Email_paiement;
-    public $ID_utilisateur;
-    public $ID_utilisateur1;
+    private $ID_paypal = 0;
+    private $Statut_paiement = null;
+    private $Comission = null;
+    private $Prix = null;
+    private $Date_paiement = null;
+    private $Email_paiement = null;
 
+    /* Attribut données par associations*/
+    private $ID_utilisateur = null;
+    private $ID_utilisateur1 = null;
 
-
-    function setID_paypal($paypal){
-        $this->ID_paypal=$paypal;
-
+    /**
+     * VENTE constructor.
+     * @param int $ID_paypal
+     * @param null $Statut_paiement
+     * @param null $Comission
+     * @param null $Prix
+     * @param null $Date_paiement
+     * @param null $Email_paiement
+     * @param null $ID_utilisateur
+     * @param null $ID_utilisateur1
+     */
+    public function __construct($ID_paypal, $Statut_paiement, $Comission, $Prix, $Date_paiement, $Email_paiement)
+    {
+        $this->ID_paypal = $ID_paypal;
+        $this->Statut_paiement = $Statut_paiement;
+        $this->Comission = $Comission;
+        $this->Prix = $Prix;
+        $this->Date_paiement = $Date_paiement;
+        $this->Email_paiement = $Email_paiement;
     }
 
-    function setStatut_paiement($Statut_paie){
-        $this->Statut_paiement=$Statut_paie;
-
+    /**
+     * @return int
+     */
+    public function getIDPaypal()
+    {
+        return $this->ID_paypal;
     }
 
-    function setComission($comission){
-        $this->Comission=$comission;
-
+    /**
+     * @param int $ID_paypal
+     */
+    public function setIDPaypal($ID_paypal)
+    {
+        $this->ID_paypal = $ID_paypal;
     }
 
-    function setPrix($prix){
-        $this->Prix=$prix;
-
+    /**
+     * @return null
+     */
+    public function getStatutPaiement()
+    {
+        return $this->Statut_paiement;
     }
 
-    function setDate_paiement($date_paie){
-        $this->Date_paiement=$date_paie;
-
+    /**
+     * @param null $Statut_paiement
+     */
+    public function setStatutPaiement($Statut_paiement)
+    {
+        $this->Statut_paiement = $Statut_paiement;
     }
 
-    function setEmail_paiement($email_paie){
-        $this->Email_paiement=$email_paie;
-
+    /**
+     * @return null
+     */
+    public function getComission()
+    {
+        return $this->Comission;
     }
 
-    function setID_utilisateur($ID_util){
-        $this->ID_utilisateur=$ID_util;
-
+    /**
+     * @param null $Comission
+     */
+    public function setComission($Comission)
+    {
+        $this->Comission = $Comission;
     }
 
-    function setID_utilisateur1($ID_util1){
-        $this->ID_utilisateur1=$ID_util1;
-
+    /**
+     * @return null
+     */
+    public function getPrix()
+    {
+        return $this->Prix;
     }
 
-    function ajoutBDD{
-        $db = New PDO ('mysql:host=localhost;dbname=fruit;chargest=utf-8','root','');
-
-        $req = $db->prepare("INSERT INTO VENTE (ID_pay, statutpaiement, Comissionvente, Price, Datepaiement,email_paypal) VALUES  (:paypal, :Statut_paie, :prix, :date_paie, :email_paie, :ID_util, :ID_util1 )");
-
-        $req -> execute (array(
-            ":paypal"=> $this->ID_paypal,
-            ":Staut_paie"=> $this->Statut_paiement,
-            ":comission"=> $this->Comission,
-            ":prix"=> $this->Prix,
-            ":date_paie"=> $this->Date_paiement,
-            ":email_paie"=> $this->Email_paiement,
-            ":ID_util"=> $this->ID_utilisateur,
-            ":ID_util1"=> $this->ID_utilisateur1,
-        ));
+    /**
+     * @param null $Prix
+     */
+    public function setPrix($Prix)
+    {
+        $this->Prix = $Prix;
     }
+
+    /**
+     * @return null
+     */
+    public function getDatePaiement()
+    {
+        return $this->Date_paiement;
+    }
+
+    /**
+     * @param null $Date_paiement
+     */
+    public function setDatePaiement($Date_paiement)
+    {
+        $this->Date_paiement = $Date_paiement;
+    }
+
+    /**
+     * @return null
+     */
+    public function getEmailPaiement()
+    {
+        return $this->Email_paiement;
+    }
+
+    /**
+     * @param null $Email_paiement
+     */
+    public function setEmailPaiement($Email_paiement)
+    {
+        $this->Email_paiement = $Email_paiement;
+    }
+
+    /**
+     * @return null
+     */
+    public function getIDUtilisateur()
+    {
+        return $this->ID_utilisateur;
+    }
+
+    /**
+     * @param null $ID_utilisateur
+     */
+    public function setIDUtilisateur($ID_utilisateur)
+    {
+        $this->ID_utilisateur = $ID_utilisateur;
+    }
+
+    /**
+     * @return null
+     */
+    public function getIDUtilisateur1()
+    {
+        return $this->ID_utilisateur1;
+    }
+
+    /**
+     * @param null $ID_utilisateur1
+     */
+    public function setIDUtilisateur1($ID_utilisateur1)
+    {
+        $this->ID_utilisateur1 = $ID_utilisateur1;
+    }
+
 }
 
 ?>

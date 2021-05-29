@@ -123,7 +123,7 @@ main.index a {
 }
 
 /*jeux cartes*/
-#dooble {
+#dooble,#bataille, #loup-garou, #jeu-dames {
     font-family: Roboto;
     font-weight: 900;
     color: #000;
@@ -730,7 +730,7 @@ button.variante  {
     font-weight: 400;
 }
 
-/*------page connexion------*/
+/*------pages connexion------*/
 #container {
     color: #000000;
     font-family: Roboto;
@@ -789,7 +789,7 @@ button.connexion {
     display: inline-block;
 }
 
-/*------page inscription------*/
+/*------pages inscription------*/
 input#prenom\/nom, input#age, input#id, input#mail, input#mdp {
     color: black;
     font-family: Roboto;
@@ -908,7 +908,7 @@ input#poster_comm {
 }
 
 /*responsive*/
-@media screen and (max-width: 2000px) {
+@media screen and (max-width: 3000px) {
     /*footer*/
     footer a {
         font-size: 14px;
