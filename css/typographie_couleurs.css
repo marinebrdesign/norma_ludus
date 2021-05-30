@@ -19,7 +19,7 @@
 }
 
 /*------logo------*/
-svg#logo {
+img#logo {
     width: 120px;
     height: 50px;
 }
@@ -516,10 +516,6 @@ h4 {
     background-color: #CF4C68;
 }
 
-.porte-monnaie {
-    background-color: #cf4c68;
-}
-
 /*------réseaux sociaux------*/
 .reseaux.module-footer li {
     display: inline-block;
@@ -730,7 +726,7 @@ button.variante  {
     font-weight: 400;
 }
 
-/*------pages connexion------*/
+/*------page connexion------*/
 #container {
     color: #000000;
     font-family: Roboto;
@@ -853,7 +849,7 @@ button.mdp-o {
     font-weight: 500;
 }
 
-#ajouter-regle input, textarea {
+#ajouter-regle input, textarea, #ajouter-regle select {
     color: black;
     font-family: Roboto;
     font-weight: 400;

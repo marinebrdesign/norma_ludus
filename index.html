@@ -3,17 +3,6 @@
 <head>
     <title>Norma Ludus</title>
 
-    <!-- JQuery Avant Bootstrap -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-
-    <!-- Bootstrap 4 -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <!-- Font-awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-
-
     <!-- VueJS -->
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <!-- Vue-router pour injection des composants => routage & navigation -->
@@ -22,23 +11,21 @@
     <!-- Lib Axios pour Ajax -->
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
-    <!-- Librairie momentJS -->
+    <!-- Librairie momentJS : format dates -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js">
     </script>
 
     <!-- Css de la maquette -->
-    <link rel="stylesheet" href="css/style.css">
 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Accueil</title>
         <script src="https://kit.fontawesome.com/6113af7c7c.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="css/typographie_couleurs.css">
         <link rel="stylesheet" href="css/menu.css">
         <link rel="stylesheet" href="css/style_mise_en_page.css">
     </head>
-<body class=" ">
-<div class="container" id="app">
+<body>
+<div id="app">
     <!-- Point d'injection des composants -->
     <router-view></router-view>
 </div>
@@ -93,25 +80,72 @@
 
 <!-- les pages utilisés -->
 <script src="pages/Accueil.vue.js"></script>
-
-
-<!--
+<script src="pages/a-propos.vue.js"></script>
+<script src="pages/abonnement.vue.js"></script>
+<script src="pages/acheter-jeux.vue.js"></script>
+<script src="pages/ajouter-regle.vue.js"></script>
+<script src="pages/ajouter-variante.vue.js"></script>
+<script src="pages/bataille.vue.js"></script>
+<script src="pages/dooble.vue.js"></script>
+<script src="pages/envoi.vue.js"></script>
+<script src="pages/j-cartes.vue.js"></script>
+<script src="pages/j-des.vue.js"></script>
+<script src="pages/j-pions.vue.js"></script>
+<script src="pages/j-plateau.vue.js"></script>
+<script src="pages/jeu-de-dames.vue.js"></script>
+<script src="pages/loup-garou.vue.js"></script>
+<script src="pages/mails.vue.js"></script>
+<script src="pages/mdp-oublie.vue.js"></script>
+<script src="pages/mentions-legales.vue.js"></script>
+<script src="pages/mes-parametres.vue.js"></script>
+<script src="pages/mon-profil.vue.js"></script>
+<script src="pages/notifications.vue.js"></script>
+<script src="pages/page-connexion.vue.js"></script>
+<script src="pages/page-inscription.vue.js"></script>
+<script src="pages/paramètre-mon-profil.vue.js"></script>
+<script src="pages/passer-premium.vue.js"></script>
+<script src="pages/paypal.vue.js"></script>
+<script src="pages/porte-monnaie.vue.js"></script>
+<script src="pages/vendre-jeux.vue.js"></script>
 <script src="pages/acheter-jeux.vue.js"></script>
 <script src="pages/vendre-jeux.vue.js"></script>
 <script src="pages/mon-profil.vue.js"></script>
 <script src="pages/mes-parametres.vue.js"></script>
-<script src="pages/a-propos.vue.js"></script>-->
+<script src="pages/a-propos.vue.js"></script>
 
 
 <script>
     // les routages / navigations de l'application
     var routes = [
-        { path: '/', 				        component: Accueil },
-        /*{ path: '/acheter-jeux.vue.js', 	component: Acheter-jeux.vue.js },
-        { path: '/vendre-jeux.vue.js', 	            component: Vendre-jeux.vue.js },
-        { path: '/mon-profil.vue.js', 		        component: Mon-profil.vue.js },
-        { path: '/mes-parametres.vue.js', 		        component: Mes-parametres.vue.js },
-        { path: '/a-propos.vue.js', 		        component: A-propos.vue.js }*/
+        { path: '/', 				        component: Accueil,         alias:'/accueil' },
+        { path: '/a-propos', 		        component: APropos },
+        { path: '/acheter-jeux', 	        component: AcheterJeux},
+        { path: '/vendre-jeux', 	        component: VendreJeux},
+        { path: '/mon-profil', 		        component: MonProfil},
+        { path: '/mes-parametres', 		    component: MesParametres},
+        { path: '/j-cartes', 		        component: JCartes},
+        { path: '/j-des', 		            component: JDes},
+        { path: '/j-pions', 		        component: JPions},
+        { path: '/j-plateau', 		        component: JPlateau},
+        { path: '/abonnement', 		        component: Abonnement},
+        { path: '/ajouter-regle', 		    component: AjouterRegle},
+        { path: '/ajouter-variante', 		component: AjouterVariante},
+        { path: '/bataille', 		        component: Bataille},
+        { path: '/dooble', 		            component: Dooble},
+        { path: '/envoi', 		            component: Envoi},
+        { path: '/jeu-de-dames', 		    component: JeuDeDames},
+        { path: '/loup-garou', 		        component: LoupGarou},
+        { path: '/mails', 		            component: Mails},
+        { path: '/mdp-oublie', 		        component: MDPOublie},
+        { path: '/mentions-legales', 		component: MentionsLegales},
+        { path: '/notifications', 		    component: Notifications},
+        { path: '/page-connexion', 		    component: PageConnexion},
+        { path: '/page-inscription', 		component: PageInscription},
+        { path: '/parametre-mon-profil', 	component: ParametreMonProfil},
+        { path: '/passer-premium', 		    component: PasserPrenium},
+        { path: '/paypal', 		            component: Paypal},
+        { path: '/porte-monnaie', 		    component: PorteMonnaie},
+
 
     ];
 

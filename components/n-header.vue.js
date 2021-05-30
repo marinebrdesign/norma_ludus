@@ -10,6 +10,9 @@ var NHeader = Vue.component('n-header',{
         }
     },
     mounted(){
+       /* axios.get('/img/logo.svg').then((response) => {
+            this.logo = response.data;
+        });*/
     },
     methods:{
     }
