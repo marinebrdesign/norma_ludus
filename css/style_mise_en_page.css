@@ -467,6 +467,10 @@ button.terminer {
     padding: 0;
 }
 
+img#img_dooble, img#img_loup_garou, img#img_bataille, img#img_jeu_dame {
+    width: 80%;
+}
+
 .acheter, .ajouter-variante {
     margin: 0 auto;
     position: relative;
@@ -1152,7 +1156,7 @@ button.transfert {
         box-sizing : border-box;
         width: 100%;
         max-width: 470px;
-        margin: 110px auto 0 auto;
+        margin: 20px auto 0 auto;
     }
 
     /*footer*/
@@ -1356,7 +1360,7 @@ button.transfert {
         box-sizing : border-box;
         width: 100%;
         max-width: 310px;
-        margin:0 auto;
+        margin:50px auto 0 auto;
     }
 
     /*footer*/

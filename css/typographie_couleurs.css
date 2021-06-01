@@ -1,4 +1,5 @@
 /*------menu------*/
+/*------menu------*/
 .menu {
     font-family: Roboto;
     font-weight: 500;
@@ -141,8 +142,10 @@ main.index a {
     box-sizing : border-box;
     width: 100%;
     max-width: 310px;
-    margin:0 auto;
+    margin:20px auto 0 auto;
+    text-align: center;
 }
+
 /*------titres------*/
 h1 {
     font-family: Roboto;
