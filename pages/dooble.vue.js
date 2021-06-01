@@ -43,13 +43,13 @@ var Dooble = Vue.component('Dooble',{
     </div>
   </div>
   <div class="commentaire">
-    <form id="commentaire" method="POST">
+    <form id="commentaire">
       <h2>Commentaires</h2>
       <label for="pseudo"></label>
-      <input type="text" id="pseudo" name="pseudo" placeholder="Votre pseudo" /><br />
+      <input type="text" id="pseudo" name="pseudo" placeholder="Votre pseudo"/><br/>
       <label for="votre_commentaire"></label>
-      <textarea name="commentaire" id="votre_commentaire" placeholder="Votre commentaire..."></textarea><br />
-      <input type="submit" id="poster_comm" value="Poster mon commentaire" name="submit_commentaire" />
+      <textarea name="commentaire" id="votre_commentaire"  placeholder="Votre commentaire..."></textarea><br/>
+      <input type="submit" id="poster_comm"  value="Poster mon commentaire" name="submit_commentaire"/>
     </form>
   </div>
 </main>

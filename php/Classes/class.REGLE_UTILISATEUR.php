@@ -3,8 +3,7 @@
 require_once('class.UTILISATEUR.php');
 
 
-class REGLE_UTILISATEUR
-{
+class REGLE_UTILISATEUR implements JsonSerializable {
     private $ID_Regle_Utilisateur = 0;
     private $Contenu = null;
     private $Date_post = null;
@@ -88,6 +87,10 @@ class REGLE_UTILISATEUR
     {
         $this->Heure_post = $Heure_post;
     }
+
+    public function jsonSerialize() {
+    return get_object_vars($this);
+}
 
 }
 ?>

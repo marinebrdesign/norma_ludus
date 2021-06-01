@@ -18,6 +18,9 @@ var JCartes = Vue.component('JCartes',{
         <div id="dooble">
             <router-link to="dooble"><h3>Dooble</h3><img src="" alt="img-dooble" data-toShow="bataille-visit"></router-link>
         </div>
+        <div v-for="regle in regles" :key="regle.Contenu">
+           {{ regle.Contenu }}
+        </div>
     </div>
 </main>
 <n-footer></n-footer>
@@ -29,18 +32,14 @@ var JCartes = Vue.component('JCartes',{
 data(){
     return {
 
-        /* titre: 'Page d\'accueil',
-         liste: null,
-         listeCategories: null,
-         je_veux_le_header: false*/
+        regles: null,
+
     }
 },
 mounted(){
     /*axios.get('http://localhost/normaludus - Copie/php/Utilitaires/Produit.php').then((response) => {
-        this.listeCategories = response.data;
-    });
-    this.liste = [1, 2, 3];*/
-    this.template
+        this.regles = response.data;
+    });*/
 },
 methods:{
 }

@@ -1,3 +1,9 @@
+#app {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
 html, body {
     height: 100%;
     padding: 0;
@@ -35,11 +41,16 @@ img#logo {
 
 /*------footer------*/
 footer {
-    position: relative;
+    /*position: relative;*/
     bottom: 0;
     right: 0;
     left: 0;
     margin-top: auto;
+    background-image: url("../img/footer_nav/footer.png");
+    padding-top: 29.95px;
+    height: auto;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
 footer > p  {

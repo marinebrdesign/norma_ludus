@@ -3,7 +3,7 @@
 require_once('class.UTILISATEUR.php');
 
 
-class CHAT{
+class CHAT implements JsonSerializable {
     private $ID_CHAT = 0;
     private $Message = null;
     private $Date_Chat = null;
@@ -86,6 +86,10 @@ class CHAT{
     public function setHeureChat($Heure_Chat)
     {
         $this->Heure_Chat = $Heure_Chat;
+    }
+
+    public function jsonSerialize() {
+        return get_object_vars($this);
     }
 
 }

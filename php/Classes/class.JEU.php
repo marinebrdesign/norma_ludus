@@ -5,8 +5,7 @@ require_once('class.COMMENTAIRE.php');
 require_once('class.CATEGORIE.php');
 
 
-class JEU
-{
+class JEU implements JsonSerializable {
 
     private $ID_Jeu = 0;
     private $Photo_Jeu = null;
@@ -204,6 +203,8 @@ class JEU
         $this->ID_Commentaire = $ID_Commentaire;
     }
 
-
+    public function jsonSerialize() {
+        return get_object_vars($this);
+    }
 }
 ?>

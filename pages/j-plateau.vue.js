@@ -7,10 +7,14 @@ var JPlateau = Vue.component('JPlateau',{
     <n-barre-recherche></n-barre-recherche>
   <div class="ajouter">
     <button><router-link to="ajouter-regle">Ajouter une règle</router-link></button>
-  </div>  <div class="jeux">
-  <div id="jeu-dames">
-    <router-link to="eu-de-dames"><h3>Le Jeu des Dames</h3><img src="" alt="img-bataille" data-toShow="bataille-visit"></router-link>
-  </div>
+  </div>  
+  <div class="jeux">
+    <div id="jeu-dames">
+        <router-link to="jeu-de-dames"><h3>Le Jeu des Dames</h3><img src="" alt="img-bataille" data-toShow="bataille-visit"></router-link>
+    </div>
+    <div v-for="regle in regles" :key="regle.Contenu">
+           {{ regle.Contenu }}
+    </div>
   </div>
 </main>
 <n-footer></n-footer>

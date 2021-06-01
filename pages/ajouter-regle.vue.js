@@ -19,8 +19,8 @@ var AjouterRegle = Vue.component('AjouterRegle',{
       <label for="categorie">Catégories</label>
       <!--<input type="text" placeholder="ex : Jeu de cartes" id="categorie" v-model="categorie" required>-->
         <select v-model="idCategorie">
-          <option v-for="categorie in categories" v-bind:value="categorie.id">
-            {{ categorie.text }}
+          <option v-for="categorie in categories" :value="categorie.ID_categorie" :key="categorie.ID_categorie">
+            {{ categorie.Nom_Categorie }}
           </option>
         </select>
     </div>
@@ -60,7 +60,7 @@ var AjouterRegle = Vue.component('AjouterRegle',{
               `,
 
   data(){
-    nomDuJeu = '';
+    /*nomDuJeu = '';
     idCategorie = '';
     nombreDeJoueur = '';
     tempsDeJeu = '';
@@ -72,20 +72,23 @@ var AjouterRegle = Vue.component('AjouterRegle',{
         { id: 2, text: 'Jeu de pions'},
         { id: 3, text: 'Jeu de cartes'},
         { id: 4, text: 'Jeu de dés'},
-    ];
+    ];*/
     return {
-
-      /* titre: 'Page d\'accueil',
-       liste: null,
-       listeCategories: null,
-       je_veux_le_header: false*/
+        categories: null,
+        nomDuJeu : '',
+        idCategorie : '',
+        nombreDeJoueur : '',
+        tempsDeJeu : '',
+        ageMinimum : '',
+        ageMaximum : '',
+        regles : '',
     }
   },
   mounted(){
-    /*axios.get('http://localhost/normaludus - Copie/php/Utilitaires/Produit.php').then((response) => {
-        this.listeCategories = response.data;
+    axios.get('http://tp/normaludus/php/Utilitaires/recuperer_categories.php').then((response) => {
+        this.categories = response.data;
+        console.log(this.categories);
     });
-    this.liste = [1, 2, 3];*/
   },
   methods:{
     ajouterRegle() {

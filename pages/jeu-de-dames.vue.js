@@ -36,7 +36,7 @@ var JeuDeDames = Vue.component('JeuDeDames',{
     </div>
   </div>
   <div class="commentaire">
-    <form id="commentaire" method="POST">
+    <form id="commentaire">
       <h2>Commentaires</h2>
       <label for="pseudo"></label>
       <input type="text" id="pseudo" name="pseudo" placeholder="Votre pseudo" /><br />

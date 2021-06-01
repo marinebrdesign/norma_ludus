@@ -1,5 +1,7 @@
-<meta charset="utf-8" />
 <?php
+
+require_once '../connexion.php';
+
 $bdd = new PDO('mysql:host=127.0.0.1;dbname=espace_commentaires;charset=utf8','root','');
 if(isset($_GET['id']) AND !empty($_GET['id'])) {
     $getid = htmlspecialchars($_GET['id']);

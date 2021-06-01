@@ -47,7 +47,7 @@ var APropos = Vue.component('APropos',{
     <div class="contact">
         <h3>Nous contacter</h3>
         <div class="formulaire_contact">
-            <form action="formulaire_de_contact" method="post" id="contact">
+            <form id="contact">
                 <div class="nom">
                     <label for="nom"></label>
                     <input type="text" placeholder="Nom" id="nom" name="user_name" required>

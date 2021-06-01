@@ -1,6 +1,5 @@
 <?php
-
-$parametres = parse_ini_file("param/param.ini");
+$parametres = parse_ini_file(__DIR__."/../parametres/param.ini");
 
 // connexion à la bdd avec fichier de paramètres
 $pdo = new PDO(

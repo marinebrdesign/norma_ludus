@@ -2,9 +2,10 @@
 require_once('class.JEU.php');
 
 
-class CATEGORIE{
+class CATEGORIE implements JsonSerializable {
     private $ID_categorie=0;
     private $Nom_Categorie=null;
+
 
     /**
      * CATEGORIE constructor.
@@ -49,7 +50,12 @@ class CATEGORIE{
         $this->Nom_Categorie = $Nom_Categorie;
     }
 
+    public function jsonSerialize() {
+        return get_object_vars($this);
+    }
+
 }
 ?>
+
 
 

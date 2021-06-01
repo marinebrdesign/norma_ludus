@@ -2,8 +2,7 @@
 require_once('class.VENTE.php');
 
 
-class PRODUIT
-{
+class PRODUIT implements JsonSerializable {
     private $ID_ProduiT = 0;
     private $Prix = null;
     private $Etat = null;
@@ -105,6 +104,10 @@ class PRODUIT
     public function setIDPaypal($ID_paypal)
     {
         $this->ID_paypal = $ID_paypal;
+    }
+
+    public function jsonSerialize() {
+        return get_object_vars($this);
     }
 
 }

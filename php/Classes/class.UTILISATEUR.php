@@ -5,8 +5,7 @@ require_once('class.COMMENTAIRE.php');
 require_once('class.VENTE.php');
 require_once('class.REGLE_UTILISATEUR.php');
 
-class UTILISATEUR
-{
+class UTILISATEUR implements JsonSerializable {
     private $ID_utilisateur = 0;
     private $Nom_utilisateur = null;
     private $Prenom_utilisateur = null;
@@ -201,6 +200,10 @@ class UTILISATEUR
     public function setIDCommentaire($ID_Commentaire)
     {
         $this->ID_Commentaire = $ID_Commentaire;
+    }
+
+    public function jsonSerialize() {
+        return get_object_vars($this);
     }
 
 }

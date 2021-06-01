@@ -2,8 +2,7 @@
 require_once('class.UTILISATEUR.php');
 
 
-class VENTE
-{
+class VENTE implements JsonSerializable {
 
     private $ID_paypal = 0;
     private $Statut_paiement = null;
@@ -163,6 +162,10 @@ class VENTE
     public function setIDUtilisateur1($ID_utilisateur1)
     {
         $this->ID_utilisateur1 = $ID_utilisateur1;
+    }
+
+    public function jsonSerialize() {
+        return get_object_vars($this);
     }
 
 }

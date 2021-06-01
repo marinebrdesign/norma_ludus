@@ -3,8 +3,7 @@
 require_once('class.UTILISATEUR.php');
 
 
-class COMMENTAIRE
-{
+class COMMENTAIRE implements JsonSerializable {
     private $ID_Commentaire = 0;
     private $Commentaire_utilisateur = null;
     private $Date_commentaire = null;
@@ -90,6 +89,9 @@ class COMMENTAIRE
         $this->Heure = $Heure;
     }
 
+    public function jsonSerialize() {
+        return get_object_vars($this);
+    }
 
 }
 ?>
