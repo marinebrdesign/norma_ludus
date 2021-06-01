@@ -42,6 +42,7 @@ var PageInscription = Vue.component('PageInscription',{
         <div class="inscription">
             <button class="je-m-inscris"
                     type="submit"  @click="inscription">
+                    Je m'inscris
             </button>
         </div>
         <p>N'attendez pas et rejoignez nous vite sur Norma Ludus !</p>
