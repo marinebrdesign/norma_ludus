@@ -758,6 +758,11 @@ button.connexion {
     margin-top: 10px;
 }
 
+.je-m-inscris a {
+    color: white;
+    text-decoration: none;
+}
+
 #container >form > a {
     color: #76A0A3;
     font-family: Roboto;
