@@ -31,5 +31,26 @@ var MDPOublie = Vue.component('MDPOublie',{
 <footer>
     <img src="img/footer_nav/bas_connexion.png" alt="bas_png" id="bas_connexion" class="responsive">
 </footer>
-</body>
-</html>
+</div>
+        
+        	`,
+
+    data(){
+        return {
+
+            /* titre: 'Page d\'accueil',
+             liste: null,
+             listeCategories: null,
+             je_veux_le_header: false*/
+        }
+    },
+    mounted(){
+        /*axios.get('http://localhost/normaludus - Copie/php/Utilitaires/Produit.php').then((response) => {
+            this.listeCategories = response.data;
+        });
+        this.liste = [1, 2, 3];*/
+        this.template
+    },
+    methods:{
+    }
+});

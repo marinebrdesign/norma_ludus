@@ -5,8 +5,8 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 header("Access-Control-Allow-Origin: *");
-require_once '../connexion.php';
-require_once "../Classes/class.CHAT.php";
+require_once 'php/connexion.php';
+require_once "php/Classes/class.CHAT.php";
 
 $pdo = new PDO(
     'mysql:host=localhost;dbname=normaludus',
@@ -25,17 +25,12 @@ if($requete->execute()){
             $donnees['Date_Chat'],
             $donnees['Heure_Chat'],
             0
-        );
-        public $ID_CHAT;
-        public $Message;
-        public $Date_Chat;
-        public $Heure_Chat;
+      );
         $liste[]=$chat;
     }
 
 }
-echo json_encode($chat->jsonSerialize());
+echo json_encode($regle_officielle->jsonSerialize());
 exit();
 
 ?>
-

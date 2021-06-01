@@ -1,9 +1,44 @@
 var Accueil = Vue.component('Accueil',{
     template: `
 		<div>
-			<h3>{{titre}}</h3>
-			<n-header v-if="je_veux_le_header"></n-header>
-			<ul>
+	    <n-header></n-header>
+	  <main class="index">
+    <n-barre-recherche></n-barre-recherche>
+    <div class="centrer">
+        <div class="categories">
+            <router-link to="j-plateau">
+                <section class="j-de-plateau">
+                    <h2>Jeux de Plateau</h2>
+                    <img src="img/index/board-game.jpg" alt="plateau">
+                </section>
+            </router-link>
+            <router-link to="j-pions">
+                <section class="j-pions">
+                    <h2>Jeux de Pions</h2>
+                    <img src="img/index/chess-pieces.jpg" alt="échecs">
+                </section>
+            </router-link>
+            <router-link to="j-cartes">
+                <section class="j-cartes">
+                    <h2>Jeux de Cartes</h2>
+                    <img src="img/index/cartes.jpg" alt="cartes">
+                </section>
+            </router-link>
+            <router-link to="j-des">
+                <section class="j-des">
+                    <h2>Jeux de Dés</h2>
+                    <img src="img/index/dices.jpg" alt="dés">
+                </section>
+            </router-link>
+        </div>
+    </div>
+</main>
+<n-footer></n-footer>
+
+
+			<!--<n-header v-if="je_veux_le_header"></n-header>
+		    <ul>
+		    
 			    <li v-for="nombre in liste" :key="nombre">{{nombre}}</li>
             </ul>
 			   ul>
@@ -11,23 +46,27 @@ var Accueil = Vue.component('Accueil',{
 			        <img src="www.quelquechose/{{categorie.ID_categorie}}"></img>
 			        <span>{{categorie.Nom_Categorie}}</span>
 			    </li>
-            </ul-->
-            <button v-on:click="je_veux_le_header = !je_veux_le_header">{{je_veux_le_header}}</button>
+            </ul
+            <button v-on:click="je_veux_le_header = !je_veux_le_header">{{je_veux_le_header}}</button>-->
 		</div>
+		
 	`,
+
     data(){
         return {
-            titre: 'Page d\'accueil',
+
+           /* titre: 'Page d\'accueil',
             liste: null,
             listeCategories: null,
-            je_veux_le_header: false
+            je_veux_le_header: false*/
         }
     },
     mounted(){
         /*axios.get('http://localhost/normaludus - Copie/php/Utilitaires/Produit.php').then((response) => {
             this.listeCategories = response.data;
-        });*/
-        this.liste = [1, 2, 3];
+        });
+        this.liste = [1, 2, 3];*/
+        this.template
     },
     methods:{
     }

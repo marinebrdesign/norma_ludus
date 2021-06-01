@@ -10,7 +10,7 @@ var PasserPrenium = Vue.component('PasserPrenium',{
   <link rel="stylesheet" href="../css/menu.css">
   <link rel="stylesheet" href="../css/style_mise_en_page.css">
 </head>
-<body class=" ">
+<div class=" ">
 <header>
   <a href="Accueil.vue.js">
           <img src="img/logo.svg" alt="logo" id="logo">
