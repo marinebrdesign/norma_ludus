@@ -51,7 +51,7 @@
 .landing #titre {
     display: flex;
     justify-content: flex-end;
-    margin-right: -10px;
+    /*margin-right: -10px;*/
 }
 
 .landing #titre h3 {

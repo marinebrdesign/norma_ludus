@@ -163,7 +163,7 @@ body {
 .norma #titre {
     display: flex;
     justify-content: flex-end;
-    margin-right: -10px;
+    /*margin-right: -10px;*/
 }
 
 .norma #titre h3 {
