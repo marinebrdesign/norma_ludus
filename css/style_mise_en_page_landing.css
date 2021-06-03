@@ -1,0 +1,1968 @@
+.landing body {
+    margin: 8px 0 8px 0;
+}
+
+.landing header {
+    height: 50px;
+    position: relative;
+}
+.landing svg#logo {
+    z-index: -1;
+}
+ /*fonctionnalités*/
+.landing .fonctionnalites {
+    position: relative;
+}
+/*equipe*/
+.landing .lena,.landing .marine, .landing .nina {
+    display: inline-block;
+    text-align: center;
+}
+
+/*à propos*/
+/*image vague*/
+.landing figure.vague > img {
+    position: relative;
+    top: 70px;
+    /*left: -10px;*/
+    right: 0;
+}
+.landing figure.vague2 > img {
+    position: relative;
+   /* left: -10px;*/
+    right: 0;
+}
+
+.landing figure.vague {
+    margin: 0;
+}
+
+.landing figure.vague2 {
+    margin: 0;
+}
+
+/*contact*/
+.landing .center {
+    width: 100%;
+    max-width: 150px;
+    margin:0 auto;
+}
+/*a propos*/
+.landing #titre {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: -10px;
+}
+
+.landing #titre h3 {
+    border-radius: 60px 0 0 60px;
+}
+
+
+@media screen and (max-width: 3000px) {
+    /*reseaux*/
+    /* logo*/
+    .landing #logo {
+        width: 180px;
+        height: 65px;
+        position: relative;
+        left: 20px;
+        top: 10px;
+    }
+
+    .landing .reseaux li {
+        display: inline;
+        padding: 0 20px 0 20px;
+    }
+
+    .landing .reseaux ul {
+        padding-left: 40px;
+    }
+
+    .landing .reseaux {
+        position: relative;
+        top: 0;
+    }
+
+    /*insta*/
+    .landing .feather.feather-instagram {
+        width: 50px;
+        height: 80px;
+    }
+
+    /*facebook*/
+    .landing #Bold {
+        width: 45px;
+        height: 79px;
+    }
+
+    /*mail*/
+    .landing #email {
+        width: 55px;
+        height: 79px;
+    }
+
+    .landing .reseaux {
+        position: relative;
+        top: -80px;
+    }
+
+    .landing #logo, .landing .reseaux {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    /*connexion*/
+    .landing .connexion {
+        position: absolute;
+        z-index: 2;
+        width: 50%;
+        top: 150px;
+
+    }
+
+    .landing .connexion input {
+        width: 100%;
+        border-radius: 20px;
+        border: none;
+        padding: 20px;
+        box-sizing: border-box;
+        resize: vertical;
+        margin-bottom: 10px;
+    }
+
+    .landing #connexion {
+        box-sizing: border-box;
+        border-radius: 30px;
+        padding: 20px 40px 20px 40px;
+        background-color: white;
+        width: 100%;
+        height: 430px;
+        max-width: 570px;
+        margin: 0 auto;
+    }
+
+    .landing #connexion .prenom\/nom, .landing #connexion .mail,.landing #connexion .id, .landing #connexion .age, .landing #connexion .mdp {
+        padding: 5px 0 5px 0;
+    }
+
+    .landing #connexion button.je-me-connecte {
+        width: 100%;
+        padding: 20px;
+        border-radius: 20px;
+        border: none;
+    }
+
+    .landing .connectez-vous h2 {
+        text-align: center;
+    }
+
+    .landing .mdp p:first-of-type {
+        text-align: center;
+        background: none;
+        padding: 0 50px 0 50px;
+        margin-top: 0;
+    }
+
+    .landing #mail {
+        margin-bottom: 0;
+    }
+
+    .landing .texte,.landing  .connexion {
+        display: inline-block;
+    }
+
+    .landing .texte {
+        width: 50%;
+    }
+
+    .landing #connexion {
+        border: 5px solid #aedfe0;
+    }
+
+    .landing #connexion a#mdp-oublie {
+        float: right;
+        padding-bottom: 10px;
+    }
+
+    .landing #connexion a#inscription {
+        display: block;
+        text-align: center;
+    }
+
+    .landing img#connexion_t_img {
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .landing img#connexion_m_img {
+        visibility: hidden;
+        position: absolute;
+    }
+
+    /*inscription*/
+    /*.inscription {
+        position: absolute;
+        z-index: 2;
+        width: 50%;
+        top: 130px;
+
+    }
+
+    .inscription input {
+        width: 100%;
+        border-radius: 20px;
+        border: none;
+        padding: 20px;
+        box-sizing: border-box;
+        resize: vertical;
+        margin-bottom: 10px;
+    }
+
+    #inscription {
+        box-sizing: border-box;
+        border-radius: 30px;
+        padding: 20px 40px 20px 40px;
+        background-color: white;
+        width: 100%;
+        height: 670px;
+        max-width: 570px;
+        margin: 0 auto;
+    }
+
+    #inscription .prenom\/nom, #inscription .mail, #inscription .id, #inscription .age, #inscription .mdp {
+        padding: 5px 0 5px 0;
+    }
+
+    #inscription button.je-m-inscris {
+        width: 100%;
+        padding: 20px;
+        border-radius: 20px;
+        border: none;
+    }
+
+    .inscrivez-vous h2 {
+        text-align: center;
+    }*/
+
+    /*.mdp p:first-of-type {
+        text-align: center;
+        background: none;
+        padding: 0 50px 0 50px;
+        margin-top: 0;
+    }
+
+    #mail {
+        margin-bottom: 0;
+    }
+
+    /*.texte, .inscription {
+        display: inline-block;
+    }
+
+    .texte {
+        width: 50%;
+    }
+
+    #inscription {
+        border: 5px solid #aedfe0;
+    }*/
+
+    /* contact*/
+    .landing .contact textarea, .landing .contact input {
+        width: 100%;
+        border-radius: 17px;
+        border: none;
+        padding: 10px 10px 10px 10px;
+        margin: 10px 0 0 0;
+        box-sizing: border-box;
+        resize: vertical;
+    }
+
+    .landing #contact {
+        box-sizing: border-box;
+        border-radius: 35px;
+        background-color: #f2f2f2;
+        padding: 20px 80px 20px 80px;
+        width: 100%;
+        height: 500px;
+        max-width: 900px;
+        margin: 0 auto 50px auto;
+    }
+
+    .landing .nom, .landing .prenom, .landing .mail2, .landing .msg {
+        padding: 5px 0 5px 0;
+    }
+
+    .landing textarea#msg {
+        height: 200px;
+    }
+
+    .landing #contact button.envoyer {
+        width: 150px;
+        height: 40px;
+        border-radius: 12px;
+        border: none;
+        /*margin:0 auto;*/
+    }
+
+    .landing #nom, .landing #prenom {
+        display: inline-block;
+        width: 100%;
+    }
+    /*decouvrez, postez, achetez vendez*/
+    .landing img#decouvrez {
+        position: relative;
+        top: -100px;
+        height: 200%;
+        width: 50%;
+    }
+
+    .landing img#decouvrez, .landing .decouvrez h2, .landing .decouvrez p {
+        display: inline-block;
+    }
+
+    .landing img#postez, .landing .postez h2, .landing .postez p {
+        display: inline-block;
+    }
+
+    .landing img#achetez_vendez, .landing .achetez_vendez h2, .landing .achetez_vendez p {
+        display: inline-block;
+    }
+
+    .landing .decouvrez h2 {
+        position: absolute;
+        top: 130px;
+    }
+
+    .landing .decouvrez p {
+        position: absolute;
+        top: 230px;
+        width: 420px;
+    }
+
+    .landing img#postez {
+        position: relative;
+        top: -700px;
+        height: 200%;
+        width: 50%;
+    }
+
+    .landing .postez h2 {
+        position: absolute;
+        top: 700px;
+        left: 250px;
+    }
+
+    .landing .postez p {
+        position: absolute;
+        top: 800px;
+        left: 250px;
+        width: 380px;
+    }
+
+    .landing .postez {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .landing img#achetez_vendez {
+        position: relative;
+        top: -300px;
+        height: 200%;
+        width: 50%;
+    }
+
+    .landing .achetez_vendez {
+        position: absolute;
+        top: 1250px;
+    }
+
+    .landing .achetez_vendez h2 {
+        position: absolute;
+        margin-left: 50px;
+        top: -35px;
+    }
+
+    .landing .achetez_vendez p {
+        position: absolute;
+        width: 585px;
+        margin-left: 50px;
+        top: 40px;
+    }
+
+    .landing .fonctionnalites {
+        height:1420px;
+    }
+
+    /*equipe*/
+
+    .landing h3#equipe, .landing .contact > h3,.landing  #titre h3 {
+        max-width: 600px;
+    }
+
+    .landing h3#equipe, .landing .contact h3 {
+        height: 30px;
+        border-radius: 0 60px 60px 0;
+        text-align: left;
+        padding: 10px 0 20px 20px;
+        margin-left: -10px;
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    .landing #titre h3 {
+        height: 30px;
+        text-align: left;
+        padding: 10px 0 20px 20px;
+        margin-left: -10px;
+        width: 100%;
+    }
+
+    .landing .equipe {
+        height: 300px;
+        position: relative;
+        margin: 70px auto 0 auto;
+        max-width: 665px;
+    }
+
+    .landing .lena img, .landing .marine img, .landing .nina img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .landing .nina > address > p,.landing  .marine > address > p, .landing .lena > address > p {
+        font-size: 16px;
+    }
+
+    .landing .lena > address > a, .landing .marine > address > a, .landing .nina > address > a{
+        padding: 7px 15px 7px 15px;
+        border-radius: 60px;
+        font-size: 14px;
+    }
+
+    .landing .lena {
+        position: relative;
+    }
+
+    .landing .marine {
+        position: relative;
+        left: 25px;
+        top: -60px;
+    }
+
+    .landing .nina {
+        position: relative;
+        left: 35px;
+    }
+
+    /*a propos*/
+    .landing img#vague.responsive {
+        width: 100%;
+        max-width: 2000px;
+    }
+
+    .landing img#vague2.responsive {
+        width: 100%;
+        max-width: 2000px;
+    }
+
+    .landing .a-propos p {
+        padding: 0 50px 0 50px;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+
+    .landing .postez h2 {
+        position: absolute;
+        top: 620px;
+        left: 200px;
+    }
+
+    .landing .postez p {
+        position: absolute;
+        top: 700px;
+        left: 200px;
+        width: 350px;
+    }
+
+    .landing .postez {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .landing .achetez_vendez {
+        position: absolute;
+        top: 1180px;
+    }
+
+    .landing .achetez_vendez h2 {
+        position: absolute;
+        margin-left: 50px;
+        top: -120px;
+    }
+
+    .landing .achetez_vendez p {
+        position: absolute;
+        width: 500px;
+        margin-left: 50px;
+        top: -30px;
+    }
+
+    .landing .fonctionnalites {
+        height:1350px;
+    }
+}
+
+
+@media screen and (max-width: 1230px) {
+    /*decouvrez, postez*/
+    .landing img#decouvrez {
+        position: relative;
+        top: -70px;
+        height: 200%;
+        width: 50%;
+    }
+
+    .landing img#decouvrez, .landing .decouvrez h2, .landing .decouvrez p {
+        display: inline-block;
+    }
+
+    .landing .decouvrez h2 {
+        position: absolute;
+        top: 80px;
+    }
+
+    .landing .decouvrez p {
+        position: absolute;
+        top: 180px;
+        width: 350px;
+    }
+
+    .landing img#postez {
+        position: relative;
+        top: -500px;
+        height: 200%;
+        width: 50%;
+    }
+
+    .landing .postez h2 {
+        position: absolute;
+        top: 500px;
+        left: 200px;
+    }
+
+    .landing .postez p {
+        position: absolute;
+        top: 580px;
+        left: 200px;
+        width: 300px;
+    }
+
+    .landing .postez {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .landing img#achetez_vendez {
+        position: relative;
+        top: -400px;
+        height: 200%;
+        width: 50%;
+    }
+
+    .landing .achetez_vendez h2 {
+        position: absolute;
+        margin-left: 30px;
+        top: -100px;
+    }
+
+    .landing .achetez_vendez p {
+        position: absolute;
+        width: 550px;
+        margin-left: 30px;
+        top: -40px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .landing img#achetez_vendez {
+        position: relative;
+        top: -350px;
+        height: 200%;
+        width: 50%;
+    }
+
+    .landing .achetez_vendez {
+        position: absolute;
+        top: 1050px;
+    }
+
+    .landing .achetez_vendez h2 {
+        position: absolute;
+        margin-left: 30px;
+        top: -100px;
+    }
+
+    .landing .achetez_vendez p {
+        position: absolute;
+        width: 500px;
+        margin-left: 30px;
+        top: -40px;
+    }
+
+
+    .landing .fonctionnalites {
+        height:1100px;
+    }
+
+    .landing img#postez {
+        position: relative;
+        top: -480px;
+        height: 200%;
+        width: 50%;
+    }
+
+}
+
+@media screen and (max-width: 1060px) {
+
+    .landing .postez h2 {
+        position: absolute;
+        top: 500px;
+        left: 200px;
+    }
+
+    .landing .postez p {
+        position: absolute;
+        top: 600px;
+        left: 200px;
+        width: 300px;
+    }
+
+    .landing .postez {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .landing img#achetez_vendez {
+        position: relative;
+        top: -280px;
+        height: 200%;
+        width: 50%;
+    }
+
+    .landing .achetez_vendez {
+        position: absolute;
+        top: 1020px;
+    }
+
+    .landing .achetez_vendez h2 {
+        position: absolute;
+        margin-left: 30px;
+        top: -120px;
+    }
+
+    .landing .achetez_vendez p {
+        position: absolute;
+        width: 400px;
+        margin-left: 30px;
+        top: -40px;
+    }
+
+
+    .landing .fonctionnalites {
+        height:1130px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    /*decouvrez, postez*/
+    .landing img#decouvrez {
+        position: relative;
+        top: -50px;
+        height: 200%;
+        width: 45%;
+    }
+
+    .landing img#decouvrez, .landing .decouvrez h2, .landing  .decouvrez p {
+        display: inline-block;
+    }
+
+    .landing .decouvrez h2 {
+        position: absolute;
+        top: 60px;
+    }
+
+    .landing .decouvrez p {
+        position: absolute;
+        top: 130px;
+        width: 420px;
+    }
+
+    .landing img#postez {
+        position: relative;
+        top: -400px;
+        height: 200%;
+        width: 50%;
+    }
+
+    .landing .postez h2 {
+        position: absolute;
+        top: 500px;
+        left: 200px;
+    }
+
+    .landing .postez p {
+        position: absolute;
+        top: 580px;
+        left: 200px;
+        width: 250px;
+    }
+
+    .landing img#achetez_vendez {
+        position: relative;
+        top: -280px;
+        height: 200%;
+        width: 50%;
+    }
+
+    .landing .achetez_vendez {
+        position: absolute;
+        top: 1020px;
+    }
+
+    .landing .achetez_vendez h2 {
+        position: absolute;
+        margin-left: 20px;
+        top: -180px;
+    }
+
+    .landing .achetez_vendez p {
+        position: absolute;
+        width: 380px;
+        margin-left: 20px;
+        top: -100px;
+    }
+
+    .landing .fonctionnalites {
+        height:1110px;
+    }
+}
+
+@media screen and (max-width: 914px) {
+    .landing .decouvrez p {
+        position: absolute;
+        top: 130px;
+        width: 380px;
+    }
+
+    .landing img#postez {
+        position: relative;
+        top: -300px;
+        height: 200%;
+        width: 50%;
+    }
+
+    .landing .postez h2 {
+        position: absolute;
+        top: 500px;
+        left: 150px;
+    }
+
+    .landing .postez p {
+        position: absolute;
+        top: 580px;
+        left: 150px;
+        width: 200px;
+    }
+
+    .landing .fonctionnalites {
+        height:1070px;
+    }
+}
+
+@media screen and (max-width: 828px) {
+
+    .landing img#postez {
+        position: relative;
+        top: -300px;
+        height: 200%;
+        width: 50%;
+    }
+
+    .landing .postez h2 {
+        position: absolute;
+        top: 400px;
+        left: 150px;
+    }
+
+    .landing .postez p {
+        position: absolute;
+        top: 480px;
+        left: 150px;
+        width: 200px;
+    }
+
+    .landing img#achetez_vendez {
+        position: relative;
+        top: -280px;
+        height: 200%;
+        width: 50%;
+    }
+
+    .landing .achetez_vendez {
+        position: absolute;
+        top: 950px;
+    }
+
+    .landing .achetez_vendez h2 {
+        position: absolute;
+        margin-left: 20px;
+        top: -200px;
+    }
+
+    .landing .achetez_vendez p {
+        position: absolute;
+        width: 350px;
+        margin-left: 20px;
+        top: -120px;
+    }
+
+    .landing .fonctionnalites {
+        height: 970px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+        /*reseaux*/
+        /* logo*/
+    .landing #logo {
+            width: 130px;
+            height: 50px;
+            position: relative;
+            left: 10px;
+            top: 0;
+        }
+
+    .landing .reseaux li {
+            display: inline;
+            padding: 0 5px 0 15px;
+        }
+
+    .landing .reseaux ul {
+            padding-left: 0;
+            margin: 0;
+        }
+
+    .landing .reseaux {
+            position: relative;
+            top: -50px;
+            z-index: 2;
+        }
+
+    .landing #logo, .landing .reseaux {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+    .landing .texte,.landing  .inscription {
+            display: table-cell;
+        }
+
+        /*insta*/
+    .landing .feather.feather-instagram {
+            width: 30px;
+            height: 50px;
+        }
+
+        /*facebook*/
+    .landing #Bold {
+            width: 30px;
+            height: 50px;
+        }
+
+        /*mail*/
+    .landing #email {
+            width: 30px;
+            height: 50px;
+        }
+
+        /*connexion*/
+    .landing .connexion {
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            top: 10px;
+            height: 550px;
+        }
+
+    .landing .connexion input {
+            width: 100%;
+            border-radius: 20px;
+            border: none;
+            padding: 20px;
+            box-sizing: border-box;
+            resize: vertical;
+            margin-bottom: 10px;
+        }
+
+    .landing #connexion {
+            box-sizing: border-box;
+            border-radius: 30px;
+            padding: 20px 50px 20px 50px;
+            background-color: white;
+            width: 100%;
+            height: 390px;
+            max-width: 450px;
+            margin: 0 auto;
+            border: none;
+            position: relative;
+            top: 70px;
+        }
+
+    .landing img#connexion_t_img {
+            position: absolute;
+            width: 100%;
+            max-width: 2000px;
+            max-height: 500px;
+            z-index: -1;
+            visibility: visible;
+        }
+
+    .landing img#connexion_m_img {
+            position: absolute;
+            visibility: hidden;
+        }
+
+    .landing #connexion .prenom\/nom,.landing  #connexion .mail, .landing #connexion .id, .landing #connexion .age, .landing #connexion .mdp {
+            padding: 5px 0 5px 0;
+        }
+
+    .landing #connnexion button.je-me-connecte {
+            width: 100%;
+            padding: 20px;
+            border-radius: 20px;
+            border: none;
+        }
+
+    .landing .connectez-vous h2 {
+            text-align: center;
+        }
+
+    .landing .mdp p:first-of-type {
+            text-align: center;
+            background: none;
+            padding: 0 50px 0 50px;
+            margin-top: 0;
+        }
+
+    .landing #mail {
+            margin-bottom: 0;
+        }
+
+    .landing #container a#mdp-oublie {
+            display: block;
+            text-align: center;
+        }
+
+        /*inscription*/
+        /*.inscription {
+            position: relative;
+            z-index: 2;
+            width: 50%;
+            top: 20px;
+
+        }
+
+        .inscription input {
+            width: 100%;
+            border-radius: 20px;
+            border: none;
+            padding: 20px;
+            box-sizing: border-box;
+            resize: vertical;
+            margin-bottom: 10px;
+        }
+
+        #inscription {
+            box-sizing: border-box;
+            border-radius: 30px;
+            padding: 20px 50px 20px 50px;
+            background-color: white;
+            width: 100%;
+            height: 670px;
+            max-width: 570px;
+            margin: 0 auto;
+            border: none;
+        }
+
+
+        #inscription .prenom\/nom, #inscription .mail, #inscription .id, #inscription .age, #inscription .mdp {
+            padding: 5px 0 5px 0;
+        }
+
+        #inscription button.je-m-inscris {
+            width: 100%;
+            padding: 20px;
+            border-radius: 20px;
+            border: none;
+        }
+
+        .inscrivez-vous h2 {
+            text-align: center;
+        }
+
+        .mdp p:first-of-type {
+            text-align: center;
+            background: none;
+            padding: 0 50px 0 50px;
+            margin-top: 0;
+        }
+
+        #mail {
+            margin-bottom: 0;
+        }*/
+
+        /* contact*/
+    .landing .contact {
+        padding: 0 20px 0 20px;
+    }
+    .landing .contact textarea, .landing .contact input {
+            width: 100%;
+            border-radius: 17px;
+            border: none;
+            padding: 10px 10px 10px 10px;
+            margin: 10px 0 0 0;
+            box-sizing: border-box;
+            resize: vertical;
+        }
+
+    .landing #contact {
+            box-sizing: border-box;
+            border-radius: 35px;
+            background-color: #f2f2f2;
+            padding: 20px 50px 20px 50px;
+            width: 100%;
+            height: 500px;
+            max-width: 680px;
+            margin: 0 auto 50px auto;
+        }
+
+    .landing .nom, .landing .prenom, .landing .mail2, .landing .msg {
+            padding: 5px 0 5px 0;
+        }
+
+    .landing textarea#msg {
+            height: 200px;
+        }
+
+    .landing #contact button.envoyer {
+            width: 150px;
+            height: 40px;
+            border-radius: 12px;
+            border: none;
+            /*margin:0 auto;*/
+        }
+
+    .landing #nom, .landing #prenom {
+            display: table-cell;
+            width: 100%;
+        }
+
+    /*decouvrez, postez*/
+
+    .landing .decouvrez p {
+        position: absolute;
+        top: 100px;
+        width: 50%;
+    }
+
+    .landing .decouvrez h2 {
+        position: absolute;
+        top: 30px;
+    }
+
+    .landing img#postez {
+        position: relative;
+        top: -200px;
+        height: 200%;
+        width: 50%;
+    }
+
+    .landing .postez h2 {
+        position: absolute;
+        top: 350px;
+        left: 100px;
+    }
+
+    .landing .postez p {
+        position: absolute;
+        top: 420px;
+        left: 100px;
+        width: 200px;
+    }
+
+    .landing img#achetez_vendez {
+        position: relative;
+        top: -280px;
+        height: 200%;
+        width: 50%;
+    }
+
+    .landing .achetez_vendez {
+        position: absolute;
+        top: 980px;
+    }
+
+    .landing .achetez_vendez h2 {
+        position: absolute;
+        margin-left: 30px;
+        top: -220px;
+    }
+
+    .landing .achetez_vendez p {
+        position: absolute;
+        width: 300px;
+        margin-left: 30px;
+        top: -160px;
+    }
+
+    .landing .fonctionnalites {
+        height: 980px;
+    }
+
+    /*equipe*/
+    .landing h3#equipe, .landing .contact > h3 {
+        max-width: 300px;
+        height: 30px;
+        border-radius: 0 60px 60px 0;
+        text-align: left;
+        padding: 10px 0 5px 20px;
+        margin-left: -10px;
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    .landing #titre h3 {
+        max-width: 300px;
+        height: 30px;
+        text-align: left;
+        padding: 10px 0 5px 20px;
+        margin-left: -10px;
+        width: 100%;
+    }
+
+    .landing .equipe {
+        height: 240px;
+        position: relative;
+        margin: 70px auto 0 auto;
+        max-width: 440px;
+    }
+
+    .landing .lena img, .landing .marine img, .landing .nina img {
+        width: 110px;
+        height: 110px;
+    }
+
+    .landing .nina > address > p, .landing .marine > address > p,.landing  .lena > address > p {
+        font-size: 14px;
+    }
+
+    .landing .lena > address > a, .landing .marine > address > a, .landing .nina > address > a{
+        padding: 7px 15px 7px 15px;
+        border-radius: 60px;
+        font-size: 12px;
+    }
+
+    .landing .nina, .landing .marine, .landing .lena {
+        position: absolute;
+    }
+
+    .landing .marine {
+        left: 125px;
+        top: -60px;
+    }
+
+    .landing .nina {
+        left: 250px;
+    }
+
+    /*a propos*/
+    .landing .a-propos p {
+        padding: 0 30px 0 30px;
+    }
+}
+
+@media screen and (max-width: 675px) {
+    .landing img#postez {
+        position: relative;
+        top: -200px;
+        height: 200%;
+        width: 50%;
+    }
+
+    .landing .postez h2 {
+        position: absolute;
+        top: 250px;
+        left: 100px;
+    }
+
+    .landing .postez p {
+        position: absolute;
+        top: 300px;
+        left: 100px;
+        width: 200px;
+    }
+
+
+    .landing img#achetez_vendez {
+        position: relative;
+        top: -280px;
+        height: 200%;
+        width: 50%;
+    }
+
+    .landing .achetez_vendez {
+        position: absolute;
+        top: 900px;
+    }
+
+    .landing .achetez_vendez h2 {
+        position: absolute;
+        margin-left: 30px;
+        top: -240px;
+    }
+
+    .landing .achetez_vendez p {
+        position: absolute;
+        width: 300px;
+        margin-left: 30px;
+        top: -180px;
+    }
+
+    .landing .fonctionnalites {
+        height: 860px;
+    }
+
+}
+
+@media screen and (max-width: 657px) {
+    .landing img#postez {
+        position: relative;
+        top: -100px;
+        height: 200%;
+        width: 50%;
+    }
+
+    .landing .postez h2 {
+        position: absolute;
+        top: 380px;
+        left: 100px;
+    }
+
+    .landing .postez p {
+        position: absolute;
+        top: 450px;
+        left: 100px;
+        width: 200px;
+    }
+
+    .landing img#achetez_vendez {
+        position: relative;
+        top: -250px;
+        height: 200%;
+        width: 50%;
+    }
+
+    .landing .achetez_vendez {
+        position: absolute;
+        top: 950px;
+    }
+
+    .landing .achetez_vendez h2 {
+        position: absolute;
+        margin-left: 30px;
+        top: -240px;
+    }
+
+    .landing .achetez_vendez p {
+        position: absolute;
+        width: 240px;
+        margin-left: 30px;
+        top: -180px;
+    }
+
+    .landing .fonctionnalites {
+        height: 930px;
+    }
+}
+
+@media screen and (max-width: 594px) {
+    .landing img#achetez_vendez {
+        position: relative;
+        top: -250px;
+        height: 200%;
+        width: 50%;
+    }
+
+    .landing .achetez_vendez {
+        position: absolute;
+        top: 910px;
+    }
+
+    .landing .achetez_vendez h2 {
+        position: absolute;
+        margin-left: 30px;
+        top: -280px;
+    }
+
+    .landing .achetez_vendez p {
+        position: absolute;
+        width: 240px;
+        margin-left: 30px;
+        top: -200px;
+    }
+
+    .landing .fonctionnalites {
+        height: 870px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .landing img#postez {
+        position: relative;
+        top: -50px;
+        height: 200%;
+        width: 50%;
+    }
+
+    .landing .postez h2 {
+        position: absolute;
+        top: 360px;
+        left: 50px;
+    }
+
+    .landing .postez p {
+        position: absolute;
+        top: 420px;
+        left: 50px;
+        width: 200px;
+    }
+
+    .landing img#achetez_vendez {
+        position: relative;
+        top: -240px;
+        height: 200%;
+        width: 50%;
+    }
+
+    .landing .achetez_vendez {
+        position: absolute;
+        top: 910px;
+    }
+
+    .landing .achetez_vendez h2 {
+        position: absolute;
+        margin-left: 10px;
+        top: -300px;
+    }
+
+    .landing .achetez_vendez p {
+        position: absolute;
+        width: 220px;
+        margin-left: 10px;
+        top: -220px;
+    }
+
+    .landing .fonctionnalites {
+        height: 860px;
+    }
+
+    .landing .fonctionnalites {
+        height: 860px;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+        /*reseaux*/
+    .landing #logo {
+            height: 40px;
+            width: 100px;
+            position: relative;
+            left: 10px;
+            top: 0;
+        }
+
+    .landing .reseaux li {
+            display: inline;
+            padding: 0 5px 0 15px;
+        }
+
+    .landing .reseaux ul {
+            padding-left: 0;
+            margin: 0;
+        }
+
+    .landing .reseaux {
+            position: relative;
+            top: -35px;
+        }
+
+    .landing #logo, .landing .reseaux {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+    .landing .texte, .landing .inscription {
+            display: table-cell;
+        }
+
+        /*insta*/
+    .landing .feather.feather-instagram {
+            width: 20px;
+            height: 35px;
+        }
+
+        /*facebook*/
+    .landing #Bold {
+            width: 20px;
+            height: 35px;
+        }
+
+        /*mail*/
+    .landing #email {
+            width: 20px;
+            height: 35px;
+        }
+
+        /*connexion*/
+    .landing .connexion {
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            top: 20px;
+            height: 550px;
+        }
+
+    .landing .connexion input {
+            width: 100%;
+            border-radius: 20px;
+            border: none;
+            padding: 10px;
+            box-sizing: border-box;
+            resize: vertical;
+            margin-bottom: 10px;
+        }
+
+    .landing #connexion {
+            box-sizing: border-box;
+            border-radius: 30px;
+            padding: 10px 30px 10px 30px;
+            background-color: white;
+            width: 100%;
+            height: 300px;
+            max-width: 310px;
+            margin: 0 auto;
+            border: none;
+            position: relative;
+            top: 110px;
+        }
+
+    .landing #connexion .prenom\/nom, .landing #connexion .mail, .landing #connexion .id,.landing  #connexion .age, .landing #connexion .mdp {
+            padding: 5px 0 5px 0;
+        }
+
+    .landing #connexion button.je-me-connecte {
+            width: 100%;
+            padding: 10px;
+            border-radius: 20px;
+            border: none;
+        }
+
+    .landing .connectez-vous h2 {
+            text-align: center;
+        }
+
+    .landing .mdp p:first-of-type {
+            text-align: center;
+            background: none;
+            padding: 0 50px 0 50px;
+            margin-top: 0;
+        }
+
+    .landing #mail {
+            margin-bottom: 0;
+        }
+
+    .landing img#connexion_t_img {
+            visibility: hidden;
+            position: absolute;
+        }
+
+    .landing img#connexion_m_img {
+            position: absolute;
+            width: 100%;
+            max-width: 2000px;
+            max-height: 650px;
+            z-index: -1;
+            visibility: visible;
+            top: -160px;
+        }
+
+        /*inscription*/
+        /*.inscription {
+            position: relative;
+            z-index: 2;
+            width: 50%;
+            top: 20px;
+
+        }
+
+        .inscription input {
+            width: 100%;
+            border-radius: 20px;
+            border: none;
+            padding: 20px;
+            box-sizing: border-box;
+            resize: vertical;
+            margin-bottom: 10px;
+        }
+
+        #inscription {
+            box-sizing: border-box;
+            border-radius: 30px;
+            padding: 20px 50px 20px 50px;
+            background-color: white;
+            width: 100%;
+            height: 670px;
+            max-width: 570px;
+            margin: 0 auto;
+            border: none;
+        }
+
+        #inscription .prenom\/nom, #inscription .mail, #inscription .id, #inscription .age, #inscription .mdp {
+            padding: 5px 0 5px 0;
+        }
+
+        #inscription button.je-m-inscris {
+            width: 100%;
+            padding: 20px;
+            border-radius: 20px;
+            border: none;
+        }
+
+        .inscrivez-vous h2 {
+            text-align: center;
+        }
+
+        .mdp p:first-of-type {
+            text-align: center;
+            background: none;
+            padding: 0 50px 0 50px;
+            margin-top: 0;
+        }
+
+        #mail {
+            margin-bottom: 0;
+        }*/
+
+        /* contact*/
+    .landing .contact {
+            padding: 0 10px 0 10px;
+        }
+    .landing .contact textarea, .landing .contact input {
+            width: 100%;
+            border-radius: 17px;
+            border: none;
+            padding: 10px 10px 10px 10px;
+            margin: 10px 0 0 0;
+            box-sizing: border-box;
+            resize: vertical;
+        }
+
+    .landing #contact {
+            box-sizing: border-box;
+            border-radius: 35px;
+            background-color: #f2f2f2;
+            padding: 20px 30px 20px 30px;
+            width: 100%;
+            height: 500px;
+            max-width: 400px;
+            margin: 0 auto 30px;
+        }
+
+    .landing .nom, .landing .prenom, .landing .mail2, .landing .msg {
+            padding: 5px 0 5px 0;
+        }
+
+    .landing textarea#msg {
+            height: 200px;
+        }
+
+    .landing #contact button.envoyer {
+            width: 150px;
+            height: 40px;
+            border-radius: 12px;
+            border: none;
+            /*margin:0 auto;*/
+        }
+
+    .landing #nom, .landing #prenom {
+            display: table-cell;
+            width: 100%;
+        }
+
+    .landing h3#equipe, .landing .contact > h3 {
+        max-width: 180px;
+        height: 30px;
+        border-radius: 0 60px 60px 0;
+        text-align: left;
+        padding: 10px 0 0 20px;
+        margin-left: -10px;
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    .landing #titre h3 {
+        max-width: 180px;
+        height: 30px;
+        text-align: left;
+        padding: 10px 0 0 20px;
+        margin-left: -10px;
+        width: 100%;
+    }
+
+    /*decouvrez*/
+    .landing .decouvrez p {
+        position: absolute;
+        top: 40px;
+        width: 50%;
+    }
+
+    .landing .decouvrez h2 {
+        position: absolute;
+        top: 0;
+    }
+
+    .landing img#postez {
+        position: relative;
+        top: -150px;
+        height: 200%;
+        width: 50%;
+    }
+
+    .landing .postez h2 {
+        position: absolute;
+        top: 220px;
+        left: 50px;
+    }
+
+    .landing .postez p {
+        position: absolute;
+        top: 260px;
+        left: 50px;
+        width: 150px;
+    }
+
+    .landing img#achetez_vendez {
+        position: relative;
+        top: -300px;
+        height: 200%;
+        width: 50%;
+    }
+
+    .landing .achetez_vendez {
+        position: absolute;
+        top: 750px;
+    }
+
+    .landing .achetez_vendez h2 {
+        position: absolute;
+        margin-left: 10px;
+        top: -300px;
+    }
+
+    .landing .achetez_vendez p {
+        position: absolute;
+        width: 200px;
+        margin-left: 10px;
+        top: -260px;
+    }
+
+    .landing .fonctionnalites {
+        height: 610px;
+    }
+
+    .landing .equipe {
+        height: 200px;
+        position: relative;
+        margin: 40px auto 0 auto;
+        max-width: 320px;
+    }
+
+    .landing .lena img, .landing .marine img, .landing .nina img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .landing .nina > address > p, .landing .marine > address > p, .landing .lena > address > p {
+        font-size: 10px;
+        margin: 0;
+    }
+
+    .landing .nina > address > a, .landing .marine > address > a, .landing .lena > address > a {
+        padding: 5px 10px 5px 10px;
+        border-radius: 60px;
+        font-size: 9px;
+    }
+
+    .landing .nina, .landing .marine, .landing .lena {
+        position: absolute;
+    }
+
+    .landing .marine {
+        left: 85px;
+        top: -40px;
+    }
+
+    .landing .nina {
+        left: 170px;
+    }
+
+    /*a propos*/
+    .landing .a-propos p {
+        padding: 0 20px 0 20px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    /*connexion*/
+    .landing .connexion {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        top: 20px;
+        height: 550px;
+    }
+
+    .landing #connexion {
+            border-radius: 30px;
+            padding: 10px 30px 10px 30px;
+            background-color: white;
+            width: 100%;
+            height: 320px;
+            max-width: 310px;
+            margin: 0 auto;
+            border: none;
+            position: relative;
+            top: 70px;
+        }
+
+    .landing img#postez {
+        position: relative;
+        top: -100px;
+        height: 200%;
+        width: 50%;
+    }
+
+    .landing img#achetez_vendez {
+        position: relative;
+        top: -280px;
+        height: 200%;
+        width: 50%;
+    }
+
+    .landing .achetez_vendez {
+        position: absolute;
+        top: 750px;
+    }
+
+    .landing .achetez_vendez h2 {
+        position: absolute;
+        margin-left: 10px;
+        top: -300px;
+    }
+
+    .landing .achetez_vendez p {
+        position: absolute;
+        width: 180px;
+        margin-left: 10px;
+        top: -260px;
+    }
+
+    .landing .fonctionnalites {
+        height: 610px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    /*connexion*/
+    .landing .connexion {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        top: 20px;
+        height:480px;
+    }
+
+
+    .landing .fonctionnalites {
+        height: 610px;
+    }
+}
+
+@media screen and (max-width: 386px) {
+    /*connexion*/
+    .landing .connexion {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        top: 20px;
+        height:480px;
+    }
+
+    .landing #connexion {
+        border-radius: 30px;
+        padding: 10px 30px 10px 30px;
+        background-color: white;
+        width: 100%;
+        height: 320px;
+        max-width: 310px;
+        margin: 0 auto;
+        border: none;
+        position: relative;
+        top: 50px;
+    }
+
+    /*decouvrez*/
+    .landing .decouvrez p {
+        position: absolute;
+        top: 20px;
+        width: 50%;
+    }
+
+    .landing .decouvrez h2 {
+        position: absolute;
+        top: -20px;
+    }
+
+    .landing img#postez {
+        position: relative;
+        top: -50px;
+        height: 200%;
+        width: 50%;
+    }
+
+    .landing .postez h2 {
+        position: absolute;
+        top: 200px;
+        left: 50px;
+    }
+
+    .landing .postez p {
+        position: absolute;
+        top: 240px;
+        left: 50px;
+        width: 120px;
+    }
+
+    .landing img#achetez_vendez {
+        position: relative;
+        top: -240px;
+        height: 200%;
+        width: 50%;
+    }
+
+    .landing .achetez_vendez {
+        position: absolute;
+        top: 750px;
+    }
+
+    .landing .achetez_vendez h2 {
+        position: absolute;
+        margin-left: 10px;
+        top: -310px;
+    }
+
+    .landing .achetez_vendez p {
+        position: absolute;
+        width: 150px;
+        margin-left: 10px;
+        top: -280px;
+    }
+
+    .landing .fonctionnalites {
+        height: 640px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .landing #connexion {
+        border-radius: 30px;
+        padding: 10px 30px 10px 30px;
+        background-color: white;
+        width: 100%;
+        height: 320px;
+        max-width: 310px;
+        margin: 0 auto;
+        border: none;
+        position: relative;
+        top: 30px;
+    }
+}
+
+@media screen and (max-width: 345px) {
+    .landing #connexion {
+        border-radius: 30px;
+        padding: 10px 30px 10px 30px;
+        background-color: white;
+        width: 100%;
+        height: 300px;
+        max-width: 310px;
+        margin: 0 auto;
+        border: none;
+        position: relative;
+        top: 30px;
+    }
+
+    /*decouvrez*/
+    .landing .decouvrez p {
+        position: absolute;
+        top: 0px;
+        width: 50%;
+    }
+
+    .landing .decouvrez h2 {
+        position: absolute;
+        top: -40px;
+    }
+}
+
+
+@media screen and (max-width: 330px) {
+    /*connexion*/
+    .landing .connexion {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        top: 20px;
+        height:410px;
+    }
+
+    .landing #connexion {
+        border-radius: 30px;
+        padding: 10px 30px 10px 30px;
+        background-color: white;
+        width: 100%;
+        height: 300px;
+        max-width: 310px;
+        margin: 0 auto;
+        border: none;
+        position: relative;
+        top: 10px;
+    }
+}

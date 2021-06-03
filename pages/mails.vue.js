@@ -3,6 +3,7 @@ var Mails = Vue.component('Mails',{
 
 <div>
 <n-header></n-header>
+<div class="norma">
 <main class="mails">
 <div class="rectangle"></div>
     <header>
@@ -15,6 +16,7 @@ var Mails = Vue.component('Mails',{
     <input type="radio" name="question" value="oui" id="oui" /><label for="oui">oui</label>
     <input type="radio" name="question" value="non" id="non" /><label for="non">non</label>
 </main>
+</div>
 <n-footer></n-footer>
 
 </div>

@@ -1,19 +1,12 @@
 var PageInscription = Vue.component('PageInscription',{
     template: `
 <div>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <title>Inscription</title>
-    <link rel="stylesheet" href="../css/typographie_couleurs.css">
-    <link rel="stylesheet" href="../css/menu.css">
-    <link rel="stylesheet" href="../css/style_mise_en_page.css">
-</head>
+<div class="norma">
 <body class="inscription">
 <img src="img/footer_nav/haut_connexion.png" alt="haut_png" id="haut_connexion" class="responsive">
 <img src="img/logo.svg" alt="logo" id="logo">
 <div class="centrer">
-    <form id="inscription">
+    <div id="inscription">
         <p>Inscrivez-vous <b>gratuitement</b></p>
         <div class="prenom">
             <label for="prenom"></label>
@@ -41,14 +34,15 @@ var PageInscription = Vue.component('PageInscription',{
         </div>
         <div class="inscription">
             <button class="je-m-inscris"
-                    type="submit"  @click="inscription"><a href="http://normaludus.marinebeurier.fr/#/">Je m'inscris</a>
+                    type="submit" @click="inscription">Je m'inscris
             </button>
         </div>
         <p>N'attendez pas et rejoignez nous vite sur Norma Ludus !</p>
-    </form>
+    </div>
 </div>
 </body>
 <img src="img/footer_nav/bas_connexion.png" alt="bas_png" id="bas_connexion" class="responsive">
+</div>
 </div>
         
         	`,
@@ -71,19 +65,23 @@ var PageInscription = Vue.component('PageInscription',{
     methods:{
         inscription() {
             var bodyFormData = new FormData();
-            bodyFormData.append('user_firstname_name', prenomUtilisateur);
             bodyFormData.append('user_lastname_name', nomUtilisateur);
+            bodyFormData.append('user_firstname_name', prenomUtilisateur);
             bodyFormData.append('user_age', ageUtilisateur);
             bodyFormData.append('user_id', identifiantUtilisateur);
             bodyFormData.append('user_mail', mailUtilisateur);
             bodyFormData.append('user_password', motDePasseUtilisateur);
             axios
-                .post('http://localhost/tp/php/Utilitaires/formulaire_inscription.php',
+                .post('http://localhost/tp/normaludus/php/Utilitaires/formulaire_inscription.php',
                     bodyFormData,
                     { headers: {
                             'Content-Type': 'application/x-www-form-urlencoded'
                         }})
-                .then(response => console.log(response))
+                .then(response => {
+                    localStorage.setItem('username', response.data);
+                    window.location.href = 'http://localhost:63342/normaludus/index.html?_ijt=rospg8fhm9e996t7j2uaio1ojk';
+                })
+                .catch(err => console.log(err))
         }
     }
 });

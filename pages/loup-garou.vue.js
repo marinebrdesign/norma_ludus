@@ -3,6 +3,7 @@ var LoupGarou = Vue.component('LoupGarou',{
 
 <div>
 <n-header></n-header>
+<div class="norma">
 <main class="index">
     <n-barre-recherche></n-barre-recherche>
   <div class="retour">
@@ -156,6 +157,7 @@ var LoupGarou = Vue.component('LoupGarou',{
     </form>
   </div>
 </main>
+</div>
 <n-footer></n-footer>
 
 </div>

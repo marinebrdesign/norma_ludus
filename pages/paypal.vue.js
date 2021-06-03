@@ -3,9 +3,11 @@ var Paypal = Vue.component('Paypal',{
 
 <div>
 <n-header></n-header>
+<div class="norma">
 <main>
    <div class="rectangle"></div> 
 </main>
+</div>
 <n-footer></n-footer>
 
 </div>

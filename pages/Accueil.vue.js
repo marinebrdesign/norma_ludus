@@ -1,8 +1,9 @@
 var Accueil = Vue.component('Accueil',{
     template: `
 		<div>
-	    <n-header></n-header>
-	  <main class="index">
+			    <n-header></n-header>
+		<div class="norma">
+			  <main class="index">
     <n-barre-recherche></n-barre-recherche>
     <div class="centrer">
         <div class="categories">
@@ -34,39 +35,16 @@ var Accueil = Vue.component('Accueil',{
     </div>
 </main>
 <n-footer></n-footer>
-
-
-			<!--<n-header v-if="je_veux_le_header"></n-header>
-		    <ul>
-		    
-			    <li v-for="nombre in liste" :key="nombre">{{nombre}}</li>
-            </ul>
-			   ul>
-			    <li v-for="categorie in listeCategories" :key="categorie.ID_categorie">
-			        <img src="www.quelquechose/{{categorie.ID_categorie}}"></img>
-			        <span>{{categorie.Nom_Categorie}}</span>
-			    </li>
-            </ul
-            <button v-on:click="je_veux_le_header = !je_veux_le_header">{{je_veux_le_header}}</button>-->
+        </div>
 		</div>
 		
 	`,
 
     data(){
         return {
-
-           /* titre: 'Page d\'accueil',
-            liste: null,
-            listeCategories: null,
-            je_veux_le_header: false*/
         }
     },
     mounted(){
-        /*axios.get('http://localhost/normaludus - Copie/php/Utilitaires/Produit.php').then((response) => {
-            this.listeCategories = response.data;
-        });
-        this.liste = [1, 2, 3];*/
-        this.template
     },
     methods:{
     }

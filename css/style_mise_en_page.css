@@ -1,21 +1,24 @@
+body {
+    margin: 0;
+}
 #app {
     display: flex;
     height: 100%;
     flex-direction: column;
 }
 
-html, body {
+.norma html, .norma body {
     height: 100%;
     padding: 0;
     margin: 0;
 }
-body {
+.norma body {
     display: flex;
     flex-direction: column;
 }
 
 /*header rectangle*/
-.rectangle{
+.norma .rectangle{
     width:100%;
     height:60px;
     background:white;
@@ -26,7 +29,7 @@ body {
 }
 
 /*------logo------*/
-img#logo {
+.norma img#logo {
     position: fixed;
     top: 0;
     left: 10px;
@@ -34,13 +37,13 @@ img#logo {
 }
 
 /*------retour------*/
-.retour {
+.norma .retour {
     margin-bottom: 10px;
     margin-top: 10px;
 }
 
 /*------footer------*/
-footer {
+.norma footer {
     /*position: relative;*/
     bottom: 0;
     right: 0;
@@ -53,41 +56,41 @@ footer {
     background-repeat: no-repeat;
 }
 
-footer > p  {
+.norma footer > p  {
     text-align: center;
     margin-bottom: 0;
     padding-bottom: 10px;
 }
 
-footer > a {
+.norma footer > a {
     display:block;
     text-align:center;
 }
 
-img#footer, img#bas_connexion {
+.norma img#footer, img#bas_connexion {
     position: absolute;
     z-index: -1;
     bottom: 0;
 }
 
 /*------reseaux sociaux------*/
-footer li {
+.norma footer li {
     padding: 0 10px 0 10px;
 }
 
-footer ul {
+.norma footer ul {
     padding: 0;
 }
-.reseaux.module-footer {
+.norma .reseaux.module-footer {
     text-align: center;
 }
 /*------index------*/
-main.index, main {
+.norma main.index, .norma  main {
     margin: 60px 5px 50px 5px;
 }
 /*------à propos------*/
 /* contact*/
-.contact textarea, .contact input {
+.norma .contact textarea, .norma .contact input {
     width: 100%;
     border-radius: 17px;
     border: none;
@@ -97,20 +100,20 @@ main.index, main {
     margin-bottom: 10px;
 }
 
-#contact label{
+.norma #contact label{
     margin-right: 0;
     margin-left: 0;
     width: 100%;
 }
 
-.contact input, .contact textarea {
+.norma .contact input, .norma .contact textarea {
     background-color: #FFFFFF;
     color: #666666;
     border: none;
     border-radius: 17px;
 }
 
-#contact {
+.norma #contact {
     box-sizing : border-box;
     border-radius:35px;
     background-color:#f2f2f2;
@@ -121,20 +124,20 @@ main.index, main {
     margin:0 auto;
 }
 
-.formulaire_contact {
+.norma .formulaire_contact {
     margin: 0 10px 0 10px;
     position: relative;
 }
 
-#contact .nom, #contact .prenom, #contact .mail2, #contact .msg {
+.norma #contact .nom, .norma #contact .prenom, .norma #contact .mail2, .norma #contact .msg {
     padding: 5px 0 5px 0;
 }
 
-textarea#msg {
+.norma textarea#msg {
     height: 200px;
 }
 
-#contact button.envoyer {
+.norma #contact button.envoyer {
     width: 150px;
     height: 40px;
     border-radius: 12px;
@@ -142,7 +145,7 @@ textarea#msg {
     float: right;
 }
 
-h3#equipe, .contact > h3, #titre h3 {
+.norma h3#equipe, .norma .contact > h3,.norma #titre h3 {
     height: 30px;
     border-radius: 0 60px 60px 0;
     text-align: left;
@@ -153,177 +156,182 @@ h3#equipe, .contact > h3, #titre h3 {
 }
 
 /*a propos*/
-.a-propos {
+.norma .a-propos {
     position: relative;
 }
 
-#titre {
+.norma #titre {
     display: flex;
     justify-content: flex-end;
     margin-right: -10px;
 }
 
-#titre h3 {
+.norma #titre h3 {
     border-radius: 60px 0 0 60px;
 }
 
-.a-propos p {
+.norma .a-propos p {
     margin: 15px 15px 5px 15px;
     position: relative;
 }
 
 /*equipe*/
-.equipe {
+.norma .equipe {
     position: relative;
     top: 35px;
 }
 
-.lena, .marine, .nina {
+.norma .lena, .norma .marine, .norma .nina {
     display:inline-block;
     text-align: center;
 
 }
 
 /*------mentions legales, parametres, mon profil(parametres)------*/
-.mentions-legales, .parametres, .parametres_profil {
+.norma .mentions-legales, .norma .parametres, .norma .parametres_profil {
     position: relative;
 }
 
-.mentions-legales p, .mentions-legales h3 {
+.norma .mentions-legales p, .norma .mentions-legales h3 {
     margin-left: 36px;
     margin-right: 36px;
 }
-.mentions-legales h1 {
+.norma .mentions-legales h1 {
     text-align: center;
 }
 
-.mentions-legales header, .parametres header {
+.norma .mentions-legales header, .parametres header {
     border-bottom:1px solid #707070;
     margin: 0;
     height: 50px;
 }
 
-.mentions-legales h3:first-of-type {
+.norma .mentions-legales h3:first-of-type {
     margin-top: 30px;
 }
 
 /*parametres, mon profil(parametres), envoi, mails, premium, vendre un jeu, porte monnaie, notifications*/
-.parametres header {
+.norma .parametres header {
     text-align: center;
 }
 
-.parametres_profil h1, .envoi h1, .mails h1, .premium h1, .vendre-un-jeu h1, #porte-monnaie h1, .notif h1 {
+.norma .parametres_profil h1, .norma .envoi h1, .norma .mails h1, .norma .premium h1, .norma .vendre-un-jeu h1,.norma  #porte-monnaie h1,.norma  .notif h1 {
     text-align: center;
     margin-top: 20px;
   }
 
-.parametres ul, .parametres_profil ul {
+.norma .parametres ul, .norma .parametres_profil ul {
     padding-left: 0;
 }
 
-.parametres_profil ul {
+.norma .parametres_profil ul {
     margin-bottom: 40px;
 }
 
-.parametres li,.parametres_profil li {
+.norma .parametres li,.norma .parametres_profil li {
     padding: 15px 0 15px 0;
 }
 
-.parametres li:first-of-type, .parametres_profil li:first-of-type  {
+.norma .parametres li:first-of-type, .norma .parametres_profil li:first-of-type  {
     border-bottom:42px solid #E4E4E4;
     padding-bottom: 15px;
     padding-top: 0;
 }
 
-.parametres li:nth-of-type(2) {
+.norma .parametres li:nth-of-type(2) {
     border-bottom:1px solid #707070;
     border-top:1px solid #707070;
 }
 
-.parametres li:nth-of-type(3), .parametres_profil li:nth-of-type(4), .parametres_profil li:nth-of-type(6), .parametres_profil li:nth-of-type(7), .parametres_profil li:nth-of-type(8) {
+.norma .parametres li:nth-of-type(3), .norma .parametres_profil li:nth-of-type(4), .norma .parametres_profil li:nth-of-type(6), .norma .parametres_profil li:nth-of-type(7), .norma .parametres_profil li:nth-of-type(8) {
     border-bottom:42px solid #E4E4E4;
 }
 
-.parametres li:nth-of-type(4) {
+.norma .parametres li:nth-of-type(4) {
     border-top:1px solid #707070;
     border-bottom:42px solid #E4E4E4;
 }
 
-.parametres li:nth-of-type(5) {
+.norma .parametres li:nth-of-type(5) {
     border-top:1px solid #707070;
     border-bottom:42px solid #E4E4E4;
 }
 
-.parametres li:nth-of-type(6), .vendre-un-jeu .prix {
+.norma .parametres li:nth-of-type(6), .norma .vendre-un-jeu .prix {
     border-top:1px solid #707070;
     border-bottom:1px solid #707070;
 }
 
-.parametres_profil header, .envoi header, .mails header, .mails, .vendre-un-jeu header, #porte-monnaie header {
+.norma .parametres_profil header, .norma .envoi header, .norma .mails header, .norma .mails, .norma .vendre-un-jeu header, .norma #porte-monnaie header {
     border-bottom:42px solid #E4E4E4;
 }
 
-.mails {
+.norma .mails {
     padding-bottom: 20px;
 }
 
-.envoi .retour button, .parametres_profil .retour button, .premium .retour button {
+.norma .envoi .retour button, .norma .parametres_profil .retour button, .norma .premium .retour button {
     position: absolute;
     top: -5px;
 }
 
-.mails .retour button, .vendre-un-jeu .retour button, #porte-monnaie .retour button, .notif .retour button {
+.norma .mails .retour button {
+    position: absolute;
+    top: 60px;
+}
+
+.norma .vendre-un-jeu .retour button, .norma #porte-monnaie .retour button, .norma .notif .retour button {
     position: absolute;
     top: 65px;
 }
 
-.parametres_profil label, .parametres_profil input, .envoi input, .envoi label {
+.norma .parametres_profil label, .norma .parametres_profil input, .norma .envoi input, .norma .envoi label {
     display: table-cell;
 }
 
-.parametres_profil button, .parametres_profil p, .parametres_profil a {
+.norma .parametres_profil button, .norma .parametres_profil p, .norma .parametres_profil a {
     display: inline-block;
 }
 
-.parametres_profil li:nth-of-type(2),.parametres_profil li:nth-of-type(3), .parametres_profil li:nth-of-type(5), .vendre-un-jeu .etat, .notif header {
+.norma .parametres_profil li:nth-of-type(2),.norma .parametres_profil li:nth-of-type(3), .norma .parametres_profil li:nth-of-type(5), .norma .vendre-un-jeu .etat, .norma .notif header {
     border-bottom:1px solid #707070;
 }
 
-.parametres_profil input, .envoi input {
+.norma .parametres_profil input, .norma .envoi input {
     border-radius: 17px;
     height: 20px;
     padding: 10px;
 }
 
 /*bouton*/
-ul#parametre_profil button {
+.norma ul#parametre_profil button {
     padding: 0;
     width: 80px;
 }
 
 /*croix, fleche retour*/
-.croix button{
+.norma .croix button{
     position: relative;
     top: -43px;
     margin-left: 30px;
 }
 
-svg#croix {
+.norma svg#croix {
     width: 16px;
     height: 16px;
 }
 
-svg#left_arrow {
+.norma svg#left_arrow {
     width: 18px;
     height: 20px;
 }
 
 /*envoi*/
-.envoi {
+.norma .envoi {
     position: relative;
 }
 
-form#envoi {
+.norma form#envoi {
     box-sizing : border-box;
     width: 100%;
     max-width: 1000px;
@@ -331,12 +339,12 @@ form#envoi {
     padding: 20px 15px 0 15px;
 }
 
-button.terminer {
+.norma button.terminer {
     display: block;
     margin : 0 auto;
 }
 
-.envoi input {
+.norma .envoi input {
     width: 100%;
     border-radius: 17px;
     border: none;
@@ -346,57 +354,53 @@ button.terminer {
     margin-bottom: 10px;
 }
 
-#envoi label{
+.norma #envoi label{
     margin-right: 0;
     margin-left: 0;
     width: 100%;
 }
 
 /*premium*/
-.premium {
+.norma .premium {
     margin: 0 15px 30px 15px;
     position: relative;
 }
 
-.premium h2 {
+.norma .premium h2 {
     padding-left: 5px;
 }
 
-.avantages p, .premium p {
+.norma .avantages p, .norma .premium p {
     text-align: center;
 }
 
-.avantages > .regles-premium > p, .avantages > .pas-pubs > p {
+.norma .avantages > .regles-premium > p,.norma  .avantages > .pas-pubs > p {
     text-align: left;
 }
 
-.pas-pubs, .regles-premium {
-
-}
-
-.pas-pubs h3, .pas-pubs figure, .regles-premium h3, .regles-premium figure {
+.norma .pas-pubs h3, .norma .pas-pubs figure, .norma .regles-premium h3, .norma .regles-premium figure {
     display: inline-block;
 }
 
-.pas-pubs figure, .regles-premium figure {
+.norma .pas-pubs figure, .norma .regles-premium figure {
     margin-right: 20px;
 }
 
-.pas-pubs h3, .regles-premium h3 {
+.norma .pas-pubs h3, .norma .regles-premium h3 {
     margin: 0;
 }
 
-.pas-pubs p, .regles-premium p {
+.norma .pas-pubs p, .norma .regles-premium p {
     padding-left: 120px;
     margin: 0;
 }
 
-.pas-pubs  h3, .pas-pubs p, .regles-premium h3, .regles-premium p {
+.norma .pas-pubs  h3, .norma .pas-pubs p, .norma .regles-premium h3, .norma .regles-premium p {
     position: relative;
     top: -50px;
 }
 
-.pas-pubs, .regles-premium  {
+.norma .pas-pubs, .norma .regles-premium  {
     box-sizing : border-box;
     width: 100%;
     max-width: 1000px;
@@ -406,7 +410,7 @@ button.terminer {
     height: 150px;
 }
 
-.avantages h2 {
+.norma .avantages h2 {
     box-sizing : border-box;
     width: 100%;
     max-width: 1000px;
@@ -415,7 +419,7 @@ button.terminer {
     position: relative;
 }
 
-.demarrer-abonnement button {
+.norma .demarrer-abonnement button {
     display: block;
     margin : 0 auto;
     width: 260px;
@@ -423,35 +427,35 @@ button.terminer {
 
 /*accueil*/
 /* recherche*/
-.recherche {
+.norma .recherche {
     background-color: #ffffff;
     margin-left: -10px;
 }
 
-#maRecherche {
+.norma #maRecherche {
     padding: 5px 0 5px 20px;
 }
 
-.recherche button {
+.norma .recherche button {
     margin-top: 4px;
     position: relative;
     top: 3px;
 }
 
 /* vendre, notification*/
-.boutons {
+.norma .boutons {
     display: flex;
     justify-content: flex-end;
     height: 0;
 }
-.vendre-jeu, .notifications{
+.norma .vendre-jeu, .norma .notifications{
     display: inline-block;
     position: relative;
     top: -45px;
 }
 
 /*j-cartes*/
-#dooble-visit, #bataille-visit, #jeu-dames-visit, #loup-garou-visit {
+.norma #dooble-visit, .norma #bataille-visit, .norma #jeu-dames-visit, .norma #loup-garou-visit {
     box-sizing : border-box;
     width: 100%;
     max-width: 800px;
@@ -463,11 +467,11 @@ button.terminer {
     box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.3);
 }
 
-img#img_dooble, img#img_loup_garou, img#img_bataille, img#img_jeu_dame {
+.norma img#img_dooble, .norma img#img_loup_garou, .norma img#img_bataille, .norma img#img_jeu_dame {
     width: 80%;
 }
 
-.acheter, .ajouter-variante {
+.norma .acheter, .norma .ajouter-variante {
     margin: 0 auto;
     position: relative;
      box-sizing : border-box;
@@ -475,21 +479,21 @@ img#img_dooble, img#img_loup_garou, img#img_bataille, img#img_jeu_dame {
      max-width: 150px;
  }
 
-.ajouter-variante button {
+.norma .ajouter-variante button {
      margin-bottom: 15px;
  }
 
-.b_regles_variante {
+.norma .b_regles_variante {
     margin: 0 auto;
     width: 150px;
 }
 
-#loup-garou-visit ul, #bataille-visit ul, #jeu-dames-visit ul, #dooble-visit ul {
+.norma #loup-garou-visit ul, .norma #bataille-visit ul, .norma #jeu-dames-visit ul, .norma #dooble-visit ul {
     padding-left: 0;
 }
 
 /*ajouter variante*/
-form#ajouter-variante {
+.norma form#ajouter-variante {
     box-sizing : border-box;
     width: 100%;
     max-width: 800px;
@@ -501,11 +505,11 @@ form#ajouter-variante {
     box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.3);
 }
 
-#ajouter-variante label, #ajouter-variante textarea {
+.norma #ajouter-variante label, .norma #ajouter-variante textarea {
     display: table-cell;
 }
 
-#ajouter-variante textarea {
+.norma #ajouter-variante textarea {
     width: 100%;
     border-radius: 17px;
     border: none;
@@ -518,13 +522,13 @@ form#ajouter-variante {
 }
 
 /*commentaire*/
-.commentaire h2 {
+.norma .commentaire h2 {
     text-align: center;
     padding-bottom: 10px;
     margin: 0;
 }
 
-.commentaire textarea, .commentaire input {
+.norma .commentaire textarea, .norma .commentaire input {
     width: 100%;
     border-radius: 13px;
     border: none;
@@ -535,21 +539,21 @@ form#ajouter-variante {
     background-color: #FFFFFF;
 }
 
-.commentaire textarea {
+.norma .commentaire textarea {
     height: 200px;
 }
 
-.commentaire input#poster_comm {
+.norma .commentaire input#poster_comm {
     float: right;
 }
 
-#commentaire label{
+.norma #commentaire label{
     margin-right: 0;
     margin-left: 0;
     width: 100%;
 }
 
-#commentaire {
+.norma #commentaire {
     box-sizing : border-box;
     border-radius:20px;
     padding:20px;
@@ -559,7 +563,7 @@ form#ajouter-variante {
     margin:0 auto;
 }
 
-.commentaire {
+.norma .commentaire {
     margin: 0 auto;
     position: relative;
     max-height: 400px;
@@ -567,12 +571,12 @@ form#ajouter-variante {
     border-radius: 20px;
 }
 
-.commentaire button {
+.norma .commentaire button {
     float: right;
 }
 
 /*ajouter regle*/
-#ajouter-regle {
+.norma #ajouter-regle {
     box-sizing : border-box;
     width: 100%;
     max-width: 800px;
@@ -584,7 +588,7 @@ form#ajouter-variante {
     box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.3);
 }
 
-#ajouter-regle input, #ajouter-regle textarea, #ajouter-regle select {
+.norma #ajouter-regle input, .norma #ajouter-regle textarea, .norma #ajouter-regle select {
     width: 100%;
     border-radius: 17px;
     border: none;
@@ -595,26 +599,26 @@ form#ajouter-variante {
     margin-top: 15px;
 }
 
-#ajouter-regle textarea {
+.norma #ajouter-regle textarea {
     height: 200px;
 }
 
-#ajouter-regle .nom-j, .ajouter-des-photos {
+.norma #ajouter-regle .nom-j, .norma .ajouter-des-photos {
     margin: 0 auto;
     position: relative;
     box-sizing : border-box;
     width: 100%;
 }
 
-#ajouter-regle .nom-j {
+.norma #ajouter-regle .nom-j {
     max-width: 90px;
 }
 
-.ajouter-des-photos {
+.norma .ajouter-des-photos {
     max-width: 230px;
 }
 
-.ajouter-des-photos > a > p{
+.norma .ajouter-des-photos > a > p{
     max-width: 240px;
     position: relative;
     top: -18px;
@@ -622,19 +626,19 @@ form#ajouter-variante {
 
 /*pages connexion et inscription, mdp oublie*/
 
-body.connexion img#logo, body.inscription img#logo, body.mdp-oublie img#logo {
+.norma body.connexion img#logo, .norma body.inscription img#logo, .norma body.mdp-oublie img#logo {
     width: 234px;
     height: 70px;
     position: relative;
     margin: 0 auto;
 }
 
-#container {
+.norma #container {
     margin: 0 10px 0 10px;
     position: relative;
 }
 
-#connexion, div.mdp-oublie, #inscription {
+.norma #connexion, .norma div.mdp-oublie,.norma #inscription {
     box-sizing : border-box;
     padding:10px;
     width: 100%;
@@ -642,11 +646,11 @@ body.connexion img#logo, body.inscription img#logo, body.mdp-oublie img#logo {
     margin:0 auto;
 }
 
-form#connexion label, form#connexion input, form#connexion a, form#inscription button, form#inscription label, form#inscription input, form#inscription button, #vendre-jeux input, #vendre-jeux label {
+.norma #connexion label, .norma #connexion input, .norma #connexion a, .norma #inscription button, .norma #inscription label, .norma #inscription input, .norma #inscription button, .norma #vendre-jeux input, .norma #vendre-jeux label {
     display: table-cell;
 }
 
-form#connexion input, div.mdp-oublie input {
+.norma #connexion input, .norma div.mdp-oublie input {
     background-color: #ffe9aa;
     border: none;
     border-radius: 25px;
@@ -658,7 +662,7 @@ form#connexion input, div.mdp-oublie input {
     resize: vertical;
 }
 
-form#inscription input {
+.norma #inscription input {
     background-color: #ffe9aa;
     border: none;
     border-radius: 25px;
@@ -670,44 +674,44 @@ form#inscription input {
     resize: vertical;
 }
 
-div.connexion {
+.norma div.connexion {
     margin: 0 auto;
     max-width: 240px;
 }
 
-div.mdp-o, div.inscription {
+.norma div.mdp-o, .norma div.inscription {
     margin: 0 auto;
     max-width: 150px;
 }
 
-button.connexion, button.inscription, button.mdp-o {
+.norma button.connexion, .norma button.inscription, .norma button.mdp-o {
     margin: 0 auto;
     max-width: 240px;
 }
 
-#container p:nth-child(2), #container a {
+.norma #container p:nth-child(2), .norma #container a {
     display:block;
     text-align:center;
 }
 
-#connexion a {
+.norma #connexion a {
     float: right;
 }
 
-form#connexion input {
+.norma #connexion input {
     height: 56px;
 }
 
-form#inscription input, .mdp-oublie input {
+.norma #inscription input, .mdp-oublie input {
     height: 35px;
 }
 
-#inscription .prenom, #inscription .nom {
+.norma #inscription .prenom, .norma #inscription .nom {
     margin: 0;
 }
 
 
-button.connexion {
+.norma button.connexion {
     background-color: #cf4c68;
     border: none;
     border-radius: 25px;
@@ -717,67 +721,67 @@ button.connexion {
     margin-top: 10px;
 }
 
-#container p, #inscription p {
+.norma #container p, .norma #inscription p {
     text-align: center;
 }
 
 /*boutons "ajouter*/
-.ajouter {
+.norma .ajouter {
     margin: 0 auto;
     position: relative;
     max-width: 150px;
     border-radius: 20px;
 }
 
-.ajouter button {
+.norma .ajouter button {
     box-sizing : border-box;
     width: 100%;
     margin:15px auto 0 auto;
 }
 
 /*vendre un jeu*/
-.vendre-un-jeu .ajouter-des-photos {
+.norma .vendre-un-jeu .ajouter-des-photos {
     margin-top: 50px;
     margin-bottom: 25px;
 }
 
-.vendre-un-jeu .nom-j, .prix, .etat {
+.norma .vendre-un-jeu .nom-j, .norma .prix, .norma .etat {
     padding: 15px 0 15px 0;
 }
 
-.vendre-un-jeu .ajouter {
+.norma .vendre-un-jeu .ajouter {
     margin-top: 50px;
 }
 
 /*porte monnaie*/
-.montant-dispo h3 {
+.norma .montant-dispo h3 {
     color: #707070;
     font-size: 17px;
     text-align: center;
 }
 
-.montant-dispo {
+.norma .montant-dispo {
     margin: 0 auto 30px auto;
     position: relative;
     max-width: 280px;
 }
 
-button.transfert {
+.norma button.transfert {
     box-sizing : border-box;
     max-width: 100%;
     margin:0 auto;
 }
 
-.solde-initial {
+.norma .solde-initial {
     border-bottom:42px solid #E4E4E4;
     border-top:42px solid #E4E4E4;
 }
 
 /*profil*/
-.mon-profil {
+.norma .mon-profil {
     margin: 30px 40px 0 40px;
 }
-.profil {
+.norma .profil {
     border: 3px solid #cf4c68;
     background-color: white;
     box-sizing : border-box;
@@ -790,7 +794,7 @@ button.transfert {
     height: 500px;
 }
 
-.porte-monnaie {
+.norma .porte-monnaie {
     box-sizing : border-box;
     width: 100%;
     max-width: 800px;
@@ -804,117 +808,121 @@ button.transfert {
     background-color: #cf4c68;
 }
 
-.porte-monnaie h4 {
+.norma .porte-monnaie h4 {
     text-align: center;
     margin: 0;
 }
 
-.solde {
+.norma .solde {
     background-color: white;
 }
 
 /*notifications*/
-.notif h1 {
+.norma .notif h1 {
     margin-bottom: 30px;
 }
 
 /*mdp oublie*/
-.mdp-oublie p {
+.norma .mdp-oublie p {
     text-align: center;
 }
 
 /*responsive*/
 @media screen and (max-width: 3000px) {
     /*equipe*/
-    h3#equipe, .contact > h3, #titre h3 {
+    .norma h3#equipe, .norma .contact > h3, .norma #titre h3 {
         max-width: 600px;
     }
 
-    .equipe {
+    .norma .equipe {
         height: 300px;
         position: relative;
         margin: 0 auto;
         max-width: 665px;
     }
 
-    .lena img, .marine img, .nina img {
+    .norma .lena img, .norma .marine img, .norma .nina img {
         width: 130px;
         height: 130px;
     }
-    .nina > address > p, .marine > address > p, .lena > address > p {
+    .norma .nina > address > p, .norma .marine > address > p, .norma .lena > address > p {
         font-size: 16px;
     }
 
-    .lena > address > a, .marine > address > a, .nina > address > a{
+    .norma .lena > address > a, .norma .marine > address > a, .norma .nina > address > a{
         padding: 7px 15px 7px 15px;
         border-radius: 60px;
         font-size: 14px;
     }
 
-    .lena {
+    .norma .lena {
         position: relative;
     }
 
-    .marine {
+    .norma .marine {
         position: relative;
         left: 25px;
         top: -60px;
     }
 
-    .nina {
+    .norma .nina {
         position: relative;
         left: 35px;
     }
 
     /*parametres, vendre un jeu*/
-    .parametres a, .parametres_profil label, .parametres_profil a, .parametres_profil p,.mails h3, .vendre-un-jeu label, #porte-monnaie h4   {
+    .norma .parametres a, .norma .parametres_profil label, .norma .parametres_profil a, .norma .parametres_profil p, .norma .mails h3, .norma .vendre-un-jeu label, .norma #porte-monnaie h4   {
         padding-left: 80px;
     }
 
-    .parametres .fa-chevron-right, .parametres_profil .fa-chevron-right {
+    .norma .parametres button {
+        padding-left: 80px;
+    }
+
+    .norma .parametres .fa-chevron-right, .norma .parametres_profil .fa-chevron-right {
         padding-left: 540px;
     }
 
     /*parametres mon profil, mails, vendre un jeu*/
-    .parametres_profil input, .mails input, .vendre-un-jeu input {
+    .norma .parametres_profil input, .norma .mails input, .norma .vendre-un-jeu input {
         margin-left:80px;
     }
 
     /*bouton*/
-    ul#parametre_profil li:first-of-type button {
+    .norma ul#parametre_profil li:first-of-type button {
         position: relative;
         left: 495px
     }
 
-    ul#parametre_profil li:nth-of-type(5) button{
+    .norma ul#parametre_profil li:nth-of-type(5) button{
         position: relative;
         left: 535px;
     }
 
-    ul#parametre_profil li:nth-of-type(6) button{
+    .norma ul#parametre_profil li:nth-of-type(6) button{
         position: relative;
         left: 490px;
     }
 
     /*mails*/
-    .mails label {
+    .norma .mails label {
         padding-left:40px;
     }
 
     /*accueil*/
     /* recherche*/
-    .recherche {
+    .norma .recherche {
         height: 42px;
         width: 250px;
         border-radius: 0 60px 60px 0;
     }
 
-    #maRecherche {
+    .norma #maRecherche {
         padding: 5px 0 5px 20px;
         margin-right: 60px;
     }
 
-    .recherche button {
+    .norma .recherche button {
         margin-top: 4px;
         position: relative;
         top: 3px;
@@ -923,12 +931,12 @@ button.transfert {
 
 
     /*jeux*/
-    .centrer {
+    .norma .centrer {
         margin-top:1vh;
         transform: translateY(-1%);
     }
 
-    .categories {
+    .norma .categories {
         display: grid;
         grid-template-columns: repeat(2, 260px);
         grid-gap: 40px;
@@ -939,24 +947,24 @@ button.transfert {
         margin: 50px auto 0 auto;
     }
 
-    .j-de-plateau, .j-pions, .j-cartes, .j-des  {
+    .norma .j-de-plateau, .norma .j-pions, .norma .j-cartes, .norma .j-des  {
         height: 400px;
         text-align: center;
         box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.3);
     }
 
-    .j-de-plateau h2, .j-pions h2, .j-cartes h2, .j-des h2{
+    .norma .j-de-plateau h2, .norma .j-pions h2, .norma .j-cartes h2, .norma .j-des h2{
         padding-top: 20px;
     }
 
-    .j-pions img, .j-cartes img, .j-des img, .j-de-plateau img {
+    .norma .j-pions img, .norma .j-cartes img, .norma .j-des img, .norma .j-de-plateau img {
         padding-top: 30px;
         width: 200px;
         height: 200px;
     }
 
     /*acheter jeux*/
-    .jeux {
+    .norma .jeux {
         display: grid;
         grid-template-columns: repeat(2, 260px);
         grid-gap: 40px;
@@ -968,7 +976,7 @@ button.transfert {
     }
 
     /*footer*/
-    img#footer.responsive {
+    .norma img#footer.responsive {
         width: 100%;
         max-width: 2000px;
         height: 210px;
@@ -976,54 +984,54 @@ button.transfert {
     }
 
     /*nav*/
-    img#img_nav.responsive {
+    .norma img#img_nav.responsive {
         width: 100%;
         max-width: 2000px;
         height: 300px;
         max-height: 500px;
     }
 
-    img#img_nav {
+    .norma img#img_nav {
         position: absolute;
         z-index: -1;
         top: -5px;
         left: 0;
     }
 
-    img#ligne.responsive {
+    .norma img#ligne.responsive {
         width: 100%;
         max-width: 2000px;
         height: 60px;
         max-height: 300px;
     }
 
-    img#ligne {
+    .norma img#ligne {
         position: fixed;
         z-index: 1;
         top: 0;
         left: 0;
     }
 
-    img#bas_connexion.responsive {
+    .norma img#bas_connexion.responsive {
         width: 100%;
         max-width: 2000px;
         height: 130px;
         max-height: 300px;
     }
 
-    img#haut_connexion.responsive {
+    .norma img#haut_connexion.responsive {
         width: 100%;
         max-width: 2000px;
         height: 130px;
         max-height: 300px;
     }
 
-    .img_visit_regle{
+    .norma .img_visit_regle{
         margin: 0 auto;
         width: 180px;
     }
 
-    .img_visit_regle img {
+    .norma .img_visit_regle img {
         width: 180px;
         height: 180px;
     }
@@ -1032,111 +1040,115 @@ button.transfert {
 
 @media screen and (max-width: 768px) {
     /*equipe*/
-    h3#equipe, .contact > h3, #titre h3 {
+    .norma h3#equipe, .norma .contact > h3, .norma #titre h3 {
         max-width: 300px;
     }
 
-    .equipe {
+    .norma .equipe {
         height: 240px;
         position: relative;
         margin: 0 auto;
         max-width: 440px;
     }
 
-    .lena img, .marine img, .nina img {
+    .norma .lena img, .norma .marine img, .norma .nina img {
         width: 110px;
         height: 110px;
     }
 
-    .nina > address > p, .marine > address > p, .lena > address > p {
+    .norma .nina > address > p, .norma .marine > address > p, .norma .lena > address > p {
         font-size: 14px;
     }
 
-    .lena > address > a, .marine > address > a, .nina > address > a{
+    .norma .lena > address > a, .norma .marine > address > a, .norma .nina > address > a{
         padding: 7px 15px 7px 15px;
         border-radius: 60px;
         font-size: 12px;
     }
 
-    .nina, .marine, .lena {
+    .norma .nina, .norma .marine, .norma .lena {
         position: absolute;
     }
 
-    .marine {
+    .norma .marine {
         left: 125px;
         top: -60px;
     }
 
-    .nina {
+    .norma .nina {
         left: 250px;
     }
 
     /*parametres, parametres mon profil, mails */
-    .parametres a, .parametres_profil label, .parametres_profil a, .parametres_profil p, .mails h3, #porte-monnaie h4 {
+    .norma .parametres a, .norma .parametres_profil label, .norma .parametres_profil a, .norma .parametres_profil p, .norma .mails h3, .norma #porte-monnaie h4 {
         padding-left: 50px;
     }
 
-    .parametres .fa-chevron-right, .parametres_profil .fa-chevron-right {
+    .norma .parametres button {
+        padding-left: 50px;
+    }
+
+    .norma .parametres .fa-chevron-right, .norma .parametres_profil .fa-chevron-right {
         padding-left: 250px;
     }
 
     /*parametres mon profil, mails*/
-    .parametres_profil input, .mails input {
+    .norma .parametres_profil input, .norma .mails input {
         margin-left:50px;
     }
 
     /*bouton*/
-    ul#parametre_profil li:first-of-type button {
+    .norma ul#parametre_profil li:first-of-type button {
         position: relative;
         left: 245px
     }
 
-    ul#parametre_profil li:nth-of-type(5) button{
+    .norma ul#parametre_profil li:nth-of-type(5) button{
         position: relative;
         left: 285px;
     }
 
-    ul#parametre_profil li:nth-of-type(6) button{
+    .norma ul#parametre_profil li:nth-of-type(6) button{
         position: relative;
         left: 240px;
     }
 
     /*accueil*/
     /* recherche*/
-    .recherche {
+    .norma .recherche {
         height: 42px;
         width: 175px;
         border-radius: 0 60px 60px 0;
     }
 
-    #maRecherche {
+    .norma #maRecherche {
         padding: 5px 0 5px 20px;
         margin-right: 0;
     }
 
-    .recherche button {
+    .norma .recherche button {
         margin-top: 4px;
         position: relative;
         top: 3px;
     }
 
     /* vendre, notification*/
-    .vendre-jeu, .notifications{
+    .norma .vendre-jeu, .norma .notifications{
         display: inline-block;
     }
 
-    .vendre-jeu, .notifications, .recherche {
+    .norma .vendre-jeu, .norma .notifications, .norma .recherche {
         flex-direction: row;
     }
 
 
 
-    .centrer {
+    .norma .centrer {
         margin-top: 10vh;
         transform: translateY(-10%);
     }
 
-    .categories {
+    .norma .categories {
         display: grid;
         grid-template-columns: repeat(2, 220px);
         grid-gap: 30px;
@@ -1147,24 +1159,24 @@ button.transfert {
         margin: 110px auto 0 auto;
     }
 
-    .j-de-plateau, .j-pions, .j-cartes, .j-des  {
+    .norma .j-de-plateau, .norma .j-pions, .norma .j-cartes, .norma .j-des  {
         height: 330px;
         text-align: center;
         box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.3);
     }
 
-    .j-de-plateau h2, .j-pions h2, .j-cartes h2, .j-des h2{
+    .norma .j-de-plateau h2, .norma .j-pions h2, .norma .j-cartes h2, .norma .j-des h2{
         padding-top: 20px;
     }
 
-    .j-pions img, .j-cartes img, .j-des img, .j-de-plateau img {
+    .norma .j-pions img, .norma .j-cartes img, .norma .j-des img, .norma .j-de-plateau img {
         padding-top: 10px;
         height: 200px;
         width: 170px;
     }
 
     /*acheter des jeux*/
-    .jeux {
+    .norma .jeux {
         display: grid;
         grid-template-columns: repeat(2, 220px);
         grid-gap: 30px;
@@ -1176,7 +1188,7 @@ button.transfert {
     }
 
     /*footer*/
-    img#footer.responsive {
+    .norma img#footer.responsive {
         width: 100%;
         max-width: 2000px;
         height: 225px;
@@ -1184,54 +1196,54 @@ button.transfert {
     }
 
     /*nav*/
-    img#img_nav.responsive {
+    .norma img#img_nav.responsive {
         width: 100%;
         max-width: 2000px;
         height: 300px;
         max-height: 400px;
     }
 
-    img#img_nav {
+    .norma img#img_nav {
         position: absolute;
         z-index: -1;
         top: -5px;
         left: 0;
     }
 
-    img#ligne.responsive {
+    .norma img#ligne.responsive {
         width: 100%;
         max-width: 2000px;
         height: 60px;
         max-height: 300px;
     }
 
-    img#ligne {
+    .norma img#ligne {
         position: fixed;
         z-index: 1;
         top: 0;
         left: 0;
     }
 
-    img#bas_connexion.responsive {
+    .norma img#bas_connexion.responsive {
         width: 100%;
         max-width: 2000px;
         height: 150px;
         max-height: 300px;
     }
 
-    img#haut_connexion.responsive {
+    .norma img#haut_connexion.responsive {
         width: 100%;
         max-width: 2000px;
         height: 150px;
         max-height: 300px;
     }
 
-    .img_visit_regle {
+    .norma .img_visit_regle {
         margin: 0 auto;
         width: 180px;
     }
 
-    .img_visit_regle img {
+    .norma .img_visit_regle img {
         width: 180px;
         height: 180px;
     }
@@ -1239,118 +1251,122 @@ button.transfert {
 
 @media screen and (max-width: 480px){
     /*equipe*/
-    h3#equipe, .contact > h3, #titre h3 {
+    .norma h3#equipe, .norma .contact > h3, .norma #titre h3 {
         max-width: 115px;
     }
 
-    .equipe {
+    .norma .equipe {
         height: 200px;
         position: relative;
         margin: 0 auto;
         max-width: 320px;
     }
 
-    .lena img, .marine img, .nina img {
+    .norma .lena img, .norma .marine img, .norma .nina img {
         width: 70px;
         height: 70px;
     }
 
-    .nina > address > p, .marine > address > p, .lena > address > p {
+    .norma .nina > address > p, .norma .marine > address > p, .norma .lena > address > p {
         font-size: 10px;
         margin: 0;
     }
 
-    .nina > address > a, .marine > address > a, .lena > address > a {
+    .norma .nina > address > a, .norma .marine > address > a, .norma .lena > address > a {
         padding: 5px 10px 5px 10px;
         border-radius: 60px;
         font-size: 9px;
     }
 
-    .nina, .marine, .lena {
+    .norma .nina, .norma .marine, .norma .lena {
         position: absolute;
     }
 
-    .marine {
+    .norma .marine {
         left: 80px;
         top: -40px;
     }
 
-    .nina {
+    .norma .nina {
         left: 160px;
     }
 
     /* a propos---*/
-    .a-propos {
+    .norma .a-propos {
         max-width: 400px;
         max-height: 440px;
     }
 
-    .a-propos p{
+    .norma .a-propos p{
         text-align: justify;
     }
 
     /*parametres*/
-    .parametres a {
+    .norma .parametres a {
         padding-left:20px;
     }
-    .parametres .fa-chevron-right, .parametres_profil .fa-chevron-right  {
+
+    .norma .parametres button {
+        padding-left: 20px;
+    }
+    .norma .parametres .fa-chevron-right, .norma .parametres_profil .fa-chevron-right  {
         padding-left: 80px;
     }
 
     /*parametres mon profil, mails*/
-    .parametres_profil input, .mails input {
+    .norma .parametres_profil input, .norma .mails input {
         margin-left:20px;
     }
 
-    .parametres_profil label, .parametres_profil a, .parametres_profil p, .mails h3, #porte-monnaie h4 {
+    .norma .parametres_profil label, .norma .parametres_profil a, .norma .parametres_profil p, .norma .mails h3, .norma #porte-monnaie h4 {
         padding-left:20px;
     }
 
-    .mails label {
+    .norma .mails label {
         padding-left:10px;
     }
 
     /*bouton*/
-    ul#parametre_profil li:first-of-type button {
+    .norma ul#parametre_profil li:first-of-type button {
         position: relative;
         left: 100px
     }
 
-    ul#parametre_profil li:nth-of-type(5) button{
+    .norma ul#parametre_profil li:nth-of-type(5) button{
         position: relative;
         left: 140px;
     }
 
-    ul#parametre_profil li:nth-of-type(6) button{
+    .norma ul#parametre_profil li:nth-of-type(6) button{
         position: relative;
         left: 95px;
     }
 
     /*accueil*/
     /* recherche*/
-    .recherche {
+    .norma .recherche {
         height: 42px;
         width: 175px;
         border-radius: 0 60px 60px 0;
     }
 
-    #maRecherche {
+    .norma #maRecherche {
         padding: 5px 0 5px 20px;
         margin-right: 0;
     }
 
-    .recherche button {
+    .norma .recherche button {
         margin-top: 4px;
         position: relative;
         top: 3px;
     }
 
-    .centrer {
+    .norma .centrer {
         margin-top: 10vh;
         transform: translateY(-10%);
     }
 
-    .categories {
+    .norma .categories {
         display: grid;
         grid-template-columns: repeat(2, 140px);
         grid-gap: 30px;
@@ -1361,24 +1377,24 @@ button.transfert {
         margin:0 auto;
     }
 
-    .j-de-plateau, .j-pions, .j-cartes, .j-des  {
+    .norma .j-de-plateau, .norma .j-pions, .norma .j-cartes, .norma .j-des  {
         height: 250px;
         text-align: center;
         box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.3);
     }
 
-    .j-de-plateau h2, .j-pions h2, .j-cartes h2, .j-des h2{
+    .norma .j-de-plateau h2, .norma .j-pions h2, .norma .j-cartes h2, .norma .j-des h2{
         padding-top: 20px;
     }
 
-    .j-pions img, .j-cartes img, .j-des img, .j-de-plateau img {
+    .norma .j-pions img, .norma .j-cartes img, .norma .j-des img, .norma .j-de-plateau img {
         padding-top: 10px;
         height: 121px;
         width: 100px;
     }
 
     /*acheter des jeux*/
-    .jeux {
+    .norma .jeux {
         display: grid;
         grid-template-columns: repeat(2, 140px);
         grid-gap: 30px;
@@ -1390,7 +1406,7 @@ button.transfert {
     }
 
     /*footer*/
-    img#footer.responsive {
+    .norma img#footer.responsive {
         width: 100%;
         max-width: 2000px;
         height: 180px;
@@ -1398,54 +1414,54 @@ button.transfert {
     }
 
     /*nav*/
-    img#img_nav.responsive {
+    .norma img#img_nav.responsive {
         width: 100%;
         max-width: 2000px;
         height: 200px;
         max-height: 300px;
     }
 
-    img#img_nav {
+    .norma img#img_nav {
         position: absolute;
         z-index: -1;
         top: 0;
         left: 0;
     }
 
-    img#ligne.responsive {
+    .norma img#ligne.responsive {
         width: 100%;
         max-width: 2000px;
         height: 60px;
         max-height: 300px;
     }
 
-    img#ligne {
+    .norma img#ligne {
         position: fixed;
         z-index: 1;
         top: 0;
         left: 0;
     }
 
-    img#bas_connexion.responsive {
+    .norma img#bas_connexion.responsive {
         width: 100%;
         max-width: 2000px;
         height: 150px;
         max-height: 300px;
     }
 
-    img#haut_connexion.responsive {
+    .norma img#haut_connexion.responsive {
         width: 100%;
         max-width: 2000px;
         height: 150px;
         max-height: 300px;
     }
 
-    .img_visit_regle {
+    .norma .img_visit_regle {
         margin: 0 auto;
         width: 100px;
     }
 
-    .img_visit_regle img {
+    .norma .img_visit_regle img {
         width: 100px;
         height: 100px;
     }

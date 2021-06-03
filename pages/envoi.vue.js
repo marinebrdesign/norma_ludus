@@ -3,6 +3,7 @@ var Envoi = Vue.component('Envoi',{
 
 <div>
 <n-header></n-header>
+<div class="norma">
 <main>
 <div class="rectangle"></div>
     <div class="envoi">
@@ -36,6 +37,7 @@ var Envoi = Vue.component('Envoi',{
         </form>
     </div>
 </main>
+</div>
 <n-footer></n-footer>
 
 </div>

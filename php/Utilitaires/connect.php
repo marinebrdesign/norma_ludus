@@ -2,32 +2,24 @@
 
 require_once '../connexion.php';
 require_once '../Classes/class.UTILISATEUR.php';
+header("Access-Control-Allow-Origin: *");
+$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+try {
+    $sql = "SELECT `Identifiant`, `Email_utilisateur`
+        FROM utilisateur WHERE Email_utilisateur = ? AND Mot_de_passe = ?";
+    $req = $pdo->prepare($sql);
+    $req->bindParam(1, $_POST['user_email']);
+    $req->bindParam(2, $_POST['user_password']);
 
-$sql = "SELECT `Email_utilisateur`, `Mot_de_passe`
-        FROM utilisateur";
-
-$req = $pdo->prepare($sql);
-
-$req->execute(array(
-    'pseudo' => $identifiant));
-$resultat = $req->fetch();
-
-// Comparaison du pass envoyé via le formulaire avec la base
-$isPasswordCorrect = password_verify($_POST['pass'], $resultat['pass']);
-
-if (!$resultat)
-{
-    echo 'Mauvais identifiant ou mot de passe !';
-}
-else
-{
-    if ($isPasswordCorrect) {
-        session_start();
-        $_SESSION['Email_utilisateur'] = $resultat['id'];
-        $_SESSION['pseudo'] = $identifiant;
-        echo 'Vous êtes connecté !';
+    $req->execute();
+    $resultat = $req->fetch();
+    if (!$resultat) {
+        echo 'Mauvais identifiant ou mot de passe!';
+    } else {
+        echo json_encode($resultat);
     }
-    else {
-        echo 'Mauvais identifiant ou mot de passe !';
-    }
+} catch(PDOException $e) {
+    //error
+    http_response_code(400);
+    $return = "Your fail message: " . $e->getMessage();
 }

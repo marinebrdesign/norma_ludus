@@ -3,6 +3,7 @@ var MonProfil = Vue.component('MonProfil',{
 
 <div>
 <n-header></n-header>
+<div class="norma">
 <main class="index">
       <n-barre-recherche></n-barre-recherche>
     <div class="mon-profil">
@@ -22,6 +23,7 @@ var MonProfil = Vue.component('MonProfil',{
         </div>
     </div>
 </main>
+</div>
 <n-footer></n-footer>
 
 </div>

@@ -2,15 +2,7 @@ var MentionsLegales = Vue.component('MentionsLegales',{
     template: `
 
 <div>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mentions Légales</title>
-    <link rel="stylesheet" href="../css/typographie_couleurs.css">
-    <link rel="stylesheet" href="../css/menu.css">
-    <link rel="stylesheet" href="../css/style_mise_en_page.css">
-</head>
-<body class=" ">
+<div class="norma">
 <main>
     <div class="mentions-legales">
     <header>
@@ -40,6 +32,7 @@ var MentionsLegales = Vue.component('MentionsLegales',{
     <p>Toute utilisation, reproduction, diffusion, commercialisation, modification de toute ou partie du site normaludus.fr,  sans autorisation de l’Editeur est prohibée et pourra entraînée des actions et poursuites judiciaires telles que notamment prévues par le Code de la propriété intellectuelle et le Code civil.</p>
     </div>
 </main>
+</div>
 <n-footer></n-footer>
 
 </div>        

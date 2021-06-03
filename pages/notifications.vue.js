@@ -3,6 +3,7 @@ var Notifications = Vue.component('notifications',{
 
 <div>
 <n-header></n-header>
+<div class="norma">
 <main>
 <div class="rectangle"></div>
     <div class="notif">
@@ -14,6 +15,7 @@ var Notifications = Vue.component('notifications',{
         </header>
     </div>
 </main>
+</div>
 <n-footer></n-footer>
 
 </div>

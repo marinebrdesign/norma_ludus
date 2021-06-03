@@ -1,50 +1,50 @@
 /*------menu------*/
 /*------menu------*/
-.menu {
+.norma .menu {
     font-family: Roboto;
     font-weight: 500;
     font-size: 17px;
 }
 
-.menu a {
+.norma .menu a {
     text-decoration: none;
     color: #000;
 }
 
-.menu ul {
+.norma .menu ul {
     list-style-type: none;
 }
 
-.fa-chevron-right {
+.norma .fa-chevron-right {
     color: #000000;
 }
 
 /*------logo------*/
-img#logo {
+.norma img#logo {
     width: 120px;
     height: 50px;
 }
 
 /*------textes------*/
-p{
+.norma p{
     font-size: 15px;
     font-family: Roboto;
     font-weight: 400;
 }
 /*------rechercher------*/
-svg#loupe {
+.norma svg#loupe {
     fill: #A8D9DC;
     width: 19px;
     height: 21px;
 }
 
-.recherche button {
+.norma .recherche button {
     background-color: white;
     border: none;
     border-radius: 50%;
 }
 
-input#maRecherche {
+.norma input#maRecherche {
     font-family: Roboto;
     font-weight: 500;
     color: #CF4C68;
@@ -55,14 +55,14 @@ input#maRecherche {
 }
 
 /*------notifications------*/
-svg#notif {
+.norma svg#notif {
     fill: #CF4C68;
     width: 30px;
     height: 30px;
     padding: 5px 5px 5px 0;
 }
 
-.notifications button {
+.norma .notifications button {
     background-color: white;
     border: none;
     border-radius: 50%;
@@ -72,14 +72,14 @@ svg#notif {
 }
 
 /*-----vendre jeu------*/
-svg#plus {
+.norma svg#plus {
     fill: #CF4C68;
     width:30px;
     height: 30px;
     padding-top: 5px;
 }
 
-.vendre-jeu button {
+.norma .vendre-jeu button {
     background-color: white;
     border: none;
     border-radius: 50%;
@@ -88,13 +88,13 @@ svg#plus {
     margin: 0 10px 0 45px;
 }
 
-#vendre-jeux label {
+.norma #vendre-jeux label {
     color: #707070;
     font-family: Roboto;
     font-weight: 500;
 }
 
-#vendre-jeux input {
+.norma #vendre-jeux input {
     color: black;
     font-family: Roboto;
     font-weight: 400;
@@ -102,7 +102,7 @@ svg#plus {
 }
 
 /*------catégories------*/
-.j-cartes, .j-pions, .j-de-plateau, .j-des {
+.norma .j-cartes, .norma .j-pions, .norma .j-de-plateau, .norma .j-des {
     font-family: Roboto;
     font-weight: 900;
     color: #000;
@@ -111,20 +111,20 @@ svg#plus {
     border-radius: 30px;
 }
 
-.categories h2 {
+.norma .categories h2 {
     font-size: 15px;
 }
 
-main.index a {
+.norma main.index a {
     text-decoration: none;
 }
 
-.jeux a {
+.norma .jeux a {
     text-decoration: none;
 }
 
 /*jeux cartes*/
-#dooble,#bataille, #loup-garou, #jeu-dames {
+.norma #dooble, .norma #bataille, .norma #loup-garou, .norma #jeu-dames {
     font-family: Roboto;
     font-weight: 900;
     color: #000;
@@ -134,7 +134,7 @@ main.index a {
     box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.3);
 }
 
-.jeux {
+.norma .jeux {
     display: grid;
     grid-template-columns: repeat(2, 140px);
     grid-gap: 30px;
@@ -146,12 +146,12 @@ main.index a {
     text-align: center;
 }
 
-#dooble-visit h3, #loup-garou-visit h3, #bataille-visit h3, #jeu-dames-visit h3 {
+.norma #dooble-visit h3, .norma #loup-garou-visit h3, .norma #bataille-visit h3, .norma #jeu-dames-visit h3 {
     text-align: center;
 }
 
 /*------titres------*/
-h1 {
+.norma h1 {
     font-family: Roboto;
     font-weight: 500;
     color: #000;
@@ -161,41 +161,41 @@ h1 {
 
 
 /*------footer------*/
-footer ul {
+.norma footer ul {
     list-style-type: none;
 }
 
-footer a {
+.norma footer a {
     font-family: Roboto;
     font-weight: 300;
     color: #000;
     font-size: 12px;
 }
 
-footer p {
+.norma footer p {
     font-family: Roboto;
     font-weight: 500;
     color: #000;
     font-size: 13px;
 }
 
-svg#Bold {
+.norma svg#Bold {
     fill: #000000;
 }
 
 /*------instagram------*/
-svg.feather.feather-instagram {
+.norma svg.feather.feather-instagram {
     stroke: #000000;
 }
 
 /*------mail------*/
-svg#Capa_1 {
+.norma svg#Capa_1 {
     stroke: #000000;
     fill : #000000;
 }
 
 /*------bouton retour------*/
-svg#left_arrow {
+.norma svg#left_arrow {
     fill: #000000;
     width: 55px;
     height: 60px;
@@ -203,14 +203,14 @@ svg#left_arrow {
     padding-top: 5px;
 }
 
-.retour button {
+.norma .retour button {
     background-color: white;
     border: none;
     border-radius: 50%;
 }
 
 /*------bouton ajouter photos------*/
-svg#plus_ajouter {
+.norma svg#plus_ajouter {
     fill: #FFFFFF;
     width: 35px;
     height: 35px;
@@ -218,12 +218,12 @@ svg#plus_ajouter {
     padding-right:10px;
 }
 
-.ajouter-des-photos {
+.norma .ajouter-des-photos {
     margin-top: 20px;
     margin-left: 20px;
 }
 
-.ajouter-des-photos a {
+.norma .ajouter-des-photos a {
     background-color: #CF4C68;
     border: none;
     border-radius: 25px;
@@ -231,11 +231,11 @@ svg#plus_ajouter {
     width: 50px;
 }
 
-svg#plus_ajouter, .ajouter-des-photos p {
+.norma svg#plus_ajouter, .norma .ajouter-des-photos p {
     display: inline-block;
 }
 
-.ajouter-des-photos p {
+.norma .ajouter-des-photos p {
     font-family: Roboto;
     font-weight: 500;
     color: #FFFFFF;
@@ -244,7 +244,7 @@ svg#plus_ajouter, .ajouter-des-photos p {
 
 /*------bouton ajouter jeu------*/
 
-.ajouter button {
+.norma .ajouter button {
     background-color: #CF4C68;
     border: none;
     border-radius: 50px;
@@ -257,7 +257,7 @@ svg#plus_ajouter, .ajouter-des-photos p {
 }
 
 
-.ajouter a {
+.norma .ajouter a {
     color: #FFFFFF;
     font-family: Roboto;
     font-weight: 500;
@@ -265,74 +265,83 @@ svg#plus_ajouter, .ajouter-des-photos p {
     font-size:15px;
 }
 /*------Paramètres------*/
-.parametres {
+.norma .parametres {
     font-family: Roboto;
     font-weight: 500;
     font-size: 17px;
 }
 
-.parametres a {
+.norma .parametres a {
     text-decoration: none;
     color: #000;
     font-size: 17px;
 }
 
-.parametres > ul > li:nth-of-type(5) > a { /*non fini*/
+.norma .parametres > ul > li:nth-of-type(5) > a { /*non fini*/
     color: #E22424;
 }
 
-.parametres ul {
+.norma .parametres ul {
     list-style-type: none;
+}
+
+.parametres button {
+    text-decoration: none;
+    border: none;
+    color: black;
+    background-color: white;
+    font-size: 17px;
+    font-family: Roboto;
+    font-weight: 500;
 }
 
 /*------Mentions légales------*/
 
-.mentions-legales h1 {
+.norma .mentions-legales h1 {
     font-family: Roboto;
     font-weight: 700;
 }
-
-.mentions-legales h3 {
+.norma .mentions-legales h3 {
     font-family: Roboto;
     font-weight: 700;
     font-size: 15px;
 }
 
-.mentions-legales p {
+.norma .mentions-legales p {
     font-family: Roboto;
     font-weight: 400;
     text-align: justify;
 }
 
 /*croix*/
-svg#croix {
+.norma svg#croix {
     fill: #000000;
     width: 55px;
     height: 60px;
     padding: 10px;
 }
 
-.croix button {
+.norma .croix button {
     background-color: #1fe0;
     border: none;
     border-radius: 50%;
 }
 
 /*------a propos------*/
-.a-propos > p {
+.norma .a-propos > p {
     color: black;
     font-family: Roboto;
     font-weight: 400;
 }
 
-#titre h3, .contact > h3 {
+.norma #titre h3, .norma .contact > h3 {
     color: white;
     font-family: Roboto;
     font-weight: 500;
     background-color: #CF4C68;
 }
 
-h3#equipe {
+.norma h3#equipe {
     color: #CF4C68;
     font-family: Roboto;
     font-weight: 500;
@@ -341,7 +350,7 @@ h3#equipe {
 
 
 /*L'équipe*/
-.lena > address > p {
+.norma .lena > address > p {
     color: #76A0A3;
     font-family: Roboto;
     font-weight: 500;
@@ -350,7 +359,7 @@ h3#equipe {
     font-style: normal;
 }
 
-.lena > address > a {
+.norma .lena > address > a {
     color: white;
     font-family: Roboto;
     font-weight: 500;
@@ -360,7 +369,7 @@ h3#equipe {
     font-style: normal;
 }
 
-.marine> address > p {
+.norma .marine> address > p {
     color: #CF4C68;
     font-family: Roboto;
     font-weight: 500;
@@ -370,7 +379,7 @@ h3#equipe {
 }
 
 
-.marine > address > a {
+.norma .marine > address > a {
     color: white;
     font-family: Roboto;
     font-weight: 500;
@@ -380,7 +389,7 @@ h3#equipe {
     font-style: normal;
 }
 
-.nina > address > p {
+.norma .nina > address > p {
     color: #E7A52E;
     font-family: Roboto;
     font-weight: 500;
@@ -389,7 +398,7 @@ h3#equipe {
     font-style: normal;
 }
 
-.nina > address > a {
+.norma .nina > address > a {
     color: white;
     font-family: Roboto;
     font-weight: 500;
@@ -400,18 +409,18 @@ h3#equipe {
 }
 
 /* contact*/
-.formulaire_contact input#mail2, .formulaire_contact input#nom, .formulaire_contact input#prenom, .formulaire_contact textarea#msg{
+.norma .formulaire_contact input#mail2, .norma .formulaire_contact input#nom, .norma .formulaire_contact input#prenom, .norma .formulaire_contact textarea#msg{
     color: #666666;
     font-family: Roboto;
     font-weight: 400;
     font-size: 15px;
 }
 
-form#contact {
+.norma form#contact {
     background-color: #FCBAC5;
 }
 
-button.envoyer {
+.norma button.envoyer {
     color: #FFFFFF;
     font-family: Roboto;
     font-weight: 500;
@@ -423,7 +432,7 @@ button.envoyer {
     width: 120px;
     margin-top: 10px;
 }
-button.publier {
+.norma button.publier {
     color: #cf4c68;
     font-family: Roboto;
     font-weight: 500;
@@ -437,34 +446,34 @@ button.publier {
 }
 
 /*------premium------*/
-h2, h3 {
+.norma h2, .norma h3 {
     color: black;
     font-family: Roboto;
     font-weight: 500;
 }
 
-h2 {
+.norma h2 {
     font-size: 18px;
 }
 
-h3 {
+.norma h3 {
     font-size: 14px;
 }
 
-.premium p {
+.norma .premium p {
     color: black;
     font-family: Roboto;
     font-weight: 400;
 }
 
-.regles-premium, .pas-pubs {
+.norma .regles-premium, .norma .pas-pubs {
     border: 2px solid #E4E4E4;
     border-radius: 18px;
     background-color: white;
 }
 
 /*bouton s'abonner*/
-.demarrer-abonnement button {
+.norma .demarrer-abonnement button {
     background-color: #CF4C68;
     border: none;
     border-radius: 17px;
@@ -476,7 +485,7 @@ h3 {
     font-size:14px;
 }
 
-.demarrer-abonnement a {
+.norma .demarrer-abonnement a {
     text-decoration: none;
     color: white;
 }
@@ -484,19 +493,19 @@ h3 {
 /*------mon profil------*/
 
 /* bouton réglages*/
-.profil svg#reglages {
+.norma .profil svg#reglages {
     fill: #000000;
     width: 24px;
     height: 24px;    padding: 0;
 }
 
-.profil button {
+.norma .profil button {
     background-color: white;
     border: none;
     padding: 0;
 }
 
-.porte-monnaie svg#reglages {
+.norma .porte-monnaie svg#reglages {
     fill: #FFFFFF;
     width: 24px;
     height: 24px;
@@ -504,19 +513,19 @@ h3 {
     background-color: #cf4c68;
 }
 
-.porte-monnaie button {
+.norma .porte-monnaie button {
     border: none;
     padding: 0;
 }
 
-h4 {
+.norma h4 {
     color: black;
     font-family: Roboto;
     font-weight: 500;
 }
 
 
-.porte-monnaie h4 {
+.norma .porte-monnaie h4 {
     color: #ffffff;
     font-family: Roboto;
     font-weight: 500;
@@ -524,12 +533,12 @@ h4 {
 }
 
 /*------réseaux sociaux------*/
-.reseaux.module-footer li {
+.norma .reseaux.module-footer li {
     display: inline-block;
 }
 
 /*------mon profil, envoi------*/
-ul#parametre_profil, ul#parametre_profil p, ul#parametre_profil a, #envoi label  {
+.norma ul#parametre_profil, .norma ul#parametre_profil p, .norma ul#parametre_profil a, .norma #envoi label  {
     list-style-type: none;
     color: black;
     font-family: Roboto;
@@ -538,7 +547,7 @@ ul#parametre_profil, ul#parametre_profil p, ul#parametre_profil a, #envoi label 
     text-decoration: none;
 }
 
-.parametres_profil input, #envoi input {
+.norma .parametres_profil input, .norma #envoi input {
     background-color:#76A0A3;
     color: #FFFFFF;
     font-family: Roboto;
@@ -548,7 +557,7 @@ ul#parametre_profil, ul#parametre_profil p, ul#parametre_profil a, #envoi label 
 }
 
 /*------categories------*/
-.ajouter-un-jeu button {
+.norma .ajouter-un-jeu button {
     background-color: #CF4C68;
     border: none;
     border-radius: 15px;
@@ -561,7 +570,7 @@ ul#parametre_profil, ul#parametre_profil p, ul#parametre_profil a, #envoi label 
     font-size:15px;
 }
 
-.ajouter-un-jeu a {
+.norma .ajouter-un-jeu a {
     color: #ffffff;
     font-family: Roboto;
     font-weight: 500;
@@ -570,7 +579,7 @@ ul#parametre_profil, ul#parametre_profil p, ul#parametre_profil a, #envoi label 
 }
 
 /*------porte-monnaie------*/
-button.transfert {
+.norma button.transfert {
     background-color: #76a0a3;
     border: none;
     border-radius: 40px;
@@ -584,7 +593,7 @@ button.transfert {
 }
 
 /*------parametres mon profil------*/
-ul#parametre_profil button {
+.norma ul#parametre_profil button {
     background-color: #ffffff;
     border-radius: 10px;
     font-family: Roboto;
@@ -599,7 +608,7 @@ ul#parametre_profil button {
 }
 
 /*------envoi------*/
-button.terminer {
+.norma button.terminer {
     background-color: #CF4C68;
     border: none;
     border-radius: 15px;
@@ -613,24 +622,24 @@ button.terminer {
 }
 
 /*------mails------*/
-.mails label {
+.norma .mails label {
     color: #000000;
     font-family: Roboto;
     font-weight: 500;
     font-size: 17px;
 }
 
-.mails h3 {
+.norma .mails h3 {
     color: #707070;
     font-size: 17px;
 }
 
 /*------regles------*/
-.regle ul {
+.norma .regle ul {
     list-style-type: none;
 }
 
-.regle li, .variante p, .variante li {
+.norma .regle li, .norma .variante p, .norma .variante li {
     color: black;
     font-family: Roboto;
     font-weight: 400;
@@ -638,12 +647,12 @@ button.terminer {
     font-size:15px;
 }
 
-.regle h4, .variante h4 {
+.norma .regle h4, .norma .variante h4 {
     color: #CF4C68;
 }
 
 /*bouton regles*/
-.regle button {
+.norma .regle button {
     background-color: #E6A4B2;
     border: none;
     border-radius: 50px;
@@ -656,7 +665,7 @@ button.terminer {
     font-size:15px;
 }
 
-.regle button {
+.norma .regle button {
     color: #000000;
     font-family: Roboto;
     font-weight: 500;
@@ -664,18 +673,18 @@ button.terminer {
     font-size:15px;
 }
 /*boutons "ajouter"*/
-button.ajouter {
+.norma button.ajouter {
     background-color: #CF4C68;
     border-radius: 17px;
 }
 
 /*bouton pour acheter le jeu*/
-button.acheter-lien {
+.norma button.acheter-lien {
     background-color: #CF4C68;
     border-radius: 17px;
 }
 
-.acheter-lien a {
+.norma .acheter-lien a {
     color: white;
     font-size:17px;
     font-family: Roboto;
@@ -683,7 +692,7 @@ button.acheter-lien {
 }
 
 /*bouton ajouter variante*/
-button.ajouter-variante  {
+.norma button.ajouter-variante  {
     background-color: #CF4C68;
     border: none;
     border-radius: 15px;
@@ -692,7 +701,7 @@ button.ajouter-variante  {
     margin-top: 10px;
 }
 
-button.ajouter-variante a {
+.norma button.ajouter-variante a {
     color: #FFFFFF;
     font-family: Roboto;
     font-weight: 500;
@@ -701,7 +710,7 @@ button.ajouter-variante a {
 }
 
 /*bouton variante*/
-.variante a {
+.norma .variante a {
     color: #000000;
     font-family: Roboto;
     font-weight: 500;
@@ -709,7 +718,7 @@ button.ajouter-variante a {
     font-size:15px;
 }
 
-button.variante  {
+.norma button.variante  {
     background-color: #76a0a3;
     border: none;
     border-radius: 50px;
@@ -722,25 +731,25 @@ button.variante  {
 }
 
 /*------ajouter une variante------*/
-.variante label {
+.norma .variante label {
     color: #CF4C68;
     font-family: Roboto;
     font-weight: 500;
 }
 
-.variante textarea#variante {
+.norma .variante textarea#variante {
     font-family: Roboto;
     font-weight: 400;
 }
 
 /*------page connexion------*/
-#container {
+.norma #container {
     color: #000000;
     font-family: Roboto;
     font-weight: 500;
 }
 
-#id, #mdp {
+.norma #id, .norma #mdp {
     color: black;
     font-family: Roboto;
     font-weight: 300;
@@ -748,12 +757,12 @@ button.variante  {
     background-color: #FFE9AA;
 }
 
-form#inscription .mdp p {
+.norma form#inscription .mdp p {
     font-size: 10px;
     margin-bottom: 5px;
 }
 
-button.connexion {
+.norma button.connexion {
     background-color: #CF4C68;
     border: none;
     border-radius: 15px;
@@ -765,12 +774,12 @@ button.connexion {
     margin-top: 10px;
 }
 
-.je-m-inscris a {
+.norma .je-m-inscris a {
     color: white;
     text-decoration: none;
 }
 
-#container >form > a {
+.norma #container >form > a {
     color: #76A0A3;
     font-family: Roboto;
     font-weight: 400;
@@ -778,14 +787,14 @@ button.connexion {
     text-decoration: none;
 }
 
-#container p {
+.norma #container p {
     color: black;
     font-family: Roboto;
     font-weight: 300;
     font-size: 15px;
 }
 
-#container a {
+.norma #container a {
     color: #CF4C68;
     font-family: Roboto;
     font-weight: 300;
@@ -793,12 +802,12 @@ button.connexion {
     text-decoration: none;
 }
 
-#container a, #container p {
+.norma #container a, .norma #container p {
     display: inline-block;
 }
 
 /*------pages inscription------*/
-input#prenom\/nom, input#age, input#id, input#mail, input#mdp {
+.norma input#prenom\/nom, .norma input#age, .norma input#id, .norma input#mail, .norma input#mdp {
     color: black;
     font-family: Roboto;
     font-weight: 300;
@@ -806,14 +815,14 @@ input#prenom\/nom, input#age, input#id, input#mail, input#mdp {
     background-color: #FFE9AA;
 }
 
-#inscription p {
+.norma #inscription p {
     color: black;
     font-family: Roboto;
     font-weight: 300;
     font-size: 15px;
 }
 
-button.je-m-inscris {
+.norma button.je-m-inscris {
     background-color: #CF4C68;
     border: none;
     border-radius: 50px;
@@ -827,14 +836,14 @@ button.je-m-inscris {
 
 
 /*------mot de passe oublié------*/
-.mdp-oublie {
+.norma .mdp-oublie {
     color: black;
     font-family: Roboto;
     font-weight: 300;
     font-size: 15px;
 }
 
-input#mdp-o {
+.norma input#mdp-o {
     color: black;
     font-family: Roboto;
     font-weight: 300;
@@ -842,7 +851,7 @@ input#mdp-o {
     background-color: #FFE9AA;
 }
 
-button.mdp-o {
+.norma button.mdp-o {
     background-color: #CF4C68;
     border: none;
     border-radius: 50px;
@@ -855,20 +864,20 @@ button.mdp-o {
 }
 
 /*------ajouter regle------*/
-#ajouter-regle label {
+.norma #ajouter-regle label {
     color: #CF4C68;
     font-family: Roboto;
     font-weight: 500;
 }
 
-#ajouter-regle input, textarea, #ajouter-regle select {
+.norma #ajouter-regle input, .norma textarea, .norma #ajouter-regle select {
     color: black;
     font-family: Roboto;
     font-weight: 400;
     background-color: #E4E4E4;
 }
 
-button.ajouter-le-jeu  {
+.norma button.ajouter-le-jeu  {
     background-color: #CF4C68;
     border: none;
     border-radius: 50px;
@@ -879,29 +888,29 @@ button.ajouter-le-jeu  {
     width: 150px;
 }
 
-input#nom-j, #vendre-jeux input {
+.norma input#nom-j,.norma #vendre-jeux input {
     background-color: white;
     border: none;
 }
 
-p {
+.norma p {
     color: black;
     font-family: Roboto;
     font-weight: 400;
 }
 
 /*commentaire*/
-.commentaire {
+.norma .commentaire {
     background-color: #cf4c68;
     border-radius:50px;
     box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.3);
 }
 
-.commentaire h2 {
+.norma .commentaire h2 {
     color: #FFFFFF;
 }
 
-input#poster_comm {
+.norma input#poster_comm {
     color: #cf4c68;
     font-family: Roboto;
     font-weight: 500;
@@ -918,98 +927,98 @@ input#poster_comm {
 /*responsive*/
 @media screen and (max-width: 3000px) {
     /*footer*/
-    footer a {
+    .norma footer a {
         font-size: 14px;
     }
 
-    footer p {
+    .norma footer p {
         font-size: 15px;
     }
 
     /*------facebook------*/
-    svg#facebook {
+    .norma svg#facebook {
         width: 50px;
         height: 80px;
     }
     /*------instagram------*/
-    svg.feather.feather-instagram {
+    .norma svg.feather.feather-instagram {
         width: 50px;
         height: 80px;
     }
 
     /*------mail------*/
-    svg#Capa_1 {
+    .norma svg#Capa_1 {
         width: 50px;
         height: 80px;
     }
 
     /*------categories------*/
-    .categories h2 {
+    .norma .categories h2 {
         font-size: 20px;
     }
 }
 
 @media screen and (max-width: 768px) {
     /*footer*/
-    footer a {
+    .norma footer a {
         font-size: 14px;
     }
 
-    footer p {
+    .norma footer p {
         font-size: 15px;
     }
 
     /*------facebook------*/
-    svg#facebook {
+    .norma svg#facebook {
         width: 40px;
         height: 70px;
     }
     /*------instagram------*/
-    svg.feather.feather-instagram {
+    .norma svg.feather.feather-instagram {
         width: 40px;
         height: 70px;
     }
 
     /*------mail------*/
-    svg#Capa_1 {
+    .norma svg#Capa_1 {
         width: 40px;
         height: 70px;
     }
 
     /*------categories------*/
-    .categories h2 {
+    .norma .categories h2 {
         font-size: 18px;
     }
 }
 
 @media screen and (max-width: 480px){
     /*footer*/
-    footer a {
+    .norma footer a {
         font-size: 12px;
     }
 
-    footer p {
+    .norma footer p {
         font-size: 13px;
     }
     /*------facebook------*/
-    svg#facebook {
+    .norma svg#facebook {
         width: 31px;
         height: 50px;
     }
     /*------instagram------*/
-    svg.feather.feather-instagram {
+    .norma svg.feather.feather-instagram {
         width: 35px;
         height: 50px;
     }
 
     /*------mail------*/
-    svg#Capa_1 {
+    .norma svg#Capa_1 {
         width: 35px;
         height: 50px;
     }
 
     /*------categories------*/
-    .categories h2 {
+    .norma .categories h2 {
         font-size: 15px;
     }
 }

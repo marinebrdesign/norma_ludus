@@ -3,6 +3,7 @@ var VendreJeux = Vue.component('VendreJeux',{
 
 <div>
 <n-header></n-header>
+<div class="norma">
 <main>
 <div class="rectangle"></div>
     <div class="vendre-un-jeu">
@@ -34,8 +35,8 @@ var VendreJeux = Vue.component('VendreJeux',{
         </div>
     </div>
 </main>
+</div>
 <n-footer></n-footer>
-
 </div>
 `,
 

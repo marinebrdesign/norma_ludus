@@ -1,0 +1,647 @@
+/*body {
+    background-color: black;
+}*/
+
+/* réseaux sociaux*/
+/*facebook*/
+.landing svg#Bold {
+    fill: #92C2C5;
+}
+
+/*instagram*/
+.landing svg.feather.feather-instagram {
+    stroke:#92C2C5;
+}
+
+/*mail*/
+.landing svg#email {
+    stroke: #92C2C5;
+    fill :#92C2C5;
+}
+
+/* haut de la page*/
+/*titre*/
+.landing .texte h1 {
+    color: #CF4C68;
+    font-family: Merriweather;
+    font-weight: 700;
+}
+
+/*texte*/
+.texte > p:first-of-type {
+    color: black;
+    font-family: Roboto;
+    font-weight: 700;
+}
+
+.texte > p:nth-of-type(2){
+    color: black;
+    font-family: Roboto;
+    font-weight: 700;
+}
+
+.texte > p:last-of-type{
+    color: black;
+    font-family: Roboto;
+    font-weight: 300;
+}
+
+/*inscription*/
+.landing .inscrivez-vous h2 {
+    color: black;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 25px;
+}
+
+.landing .inscrivez-vous b {
+    color: black;
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 27px;
+    text-decoration: underline;
+}
+
+.landing input#prenom\/nom, .landing input#age, .landing input#id, .landing input#mail, .landing input#mdp {
+    color: black;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 15px;
+    background-color: #FFE9AA;
+}
+
+.landing .inscription > p {
+    color: black;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 15px;
+    text-align: center;
+}
+.landing .mdp > p:first-of-type {
+    color: black;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 10px;
+}
+
+.landing button.je-m-inscris {
+    color: white;
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 18px;
+    background-color: #CF4C68;
+
+}
+
+/*fonctionnalités*/
+.landing .fonctionnalites p{
+    color: black;
+    font-family: Roboto;
+    font-weight: 300;
+}
+
+.landing .fonctionnalites h2{
+    color: black;
+    font-family: Roboto;
+    font-weight: 500;
+}
+
+/* à propos*/
+.landing #titre h3,.landing h3#equipe, .landing .contact > h3 {
+    color: white;
+    font-family: Roboto;
+    font-weight: 500;
+    background-color: #CF4C68;
+}
+
+/*L'équipe*/
+.landing .lena > address > p {
+    color: #76A0A3;
+    font-family: Roboto;
+    font-weight: 500;
+    text-decoration: none;
+    font-style: normal;
+}
+
+.landing .lena > address > a {
+    color: white;
+    font-family: Roboto;
+    font-weight: 500;
+    text-decoration: none;
+    background-color: #76A0A3;
+    font-style: normal;
+}
+
+.landing .marine> address > p {
+    color: #CF4C68;
+    font-family: Roboto;
+    font-weight: 500;
+    text-decoration: none;
+    font-style: normal;
+}
+
+
+.landing .marine > address > a {
+    color: white;
+    font-family: Roboto;
+    font-weight: 500;
+    text-decoration: none;
+    background-color: #CF4C68;
+    font-style: normal;
+}
+
+.landing .nina > address > p {
+    color: #E7A52E;
+    font-family: Roboto;
+    font-weight: 500;
+    text-decoration: none;
+    font-style: normal;
+}
+
+.landing .nina > address > a {
+    color: white;
+    font-family: Roboto;
+    font-weight: 500;
+    text-decoration: none;
+    background-color: #E7A52E;
+    font-style: normal;
+}
+
+/* contact*/
+.landing input#mail2, .landing input#nom, .landing input#prenom, .landing textarea#msg{
+    color: #666666;
+    font-family: Roboto;
+    font-weight: 500;
+}
+
+.landing #contact {
+    background-color: #FCBAC5;
+}
+
+.landing button.envoyer {
+    color: white;
+    font-family: Roboto;
+    font-weight: 500;
+    background-color: #CF4C68;
+}
+
+
+/*connexion*/
+.landing button.je-me-connecte a {
+    color: white;
+    text-decoration: none;
+}
+
+/*responsive*/
+@media screen and (max-width: 3000px) {
+    .landing .texte p {
+        padding-left: 28px;
+        padding-right: 15px;
+    }
+
+    .landing .texte h1 {
+        font-size: 90px;
+        margin-bottom: 0;
+        padding-left: 30px;
+    }
+
+    .landing .texte > p:first-of-type {
+        font-size: 30px;
+        text-align: justify;
+    }
+
+    .landing .texte > p:nth-of-type(2){
+        font-size: 25px;
+    }
+
+    .landing .texte > p:last-of-type{
+        font-size: 25px;
+    }
+
+    /*connexion*/
+    .landing .connectez-vous b {
+        color: black;
+        font-family: Roboto;
+        font-weight: 700;
+        font-size: 27px;
+        text-decoration: underline;
+    }
+
+    .landing input#prenom\/nom, .landing input#age, .landing input#id, .landing input#mail, .landing input#mdp {
+        color: black;
+        font-family: Roboto;
+        font-weight: 300;
+        font-size: 15px;
+        background-color: #FFE9AA;
+    }
+
+    .landing button.je-me-connecte {
+        color: white;
+        font-family: Roboto;
+        font-weight: 700;
+        font-size: 18px;
+        background-color: #CF4C68;
+    }
+
+    .landing .connexion > p {
+        color: black;
+        font-family: Roboto;
+        font-weight: 300;
+        font-size: 15px;
+        text-align: center;
+    }
+    .landing .mdp > p:first-of-type {
+        color: black;
+        font-family: Roboto;
+        font-weight: 300;
+        font-size: 10px;
+    }
+
+    .landing #connexion a#mdp-oublie {
+        color: #76A0A3;
+        font-family: Roboto;
+        font-weight: 400;
+        font-size: 15px;
+        text-decoration: none;
+    }
+
+    .landing #connexion a#inscription {
+        color: #CF4C68;
+        font-family: Roboto;
+        font-weight: 300;
+        font-size: 15px;
+        text-decoration: none;
+    }
+
+    .landing #connexion a, .landing #connexion p {
+        display: inline-block;
+    }
+
+    .landing #connexion p {
+        color: black;
+        font-family: Roboto;
+        font-weight: 300;
+        font-size: 15px;
+    }
+
+    /*fonctionnalités*/
+    .landing .fonctionnalites p{
+        font-size: 22px;
+    }
+
+    .landing .fonctionnalites h2{
+        font-size: 38px;
+    }
+
+    /*equipe*/
+    .landing h3#equipe, .landing .contact > h3, .landing #titre h3 {
+        font-size: 32px;
+    }
+
+    /*a propos*/
+    .landing .a-propos > p {
+        color: black;
+        font-family: Roboto;
+        font-weight: 300;
+        font-size: 24px;
+    }
+
+    /*contact*/
+    .landing input#mail2, .landing input#nom,.landing  input#prenom, .landing textarea#msg{
+        font-size: 22px;
+    }
+
+    .landing button.envoyer {
+        color: white;
+        font-family: Roboto;
+        font-weight: 500;
+        font-size: 22px;
+        background-color: #CF4C68;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    .landing .texte p {
+        padding-left: 15px;
+        padding-right: 25px;
+    }
+
+    .landing .texte > p:first-of-type {
+        font-size: 22px;
+        text-align: justify;
+    }
+
+    .landing .texte > p:nth-of-type(2){
+        font-size: 17px;
+    }
+
+    .landing .texte > p:last-of-type{
+        font-size: 15px;
+    }
+
+    /*fonctionnalités*/
+    .landing .fonctionnalites p{
+        font-size: 18px;
+    }
+
+    .landing .fonctionnalites h2{
+        font-size: 34px;
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    .landing .texte p {
+        padding-left: 15px;
+        padding-right: 20px;
+    }
+
+    .landing .texte > p:first-of-type {
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .landing .texte p {
+        padding-left: 15px;
+        padding-right: 20px;
+    }
+
+    .landing .texte > p:first-of-type {
+        text-align: justify;
+    }
+
+    .landing .texte h1 {
+        margin-bottom: 0;
+    }
+
+    /*fonctionnalités*/
+    .landing .fonctionnalites p{
+        font-size: 16px;
+    }
+
+    .landing .fonctionnalites h2{
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .landing .texte p {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .landing .texte h1 {
+        font-size: 60px;
+        padding-left: 15px;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    .landing .texte > p:first-of-type {
+        font-size: 22px;
+        text-align: justify;
+    }
+
+    .landing .texte > p:nth-of-type(2){
+        font-size: 18px;
+    }
+
+    .landing .texte > p:last-of-type{
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    /*connexion*/
+    .landing .connectez-vous b {
+        color: black;
+        font-family: Roboto;
+        font-weight: 700;
+        font-size: 25px;
+        text-decoration: underline;
+    }
+
+    .landing input#prenom\/nom, .landing input#age, .landing input#id, .landing input#mail, .landing input#mdp {
+        color: black;
+        font-family: Roboto;
+        font-weight: 300;
+        font-size: 15px;
+        background-color: #FFE9AA;
+    }
+
+    .landing button.je-me-connecte {
+        color: white;
+        font-family: Roboto;
+        font-weight: 700;
+        font-size: 15px;
+        background-color: #CF4C68;
+    }
+
+    .landing .connexion > p {
+        color: black;
+        font-family: Roboto;
+        font-weight: 300;
+        font-size: 15px;
+        text-align: center;
+    }
+    .landing .mdp > p:first-of-type {
+        color: black;
+        font-family: Roboto;
+        font-weight: 300;
+        font-size: 10px;
+    }
+
+    .landing #connexion a#mdp-oublie {
+        color: #76A0A3;
+        font-family: Roboto;
+        font-weight: 400;
+        font-size: 15px;
+        text-decoration: none;
+    }
+
+    .landing #connexion a#inscription {
+        color: #CF4C68;
+        font-family: Roboto;
+        font-weight: 300;
+        font-size: 15px;
+        text-decoration: none;
+    }
+
+    .landing #connexion a, .landing #connexion p {
+        display: inline-block;
+    }
+
+    .landing #connexion p {
+        color: black;
+        font-family: Roboto;
+        font-weight: 300;
+        font-size: 15px;
+    }
+
+    /*fonctionnalités*/
+    .landing .fonctionnalites p{
+        font-size: 16px;
+    }
+
+    .landing .fonctionnalites h2{
+        font-size: 28px;
+    }
+
+    /*equipe*/
+    .landing h3#equipe, .landing .contact > h3, .landing #titre h3 {
+        font-size: 20px;
+    }
+
+    /*a propos*/
+    .landing .a-propos > p {
+        color: black;
+        font-family: Roboto;
+        font-weight: 300;
+        font-size: 16px;
+    }
+
+    /*contact*/
+    .landing input#mail2, .landing input#nom,.landing  input#prenom, .landing textarea#msg{
+        font-size: 18px;
+    }
+
+    .landing button.envoyer {
+        color: white;
+        font-family: Roboto;
+        font-weight: 500;
+        font-size: 18px;
+        background-color: #CF4C68;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .landing .texte p {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .landing .texte h1 {
+        font-size: 30px;
+        margin-bottom: 0;
+        padding-left: 15px;
+        text-align: center;
+    }
+
+    .landing .texte > p:first-of-type {
+        font-size: 18px;
+        text-align: justify;
+    }
+
+    .landing .texte > p:nth-of-type(2){
+        font-size: 15px;
+    }
+
+    .landing .texte > p:last-of-type{
+        font-size: 12px;
+        text-align: justify;
+    }
+
+    /*connexion*/
+    .landing .connectez-vous b {
+        color: black;
+        font-family: Roboto;
+        font-weight: 700;
+        font-size: 18px;
+        text-decoration: underline;
+    }
+
+    .landing input#prenom\/nom, .landing input#age, .landing input#id, .landing input#mail, .landing input#mdp {
+        color: black;
+        font-family: Roboto;
+        font-weight: 300;
+        font-size: 12px;
+        background-color: #FFE9AA;
+    }
+
+    .landing button.je-me-connecte {
+        color: white;
+        font-family: Roboto;
+        font-weight: 700;
+        font-size: 12px;
+        background-color: #CF4C68;
+    }
+
+
+    .landing .connexion > p {
+        color: black;
+        font-family: Roboto;
+        font-weight: 300;
+        font-size: 12px;
+        text-align: center;
+    }
+    .landing .mdp > p:first-of-type {
+        color: black;
+        font-family: Roboto;
+        font-weight: 300;
+        font-size: 8px;
+    }
+
+    .landing #connexion a#mdp-oublie {
+        color: #76A0A3;
+        font-family: Roboto;
+        font-weight: 400;
+        font-size: 12px;
+        text-decoration: none;
+    }
+
+    .landing #connexion a#inscription {
+        color: #CF4C68;
+        font-family: Roboto;
+        font-weight: 300;
+        font-size: 12px;
+        text-decoration: none;
+    }
+
+    .landing #connexion a, .landing #connexion p {
+        display: inline-block;
+    }
+
+    .landing #connexion p {
+        color: black;
+        font-family: Roboto;
+        font-weight: 300;
+        font-size: 12px;
+    }
+
+    /*fonctionnalités*/
+    .landing .fonctionnalites p{
+        font-size: 12px;
+    }
+
+    .landing .fonctionnalites h2{
+        font-size: 16px;
+    }
+
+    /*equipe*/
+    .landing h3#equipe, .landing .contact > h3, .landing #titre h3 {
+        font-size: 16px;
+    }
+
+    /*a propos*/
+    .landing .a-propos > p {
+        color: black;
+        font-family: Roboto;
+        font-weight: 300;
+        font-size: 12px;
+    }
+
+    /*contact*/
+    .landing input#mail2, .landing input#nom, .landing input#prenom,.landing textarea#msg{
+        font-size: 14px;
+    }
+
+    .landing button.envoyer {
+        color: white;
+        font-family: Roboto;
+        font-weight: 500;
+        font-size: 14px;
+        background-color: #CF4C68;
+    }
+
+}
+

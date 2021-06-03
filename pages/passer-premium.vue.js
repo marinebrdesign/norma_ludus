@@ -2,15 +2,7 @@ var PasserPrenium = Vue.component('PasserPrenium',{
   template: `
 
 <div>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Passer-Premimum</title>
-  <link rel="stylesheet" href="../css/typographie_couleurs.css">
-  <link rel="stylesheet" href="../css/menu.css">
-  <link rel="stylesheet" href="../css/style_mise_en_page.css">
-</head>
-<div class=" ">
+<div class="norma">
 <header>
   <a href="Accueil.vue.js">
           <img src="img/logo.svg" alt="logo" id="logo">
@@ -50,8 +42,10 @@ var PasserPrenium = Vue.component('PasserPrenium',{
   </div>
   </div>
 </main>
-<n-footer></n-footer>
+</div>
+<!--<div class=" ">-->
 
+<n-footer></n-footer>
 </div>
       
       	`,

@@ -3,9 +3,12 @@ var AcheterJeux = Vue.component('AcheterJeux',{
 
 <div>
 <n-header></n-header>
+<div class="norma">
 <main class="index">
 <n-barre-recherche></n-barre-recherche>
 </main>
+
+</div>
 <n-footer></n-footer>
 </div>
 

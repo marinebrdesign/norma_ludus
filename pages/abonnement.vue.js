@@ -3,6 +3,7 @@ var Abonnement = Vue.component('Abonnement',{
 
 <div>
 <n-header></n-header>  
+<div class="norma">
 <main>
   <header>
     <img src="img/footer_nav/vagues.png" alt="vagues" id="img_nav" class="responsive">
@@ -15,6 +16,8 @@ var Abonnement = Vue.component('Abonnement',{
   <p>Deviens toi aussi un abonné à Norma Ludus Premium</p>
   <h2>Payer avec PayPal</h2>
 </main>
+
+</div>
 <n-footer></n-footer>
 </div>
 

@@ -3,6 +3,7 @@ var Dooble = Vue.component('Dooble',{
 
 <div>
 <n-header></n-header>
+<div class="norma">
 <main class="index">
    <n-barre-recherche></n-barre-recherche>
   <div class="retour">
@@ -59,6 +60,7 @@ var Dooble = Vue.component('Dooble',{
     </form>
   </div>
 </main>
+</div>
 <n-footer></n-footer>
 
 </div>

@@ -1,7 +1,8 @@
 var NHeader = Vue.component('n-header',{
     template: `
         <div>
-<header>
+        <div class="norma">
+        <header>
     <router-link to="/Accueil">
     <img src="img/logo.svg" alt="logo" id="logo">
     </router-link>
@@ -23,6 +24,7 @@ var NHeader = Vue.component('n-header',{
     </nav>
 </header>
 
+</div>
 		</div>
 	`,
     data(){

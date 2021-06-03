@@ -3,6 +3,7 @@ var ParametreMonProfil = Vue.component('ParametreMonProfil',{
 
 <div>
 <n-header></n-header>
+<div class="norma">
 <main>
 <div class="rectangle"></div>
     <div class="parametres_profil">
@@ -36,6 +37,7 @@ var ParametreMonProfil = Vue.component('ParametreMonProfil',{
         </ul>
     </div>
 </main>
+</div>
 <n-footer></n-footer>
 
 </div>

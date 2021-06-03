@@ -3,20 +3,19 @@ var JPlateau = Vue.component('JPlateau',{
 
 <div>
 <n-header></n-header>
+<div class="norma">
 <main class="index">
     <n-barre-recherche></n-barre-recherche>
   <div class="ajouter">
     <button><router-link to="ajouter-regle">Ajouter une règle</router-link></button>
   </div>  
   <div class="jeux">
-    <div id="jeu-dames">
-        <router-link to="jeu-de-dames"><h3>Le Jeu des Dames</h3><img src="img/jeu_dames.jpg" id="img_jeu_dame" alt="img-bataille" data-toShow="bataille-visit"></router-link>
-    </div>
-    <!--<div v-for="regle in regles" :key="regle.Contenu">
-           {{ regle.Contenu }}
-    </div>-->
+         <div v-for="game in games" id="jeu-dames">
+            <router-link v-bind:to='game.name'><h3>{{ game.displayName }}</h3><img v-bind:src='game.img' alt="img-jeu-dames" id="img_bataille"  data-toShow="bataille-visit"></router-link>
+        </div>
   </div>
 </main>
+</div>
 <n-footer></n-footer>
 
 </div>
@@ -25,19 +24,14 @@ var JPlateau = Vue.component('JPlateau',{
 
   data(){
     return {
-
-      /* titre: 'Page d\'accueil',
-       liste: null,
-       listeCategories: null,
-       je_veux_le_header: false*/
+      regles: [],
+      games: [
+        { name: "jeu-de-dames", displayName: "Le Jeu de Dames", img: "img/jeu_dames.jpg" },
+      ],
     }
   },
   mounted(){
-    /*axios.get('http://localhost/normaludus - Copie/php/Utilitaires/Produit.php').then((response) => {
-        this.listeCategories = response.data;
-    });
-    this.liste = [1, 2, 3];*/
-    this.template
+
   },
   methods:{
   }

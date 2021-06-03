@@ -3,6 +3,7 @@ var JeuDeDames = Vue.component('JeuDeDames',{
 
 <div>
 <n-header></n-header>
+<div class="norma">
 <main class="index">
     <n-barre-recherche></n-barre-recherche>
   <div class="retour">
@@ -54,6 +55,7 @@ var JeuDeDames = Vue.component('JeuDeDames',{
     </form>
   </div>
 </main>
+</div>
 <n-footer></n-footer>
 
 </div>

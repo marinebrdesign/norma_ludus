@@ -3,6 +3,7 @@ var MesParametres = Vue.component('MesParametres',{
 
 <div>
 <n-header></n-header>
+<div class="norma">
 <main>
 <div class="rectangle"></div>
     <div class="parametres">
@@ -15,10 +16,11 @@ var MesParametres = Vue.component('MesParametres',{
             <li><router-link to="envoi">Envoi</router-link><i class="fas fa-chevron-right"></i></li>
             <li><router-link to="mails">Mails</router-link><i class="fas fa-chevron-right"></i></li>
             <li><router-link to="passer-premium">Passer premium</router-link><i class="fas fa-chevron-right"></i></li>
-            <li><router-link to="">Se déconnecter</router-link></li>
+            <li><button @click="logout">Se déconnecter</button></li>
         </ul>
     </div>
 </main>
+</div>
 <n-footer></n-footer>
 
 </div>
@@ -42,5 +44,9 @@ var MesParametres = Vue.component('MesParametres',{
         this.template
     },
     methods:{
+        logout() {
+            localStorage.removeItem('username');
+            window.location.href = 'http://localhost:63342/normaludus/index.html?_ijt=rospg8fhm9e996t7j2uaio1ojk';
+        }
     }
 });

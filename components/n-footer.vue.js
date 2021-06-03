@@ -1,7 +1,9 @@
 var NFooter= Vue.component('n-footer',{
     template: `
 
-    <footer>
+<div>
+<div class="norma">
+  <footer>
     <!--<img src="img/footer_nav/footer.png" alt="footer" id="footer" class="responsive">-->
     <div class="reseaux module-footer">
         <ul>
@@ -13,6 +15,9 @@ var NFooter= Vue.component('n-footer',{
     <router-link to="/mentions-legales">Mentions Légales</router-link>
     <p>Lena Bataillard - Nina Bellino - Marine Beurier</p>
 </footer>
+</div>
+</div>
+  
 
 
     	`,

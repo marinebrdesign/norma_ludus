@@ -1,6 +1,7 @@
 var NBarreRecherche= Vue.component('n-barre-recherche',{
     template: `
 <div>
+<div class="norma">
  <header>
         <img src="img/footer_nav/vagues.png" alt="vagues" id="img_nav" class="responsive">
         <img src="img/footer_nav/ligne.png" alt="ligne" id="ligne" class="responsive">
@@ -21,6 +22,8 @@ var NBarreRecherche= Vue.component('n-barre-recherche',{
             </div>
         </div>
     </header>
+
+</div>
 </div>
 
 

@@ -2,6 +2,7 @@ var APropos = Vue.component('APropos',{
     template:`
 <div>
 <n-header></n-header>
+<div class="norma">
 <main>
     <img src="img/footer_nav/vagues.png" alt="vagues" id="img_nav" class="responsive">
     <img src="img/footer_nav/ligne.png" alt="ligne" id="ligne" class="responsive">
@@ -72,6 +73,7 @@ var APropos = Vue.component('APropos',{
         </div>
     </div>
 </main>
+</div>
 <n-footer></n-footer>
 </div>
 

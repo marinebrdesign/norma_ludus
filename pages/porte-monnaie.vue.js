@@ -3,6 +3,7 @@ var PorteMonnaie = Vue.component('Portemonnaie',{
 
 <div>
 <n-header></n-header>
+<div class="norma">
 <main id="porte-monnaie">
     <header>
         <h1>Mon porte-monnaie</h1>
@@ -21,8 +22,8 @@ var PorteMonnaie = Vue.component('Portemonnaie',{
         <h4>Solde initial</h4>
     </div>
 </main>
+</div>
 <n-footer></n-footer>
-
 </div>
         
         	`,

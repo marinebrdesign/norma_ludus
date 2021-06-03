@@ -2,6 +2,7 @@ var AjouterRegle = Vue.component('AjouterRegle',{
   template: `
 <div>
 <n-header></n-header>
+<div class="norma">
 <main class="index">
   <n-barre-recherche></n-barre-recherche>
   <div class="retour">
@@ -53,6 +54,7 @@ var AjouterRegle = Vue.component('AjouterRegle',{
     </div>
   </form>
 </main>
+</div>
 <n-footer></n-footer>
 </div>
 
@@ -85,7 +87,7 @@ var AjouterRegle = Vue.component('AjouterRegle',{
     }
   },
   mounted(){
-    axios.get('http://tp/normaludus/php/Utilitaires/recuperer_categories.php').then((response) => {
+    axios.get('http://localhost/tp/normaludus/php/Utilitaires/recuperer_categories.php').then((response) => {
         this.categories = response.data;
         console.log(this.categories);
     });
@@ -102,7 +104,7 @@ var AjouterRegle = Vue.component('AjouterRegle',{
         bodyFormData.append('time', tempsDeJeu);
         bodyFormData.append('official_rule', regles);
       axios
-          .post('http://localhost/tp/php/Utilitaires/Ajouter_un_jeu.php',
+          .post('http://localhost/tp/normaludus/php/Utilitaires/Ajouter_un_jeu.php',
           bodyFormData,
           { headers: {
             'Content-Type': 'application/x-www-form-urlencoded'
