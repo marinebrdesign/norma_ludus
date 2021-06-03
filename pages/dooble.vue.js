@@ -10,9 +10,13 @@ var Dooble = Vue.component('Dooble',{
   </div>
   <div id="dooble-visit">
     <h3>Dooble</h3>
-    <img src="" alt="img-dooble">
+    <div class="img_visit_regle">
+        <img src="img/dooble.jpg" alt="img-dooble">
+    </div>
     <div class="regle">
-      <button><router-link to="">Règle</router-link></button>
+    <div class="b_regles_variante">
+          <button>Règle</button>
+    </div>
       <ul>
         <li><h4>Nombre de joueurs</h4>2 à 5</li>
         <li><h4>Âge</h4>4 et plus</li>
@@ -26,7 +30,9 @@ var Dooble = Vue.component('Dooble',{
       </div>
     </div>
     <div class="variante">
-      <button class="variante"><router-link to="">Variante</router-link></button>
+      <div class="b_regles_variante">
+          <button class="variante">Variante</button>
+      </div>
         <ul>
           <li>
             <h4>Les différents villages</h4>

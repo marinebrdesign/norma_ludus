@@ -146,6 +146,10 @@ main.index a {
     text-align: center;
 }
 
+#dooble-visit h3, #loup-garou-visit h3, #bataille-visit h3, #jeu-dames-visit h3 {
+    text-align: center;
+}
+
 /*------titres------*/
 h1 {
     font-family: Roboto;
@@ -652,7 +656,7 @@ button.terminer {
     font-size:15px;
 }
 
-.regle a {
+.regle button {
     color: #000000;
     font-family: Roboto;
     font-weight: 500;
@@ -711,10 +715,10 @@ button.variante  {
     border-radius: 50px;
     font-family: Roboto;
     font-weight: 500;
-    color: #FFFFFF;
     height: 40px;
     width: 150px;
     margin-top: 10px;
+    font-size: 15px;
 }
 
 /*------ajouter une variante------*/

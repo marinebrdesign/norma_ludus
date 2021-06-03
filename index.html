@@ -24,6 +24,8 @@
         <link rel="stylesheet" href="css/menu.css">
         <link rel="stylesheet" href="css/style_mise_en_page.css">
     <style>@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');</style>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');</style>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@300;400;500;700;900&display=swap');</style>
     </head>
 <body>
     <!-- Point d'injection des composants -->
@@ -118,6 +120,7 @@
 
 <script>
     // les routages / navigations de l'application
+    // import LandingPage from "components/landing-page.vue"
     var routes = [
         { path: '/', 				        component: Accueil,         alias:'/accueil' },
         { path: '/a-propos', 		        component: APropos },
@@ -147,8 +150,7 @@
         { path: '/passer-premium', 		    component: PasserPrenium},
         { path: '/paypal', 		            component: Paypal},
         { path: '/porte-monnaie', 		    component: PorteMonnaie},
-
-
+        // { path: '/landing-page', 		    component: LandingPage},
     ];
 
     // Le router initialisé sur l'accueil

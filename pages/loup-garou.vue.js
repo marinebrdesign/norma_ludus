@@ -9,15 +9,19 @@ var LoupGarou = Vue.component('LoupGarou',{
     <button><a href="javascript:history.go(-1)"><svg version="1.1" id="left_arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 443.52 443.52" style="enable-background:new 0 0 443.52 443.52;" xml:space="preserve"><g><g><path d="M143.492,221.863L336.226,29.129c6.663-6.664,6.663-17.468,0-24.132c-6.665-6.662-17.468-6.662-24.132,0l-204.8,204.8c-6.662,6.664-6.662,17.468,0,24.132l204.8,204.8c6.78,6.548,17.584,6.36,24.132-0.42c6.387-6.614,6.387-17.099,0-23.712L143.492,221.863z"/></g></g></svg></a></button>
   </div>
   <div id="loup-garou-visit">
-    <h3>Bataille</h3>
-    <img src="" alt="img-bataille">
+    <h3>Les Loups Garous de Thiercelieux</h3>
+    <div class="img_visit_regle">
+        <img src="img/loup-garou.jpg" alt="img-loup-garou">
+    </div>
     <div class="regle">
-      <button><router-link to="">Règle</router-link></button>
+    <div class="b_regles_variante">
+          <button>Règle</button>
+    </div>
       <ul>
         <li><h4>Nombre de joueurs</h4>6 à 24</li>
         <li><h4>Âge</h4>Â partir de 10 ans</li>
         <li><h4>Temps</h4>Environ 30 à 45 minutes</li>
-        <li><h4>Règle</h4>Le but du jeu pour les Loup garous est de tuer tous les villageois. Et pour les villageois de tuer tous les loups garous.<br>
+        <li><h4>Règle</h4>Le but du jeu pour les loup garous est de tuer tous les villageois. Et pour les villageois de tuer tous les loups garous.<br>
           Les loups garous : Chaque nuit, ils choisissent un Villageois pour le tuer. Le jour, ils doivent cacher leur rôle pour échapper à la revanche des habitants du village.<br>
           Les villageois = Il n’ont pas de pouvoir, il participe juste le jour pour démasquer les loups garous. <br>
           La voyante : Chaque nuit, elle choisit la carte d’un des joueurs pour découvrir sa réelle identité. Elle peut ensuite aider les autres Villageois le jour, mais elle doit rester discrète pour ne pas être démasquée par les Loups-Garous.<br>
@@ -129,12 +133,16 @@ var LoupGarou = Vue.component('LoupGarou',{
       </div>
     </div>
     <div class="variante">
-      <button class="variante"><router-link to="">Variante</router-link></button>
+    <div class="b_regles_variante">
+          <button class="variante">Variante</button>
+    </div>
       <ul>
         <li><h4>Les différents villages</h4> Les joueurs sont séparés en plusieurs villages. Les habitants des différents villages peuvent venir dans les villages voisins quand le Maître du jeu le décide.</li>
         <li><h4>Le panneau du village</h4> Chaque jour les habitants peuvent écrire sur un bout de papier des soupçons, découverte, mensonge pour tromper l'ennemi, etc… Les textes sont affichés dans le désordre quand la nuit tombe. </li>
       </ul>
-      <button class="ajouter-variante"><router-link to="ajouter-variante">Ajouter une variante</router-link></button>
+      <div class="ajouter-variante">
+            <button class="ajouter-variante"><router-link to="ajouter-variante">Ajouter une variante</router-link></button>
+      </div>
     </div>
   </div>
   <div class="commentaire">

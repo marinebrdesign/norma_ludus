@@ -463,10 +463,6 @@ button.terminer {
     box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.3);
 }
 
-#dooble-visit ul, #bataille-visit, #jeu-dames-visit, #loup-garou-visit  {
-    padding: 0;
-}
-
 img#img_dooble, img#img_loup_garou, img#img_bataille, img#img_jeu_dame {
     width: 80%;
 }
@@ -482,6 +478,15 @@ img#img_dooble, img#img_loup_garou, img#img_bataille, img#img_jeu_dame {
 .ajouter-variante button {
      margin-bottom: 15px;
  }
+
+.b_regles_variante {
+    margin: 0 auto;
+    width: 150px;
+}
+
+#loup-garou-visit ul, #bataille-visit ul, #jeu-dames-visit ul, #dooble-visit ul {
+    padding-left: 0;
+}
 
 /*ajouter variante*/
 form#ajouter-variante {
@@ -1012,6 +1017,17 @@ button.transfert {
         height: 130px;
         max-height: 300px;
     }
+
+    .img_visit_regle{
+        margin: 0 auto;
+        width: 180px;
+    }
+
+    .img_visit_regle img {
+        width: 180px;
+        height: 180px;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -1208,6 +1224,16 @@ button.transfert {
         max-width: 2000px;
         height: 150px;
         max-height: 300px;
+    }
+
+    .img_visit_regle {
+        margin: 0 auto;
+        width: 180px;
+    }
+
+    .img_visit_regle img {
+        width: 180px;
+        height: 180px;
     }
 }
 
@@ -1412,6 +1438,16 @@ button.transfert {
         max-width: 2000px;
         height: 150px;
         max-height: 300px;
+    }
+
+    .img_visit_regle {
+        margin: 0 auto;
+        width: 100px;
+    }
+
+    .img_visit_regle img {
+        width: 100px;
+        height: 100px;
     }
 }
 

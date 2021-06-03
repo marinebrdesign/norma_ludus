@@ -10,10 +10,14 @@ var JeuDeDames = Vue.component('JeuDeDames',{
   </div>
   <div id="jeu-dames-visit">
     <h3>Jeu de dames</h3>
-    <img src="" alt="img-jeu-dames">
+     <div class="img_visit_regle">
+        <img src="img/jeu_dames.jpg" alt="img-jeu_dames">
+    </div>
     <div class="regle">
-      <button><router-link to="">Règle</router-link></button>
-      <ul>
+    <div class="b_regles_variante">
+            <button>Règle</button>
+    </div>      
+    <ul>
         <li><h4>Nombre de joueurs</h4>2</li>
         <li><h4>Âge</h4>6 et plus</li>
         <li><h4>Temps</h4>Environ 30 à 60 minutes</li>
@@ -29,10 +33,14 @@ var JeuDeDames = Vue.component('JeuDeDames',{
       </div>
     </div>
     <div class="variante">
-      <button class="variante"><router-link to="">Variante</router-link></button>
-          <p>Pièce touchée = pièce jouée. Une pièce que le joueur touche doit obligatoirement être jouée par ce dernier. Pour replacer une pièce sur l’échiquier sans avoir à la bouger, il faut dire “J’adoube“.
-            Les prises sont obligatoires. En un mot, aux Dames, si vous pouvez manger des Pions (ou des Dames), vous êtes obligés de le faire !</p>
-      <button class="ajouter-variante"><router-link to="ajouter-variante">Ajouter une variante</router-link></button>
+    <div class="b_regles_variante">
+          <button class="variante">Variante</button>
+    </div>             
+    <p>Pièce touchée = pièce jouée. Une pièce que le joueur touche doit obligatoirement être jouée par ce dernier. Pour replacer une pièce sur l’échiquier sans avoir à la bouger, il faut dire “J’adoube“.
+       Les prises sont obligatoires. En un mot, aux Dames, si vous pouvez manger des Pions (ou des Dames), vous êtes obligés de le faire !</p>
+    <div class="ajouter-variante">
+            <button class="ajouter-variante"><router-link to="ajouter-variante">Ajouter une variante</router-link></button>
+     </div>    
     </div>
   </div>
   <div class="commentaire">

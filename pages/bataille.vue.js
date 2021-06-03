@@ -10,9 +10,13 @@ var Bataille = Vue.component('Bataille',{
   </div>
   <div id="bataille-visit">
     <h3>La Bataille</h3>
-    <!--<img src="img/jeux/cartes.jpg" alt="img-bataille">-->
+      <div class="img_visit_regle">
+        <img src="img/bataille.jpg" alt="img_bataille">
+    </div>
     <div class="regle">
-      <button><router-link to="">Règle</router-link></button>
+       <div class="b_regles_variante">
+          <button>Règle</button>
+       </div>
       <ul>
         <li><h4>Nombre de joueurs</h4>2 ou plus</li>
         <li><h4>Âge</h4>2 et plus</li>
@@ -25,13 +29,16 @@ var Bataille = Vue.component('Bataille',{
       </div>
     </div>
     <div class="variante">
-      <button class="variante"><router-link href="">Variante</router-link></button>
+      <div class="b_regles_variante">
+          <button class="variante">Variante</button>
+      </div>
       <p>Pièce touchée = pièce jouée. Une pièce que le joueur touche doit obligatoirement être jouée par ce dernier. Pour replacer une pièce sur l’échiquier sans avoir à la bouger, il faut dire “J’adoube“.
         Les prises sont obligatoires. En un mot, aux Dames, si vous pouvez manger des Pions (ou des Dames), vous êtes obligés de le faire !</p>
       <div class="ajouter-variante">
         <button class="ajouter-variante"><router-link to="ajouter-variante">Ajouter une variante</router-link></button>
       </div>
-    </div>
+    </div> 
+ </div>
   <div class="commentaire">
     <form id="commentaire">
       <h2>Commentaires</h2>
@@ -44,8 +51,8 @@ var Bataille = Vue.component('Bataille',{
   </div>
 </main>
 <n-footer></n-footer>
-
 </div>
+
 
 `,
 
